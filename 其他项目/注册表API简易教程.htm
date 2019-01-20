@@ -1,0 +1,397 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0036)http://www.xuyibo.org/article/71.htm -->
+<HTML><HEAD><TITLE>注册表API简易教程 - xuyibo.org</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="注册表API简易教程_files/style.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript src="注册表API简易教程_files/script.js"></SCRIPT>
+
+<META content="MSHTML 6.00.6000.17063" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=head><A class=banner href="http://www.xuyibo.org/">Home</A> » <A 
+class=banner href="http://www.xuyibo.org/article/index.htm">Article</A> » 
+注册表API简易教程</DIV>
+<DIV id=content>
+<OL>
+  <H1>注册表API简易教程</H1>Author: 徐艺波 &nbsp;From: <A 
+  href="http://www.xuyibo.org/">xuyibo.org</A> &nbsp;Updated: 2008-06-19
+  <P>
+  <TABLE class=formtable cellSpacing=1>
+    <TBODY>
+    <TR>
+      <TD class=itemlist>&nbsp;<A 
+        href="http://www.xuyibo.org/mailnotify.asp?id=71"><IMG 
+        src="注册表API简易教程_files/mail.ico"> 邮件通知</A></TD>
+      <TD colSpan=4>&nbsp;&nbsp;当更新时自动发送邮件通知。</TD></TR>
+    <TR>
+      <TD class=itemlist>&nbsp;<A href="javascript:Reply()"><IMG 
+        src="注册表API简易教程_files/msg.ico"> 评论本文</A></TD>
+      <TD colSpan=4>&nbsp;&nbsp;有什么建议或评论，可以贴一下。</TD></TR>
+    <TR>
+      <TD class=itemlist>&nbsp;<A href="http://www.xuyibo.org/donate.htm"><IMG 
+        src="注册表API简易教程_files/donate.ico"> 我要捐助</A></TD>
+      <TD colSpan=4>&nbsp;&nbsp;你的支持，让我们做的更好。</TD></TR>
+    <TR>
+      <TD class=itemlist colSpan=5>&nbsp;
+        <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-6037088668602486";
+google_ad_slot = "8720757626";
+google_ad_width = 728;
+google_ad_height = 70;
+//-->
+</SCRIPT>
+
+        <SCRIPT src="注册表API简易教程_files/show_ads.js" 
+type=text/javascript></SCRIPT>
+         </TD></TR></TBODY></TABLE>
+  <P>
+  <LI>术语对照 
+  <P><IMG src="注册表API简易教程_files/reg1.jpg"></P>
+  <LI>注册表操作常用API 
+  <P>
+  <TABLE class=index style="WIDTH: 80%">
+    <TBODY>
+    <TR>
+      <TH>API</TH>
+      <TH>说明</TH></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegCreateKey</FONT></TD>
+      <TD>创建一个KEY，并返回相应的HKEY</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegOpenKey</FONT></TD>
+      <TD>打开注册表，得到一个HKEY，用来作为下面这些函数的第一个参数。</TD></TR>
+    <TR>
+      <TD>RegOpenKeyEx</TD>
+      <TD>同RegOpenKey类似，一般很少用，增加了一个访问控制类型参数。</TD></TR>
+    <TR>
+      <TD>RegSetValue</TD>
+      <TD>设置一个HKEY的默认值</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegSetValueEx</FONT></TD>
+      <TD>设置一个HKEY除默认值以外其它的值</TD></TR>
+    <TR>
+      <TD>RegQueryValue</TD>
+      <TD>获取一个HKEY的默认值</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegQueryValueEx</FONT></TD>
+      <TD>获取一个HKEY除默认值以外其它的值</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegDeleteKey</FONT></TD>
+      <TD>删除一个KEY，此KEY不能包含子KEY</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>SHDeleteKey</FONT></TD>
+      <TD>删除一个KEY以及所有子KEY</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegDeleteValue</FONT></TD>
+      <TD>删除KEY里面的值</TD></TR>
+    <TR>
+      <TD><FONT color=#ff0000>RegCloseKey</FONT></TD>
+      <TD>关闭注册表</TD></TR></TBODY></TABLE><BR></P>
+  <LI>注册表数据类型 
+  <P>
+  <TABLE class=index style="WIDTH: 80%">
+    <TBODY>
+    <TR>
+      <TH>类型</TH>
+      <TH>说明</TH></TR>
+    <TR>
+      <TD><FONT color=red>REG_DWORD</FONT></TD>
+      <TD>32位数字</TD></TR>
+    <TR>
+      <TD><FONT color=red>REG_SZ</FONT></TD>
+      <TD>以NULL结尾的字符串，它可以为Unicode或ANSI字符串，取决于是否使用的是Unicode还是ANSI函数。</TD></TR></TBODY></TABLE><BR></P>
+  <LI>函数用法 
+  <P>
+  <UL>
+    <LI>RegCreateKey<BR><PRE>LONG RegCreateKey(
+  HKEY hKey,        // handle to an open key
+  LPCTSTR lpSubKey, // subkey name
+  PHKEY phkResult   // buffer for key handle
+);
+</PRE>
+    <P>假如我们要将demo程序的许多相机参数保存到：HKEY_LOCAL_MACHINE\SOFTWARE\daheng_directx，使用这个函数来创建指定的key，得到对于的HKEY以便进一步操作。</P><PRE>HKEY hKey;
+if (RegCreateKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+// 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+}
+RegCloseKey(hKey);
+</PRE>
+    <P><I>注意：一般程序经常保持数据的位置有：HKEY_LOCAL_MACHINE\SOFTWARE和HKEY_CURRENT_USER\Software，两者的区别为：前者保持的数据，操作系统上的所有账户都可以访问（比如你的机器上有两个账户，一个是徐艺波，一个是康康，假如你将注册表保存在HKEY_LOCAL_MACHINE\SOFTWARE，那么当系统以徐艺波的账户登录加入后，运行demo和进入康康运行demo，获取的初始值都是一样的。），而HKEY_CURRENT_USER\Softwar是针对当前账户的，系统以不同的账户登录，这个KEY下面的值是不一样的。 
+    </I></P>
+    <LI>RegOpenKey<BR><PRE>LONG RegOpenKey(
+  HKEY hKey,        // handle to open key
+  LPCTSTR lpSubKey, // name of subkey to open
+  PHKEY phkResult   // handle to open key
+);
+</PRE>
+    <P>这个函数不同于RegCreateKey的地方在于，如果这个KEY不存在，那么此函数执行失败（而RegCreateKey：存在的话，返回存在的HKEY；不存在，创建一个并返回其HKEY）。 
+    假如我们要将demo程序的许多相机参数保存到：HKEY_LOCAL_MACHINE\SOFTWARE\daheng_directx，使用这个函数来打开指定的key，得到对于的HKEY以便进一步操作。 
+    </P><PRE>HKEY hKey;
+if (RegOpenKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+// 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+}
+RegCloseKey(hKey);
+</PRE>
+    <LI>RegSetValueEx<BR><PRE>LONG RegSetValueEx(
+  HKEY hKey,           // handle to key
+  LPCTSTR lpValueName, // value name
+  DWORD Reserved,      // reserved
+  DWORD dwType,        // value type
+  CONST BYTE *lpData,  // value data
+  DWORD cbData         // size of value data
+);
+</PRE>
+    <P>假设我们要保持相机曝光数据到HKEY_LOCAL_MACHINE\SOFTWARE\daheng_directx，数据名为AEC，值为1：</P><PRE>HKEY hKey;
+    HKEY hSubKey;
+    DWORD dwValue = 1;
+    char Buffer[] = "raw2rgb.dll";
+    
+    // 使用RegCreateKey能保证如果Software\daheng_directx不存在的话，创建一个。
+    if (RegCreateKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+        //
+        // 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+        //
+
+        if (RegSetValueEx(hKey, "AEC", 0, REG_DWORD, (CONST BYTE*)&amp;dwValue, sizeof(DWORD)) == ERROR_SUCCESS) {
+            printf("RegSetValueEx: AEC = %d\n", dwValue);
+        }
+
+        //
+        // 如果想在Software\\daheng_directx创建一个plugins key，那么就不能再使用hKey了，需要
+        // 重新获取这个结点的HKEY。
+        //
+        
+        if (RegCreateKey(hKey, "plugins", &amp;hSubKey) == ERROR_SUCCESS) {
+            if (RegSetValueEx(hSubKey, "颜色校正插件", 0, REG_SZ, (CONST BYTE*)Buffer,strlen(Buffer) + 1) == ERROR_SUCCESS) {
+                printf("RegSetValueEx: 颜色校正插件 = %s\n", Buffer);
+            }
+            RegCloseKey(hSubKey);
+        }
+    }
+    RegCloseKey(hKey);
+</PRE>
+    <LI>RegQueryValueEx<BR><PRE>LONG RegQueryValueEx(
+  HKEY hKey,            // handle to key
+  LPCTSTR lpValueName,  // value name
+  LPDWORD lpReserved,   // reserved
+  LPDWORD lpType,       // type buffer
+  LPBYTE lpData,        // data buffer
+  LPDWORD lpcbData      // size of data buffer
+);
+</PRE>
+    <P>假设我们要读取上面设置RegSetValueEx设置的值：</P><PRE> HKEY hKey;
+    HKEY hSubKey;
+    DWORD dwType;
+    DWORD dwValue;
+    DWORD dwSize;
+    // 使用RegCreateKey能保证如果Software\daheng_directx不存在的话，创建一个。
+    if (RegOpenKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+        //
+        // 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+        //
+
+        dwType = REG_DWORD;
+        dwSize = sizeof(DWORD);
+        if (RegQueryValueEx(hKey, "AEC", 0, &amp;dwType, &amp;dwValue, &amp;dwSize) == ERROR_SUCCESS) {
+            printf("RegQueryValueEx AEC = %d\n", dwValue);
+        } else {
+            printf("Some error occurred!\n");
+        }
+
+        //
+        // 如果想在Software\\daheng_directx创建一个plugins key，那么就不能再使用hKey了，需要
+        // 重新获取这个结点的HKEY。
+        //
+
+        if (RegOpenKey(hKey, "plugins", &amp;hSubKey) == ERROR_SUCCESS) {
+            char Buffer[256];
+            dwType = REG_SZ;
+            dwSize = sizeof(Buffer);
+            if (RegQueryValueEx(hSubKey, "颜色校正插件", 0, &amp;dwType, (LPBYTE)Buffer, &amp;dwSize) == ERROR_SUCCESS) {
+                    printf("RegQueryValueEx 颜色校正插件 = %s\n", Buffer);
+            } else {
+                    printf("Some error occurred!\n");
+            }
+            RegCloseKey(hSubKey);
+        }
+    }
+    RegCloseKey(hKey);
+</PRE>
+    <LI>RegDeleteKey<BR><PRE>LONG RegDeleteKey(
+  HKEY hKey,         // handle to open key
+  LPCTSTR lpSubKey   // subkey name
+);
+</PRE>
+    <P>假设我们要删除RegSetValueEx设置的KEY：</P><PRE> RegDeleteKey (HKEY_LOCAL_MACHINE, "Software\\daheng_directx");</PRE>
+    <LI>SHDeleteKey<BR><PRE>LONG SHDeleteKey(
+  HKEY hKey,         // handle to open key
+  LPCTSTR lpSubKey   // subkey name
+);
+</PRE>
+    <P>假设我们要删除RegSetValueEx设置的KEY以及所有子KEY：</P><PRE> SHDeleteKey (HKEY_LOCAL_MACHINE, "Software\\daheng_directx");</PRE>
+    <LI>RegDeleteValue<BR><PRE>LONG RegDeleteValue(
+  HKEY hKey,            // handle to key
+  LPCTSTR lpValueName   // value name
+);
+</PRE>
+    <P>假设我们要删除上面设置RegSetValueEx设置的值：</P><PRE>    HKEY hKey;
+    HKEY hSubKey;
+    DWORD dwType;
+    DWORD dwValue;
+    DWORD dwSize;
+    // 使用RegCreateKey能保证如果Software\daheng_directx不存在的话，创建一个。
+    if (RegOpenKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+        dwType = REG_DWORD;
+        dwSize = sizeof(DWORD);
+        if (RegDeleteValue(hKey, "AEC") == ERROR_SUCCESS) {
+            printf("RegDeleteValue AEC = %d\n", dwValue);
+        } else {
+            printf("Some error occurred!\n");
+        }
+    }
+    RegCloseKey(hKey);
+</PRE>
+    <LI>RegCloseKey<BR><PRE>LONG RegCloseKey(
+  HKEY hKey   // handle to key to close
+);
+</PRE><BR><PRE>HKEY hKey;
+if (RegCreateKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+      // …
+}
+RegCloseKey(hKey);
+</PRE>
+    <P>这个函数比较简单，参数1为RegCreateKey、RegOpenKey、RegCreateKeyEx、RegOpenKeyEx函数返回的HKEY。</P></LI></UL>
+  <LI>实例 <PRE>/*++
+
+Copyright (c) 2007 http://www.xuyibo.org
+
+Module Name:
+
+    reg.c
+
+Abstract:
+
+    Small registry demo for my good friend LiuMin ;)
+
+Author:
+
+    xuyibo (xuyibo) 2007-05-15
+
+Revision History:
+
+--*/
+
+#include &lt;stdio.h&gt;
+#include &lt;windows.h&gt;
+#pragma comment(lib, "advapi32.lib")
+
+void SetRegistryValue()
+{
+    HKEY hKey;
+    HKEY hSubKey;
+    DWORD dwValue = 1;
+    char Buffer[] = "raw2rgb.dll";
+    
+    // 使用RegCreateKey能保证如果Software\daheng_directx不存在的话，创建一个。
+    if (RegCreateKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+        //
+        // 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+        //
+
+        if (RegSetValueEx(hKey, "AEC", 0, REG_DWORD, (CONST BYTE*)&amp;dwValue, sizeof(DWORD)) == ERROR_SUCCESS) {
+            printf("RegSetValueEx: AEC = %d\n", dwValue);
+        }
+
+        //
+        // 如果想在Software\\daheng_directx创建一个plugins key，那么就不能再使用hKey了，需要
+        // 重新获取这个结点的HKEY。
+        //
+        
+        if (RegCreateKey(hKey, "plugins", &amp;hSubKey) == ERROR_SUCCESS) {
+            if (RegSetValueEx(hSubKey, "颜色校正插件", 0, REG_SZ, (CONST BYTE*)Buffer,strlen(Buffer) + 1) == ERROR_SUCCESS) {
+                printf("RegSetValueEx: 颜色校正插件 = %s\n", Buffer);
+            }
+            RegCloseKey(hSubKey);
+        }
+    }
+    RegCloseKey(hKey);
+}
+
+void GetRegistryValue()
+{
+    HKEY hKey;
+    HKEY hSubKey;
+    DWORD dwType;
+    DWORD dwValue;
+    DWORD dwSize;
+    // 使用RegCreateKey能保证如果Software\daheng_directx不存在的话，创建一个。
+    if (RegOpenKey(HKEY_LOCAL_MACHINE, "Software\\daheng_directx", &amp;hKey) == ERROR_SUCCESS) {
+        //
+        // 在这里就可以使用hKey来操作daheng_directx这个KEY里面的值了。
+        //
+
+        dwType = REG_DWORD;
+        dwSize = sizeof(DWORD);
+        if (RegQueryValueEx(hKey, "AEC", 0, &amp;dwType, &amp;dwValue, &amp;dwSize) == ERROR_SUCCESS) {
+            printf("RegQueryValueEx AEC = %d\n", dwValue);
+        } else {
+            printf("Some error occurred!\n");
+        }
+
+        //
+        // 如果想在Software\\daheng_directx创建一个plugins key，那么就不能再使用hKey了，需要
+        // 重新获取这个结点的HKEY。
+        //
+
+        if (RegOpenKey(hKey, "plugins", &amp;hSubKey) == ERROR_SUCCESS) {
+            char Buffer[256];
+            dwType = REG_SZ;
+            dwSize = sizeof(Buffer);
+            if (RegQueryValueEx(hSubKey, "颜色校正插件", 0, &amp;dwType, (LPBYTE)Buffer, &amp;dwSize) == ERROR_SUCCESS) {
+                    printf("RegQueryValueEx 颜色校正插件 = %s\n", Buffer);
+            } else {
+                    printf("Some error occurred!\n");
+            }
+            RegCloseKey(hSubKey);
+        }
+    }
+    RegCloseKey(hKey);
+}
+
+int main(int argc, char* argv[])
+{
+    SetRegistryValue();
+    GetRegistryValue();
+    
+    getchar();
+    return 0;
+} 
+</PRE>
+  <P>运行结果：<BR><IMG src="注册表API简易教程_files/reg2.png"><BR><IMG 
+  src="注册表API简易教程_files/reg3.png"><BR><IMG src="注册表API简易教程_files/reg4.png"> </P>
+  <P></P>
+  <LI>相关文章
+  <P><A href="http://www.xuyibo.org/download/80.htm">程序异常捕获库 - 
+  CrashRpt</A><BR><A href="http://www.xuyibo.org/article/35.htm">MAPI 
+  MAPISendMail</A><BR><A 
+  href="http://www.xuyibo.org/article/34.htm">轻量级的浏览器控件HTMLLITE</A><BR><A 
+  href="http://www.xuyibo.org/article/30.htm">在XP下使用Link控件</A><BR><A 
+  href="http://www.xuyibo.org/article/21.htm">我的电脑软配置</A><BR><A 
+  href="http://www.xuyibo.org/article/20.htm">让你的程序支持脱拽</A><BR><A 
+  href="http://www.xuyibo.org/article/19.htm">背景透明的按钮</A><BR></P><A 
+  name=REPLY></A>
+  <P></P>
+  <LI>评论本文: 
+  <TABLE class=formtable>
+    <FORM name=form1 
+    onsubmit="return PostPage('../commentadd.asp?id=71', oComment)" method=post>
+    <TBODY>
+    <TR>
+      <TD>EMail: <INPUT class=user maxLength=30 name=user><BR><TEXTAREA id=msg name=msg></TEXTAREA> </TD></TR>
+    <TR>
+      <TD><INPUT type=submit value=Submit name=Submit> <INPUT type=reset value=Reset name=Submit2></TD></TR></FORM></TBODY></TABLE>
+  <DIV id=oComment></DIV>
+  <SCRIPT 
+language=JavaScript>GetPage('../comment.asp?id=71', oComment);</SCRIPT>
+  </LI></OL></DIV>
+<DIV id=foot>Copyright © 2010 xuyibo.org All right reserved.
+<SCRIPT src="注册表API简易教程_files/tongji.js" type=text/javascript></SCRIPT>
+ </DIV></BODY></HTML>

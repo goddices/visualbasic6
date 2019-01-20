@@ -1,0 +1,2408 @@
+“/”应用程序中的服务器错误。
+--------------------------------------------------------------------------------
+
+编译错误 
+说明: 在编译向该请求提供服务所需资源的过程中出现错误。请检查下列特定错误详细信息并适当地修改源代码。 
+
+编译器错误消息: CS1010: 常量中有换行符
+
+源错误:
+
+ 
+
+行 1130:dtr=cmd.ExecuteReader();
+行 1131:    
+行 1132:    '  string[] str="";
+行 1133:    'if (dtr["ilasteditdate"].ToString()!=null|| dtr["ilasteditdate"].ToString()!="") 
+行 1134:    '        {
+ 
+
+源文件: d:\mydata\easytv\index.aspx    行: 1132 
+
+
+
+显示详细的编译器输出:
+
+
+c:\windows\system32\inetsrv> "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\csc.exe" /t:library /utf8output /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_footbar.ascx.cdcab7d2.orvk4zcq.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\728db7a1\9203feeb_e97ac901\AppDewDAO_SQLServer.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_global.asax.wkicdkre.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\09d31765\10633eec_e97ac901\AppDewModel.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_headbar.ascx.cdcab7d2.0mxhuc_7.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_searchbar.ascx.cdcab7d2.vyyuw85x.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\0a6cd242\7c9253fd_e558c901\TAjax.DLL" /R:"C:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_selecteda.ascx.cdcab7d2.fjwookqg.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\aceff579\8cce9366_10eac701\vbapp.DLL" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll" /R:"C:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\bab6eb1d\20f9f8fc_e558c901\AjaxPro.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\6876a64b\6e06c0eb_e97ac901\AppDewBO_SQLServer.DLL" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Web.Mobile\2.0.0.0__b03f5f7f11d50a3a\System.Web.Mobile.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\472bdbf8\113cfcd8_707cc901\cableplus.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_uhwyvxde.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\548b4e22\9e5839fd_e558c901\MagicAjax.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\3ef98e68\029c7d0e_88f0c901\System.Web.Extensions.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\e7ad6518\a46b84eb_e97ac901\app.DLL" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\ddf758f9\1e90290c_88f0c901\System.Web.Extensions.Design.DLL" /R:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\assembly\dl3\c75d5090\96c12701_3df9c901\FredCK.FCKeditorV2.DLL" /R:"C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll" /R:"C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll" /out:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_index.aspx.cdcab7d2.ob_gbrg0.dll" /D:DEBUG /debug+ /optimize- /win32res:"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\bjpxmnqo.res" /w:4 /nowarn:1659;1699;1701  "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_index.aspx.cdcab7d2.ob_gbrg0.0.cs" "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\f2a5db01\d5a44f86\App_Web_index.aspx.cdcab7d2.ob_gbrg0.1.cs"
+
+
+Microsoft (R) Visual C# 2005 编译器 版本 8.00.50727.1433
+用于 Microsoft (R) Windows (R) 2005 Framework 版本 2.0.50727
+版权所有 (C) Microsoft Corporation 2001-2005。保留所有权利。
+
+d:\mydata\easytv\index.aspx(1132,5): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1132,5): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1133,5): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1133,5): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1134,5): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1134,5): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1135,5): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1135,54): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1135,54): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1136,5): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1136,5): error CS1012: 字符文本中的字符太多
+d:\mydata\easytv\index.aspx(1137,5): error CS1010: 常量中有换行符
+d:\mydata\easytv\index.aspx(1137,5): error CS1012: 字符文本中的字符太多
+
+ 
+
+
+
+显示完整的编译源:
+
+
+行 1:    #pragma checksum "D:\mydata\easytv\index.aspx" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "46A19FCF6FDE90E6B6B92EBF127A3993"
+行 2:    //------------------------------------------------------------------------------
+行 3:    // <auto-generated>
+行 4:    //     此代码由工具生成。
+行 5:    //     运行库版本:2.0.50727.1433
+行 6:    //
+行 7:    //     对此文件的更改可能会导致不正确的行为，并且如果
+行 8:    //     重新生成代码，这些更改将会丢失。
+行 9:    // </auto-generated>
+行 10:   //------------------------------------------------------------------------------
+行 11:   
+行 12:   namespace ASP {
+行 13:       
+行 14:       #line 10 "D:\mydata\easytv\index.aspx"
+行 15:       using AppDewBO_SQLServer;
+行 16:       
+行 17:       #line default
+行 18:       #line hidden
+行 19:       
+行 20:       #line 265 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 21:       using System.Web.Security;
+行 22:       
+行 23:       #line default
+行 24:       #line hidden
+行 25:       
+行 26:       #line 7 "D:\mydata\easytv\index.aspx"
+行 27:       using System.Collections;
+行 28:       
+行 29:       #line default
+行 30:       #line hidden
+行 31:       
+行 32:       #line 8 "D:\mydata\easytv\index.aspx"
+行 33:       using AppDewModel;
+行 34:       
+行 35:       #line default
+行 36:       #line hidden
+行 37:       
+行 38:       #line 13 "D:\mydata\easytv\index.aspx"
+行 39:       using ASP;
+行 40:       
+行 41:       #line default
+行 42:       #line hidden
+行 43:       
+行 44:       #line 268 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 45:       using System.Web.UI.WebControls;
+行 46:       
+行 47:       #line default
+行 48:       #line hidden
+行 49:       
+行 50:       #line 262 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 51:       using System.Web;
+行 52:       
+行 53:       #line default
+行 54:       #line hidden
+行 55:       
+行 56:       #line 6 "D:\mydata\easytv\index.aspx"
+行 57:       using System.Data.SqlClient;
+行 58:       
+行 59:       #line default
+行 60:       #line hidden
+行 61:       
+行 62:       #line 267 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 63:       using System.Web.UI;
+行 64:       
+行 65:       #line default
+行 66:       #line hidden
+行 67:       
+行 68:       #line 270 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 69:       using System.Web.UI.HtmlControls;
+行 70:       
+行 71:       #line default
+行 72:       #line hidden
+行 73:       
+行 74:       #line 9 "D:\mydata\easytv\index.aspx"
+行 75:       using System.Text.RegularExpressions;
+行 76:       
+行 77:       #line default
+行 78:       #line hidden
+行 79:       
+行 80:       #line 259 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 81:       using System.Configuration;
+行 82:       
+行 83:       #line default
+行 84:       #line hidden
+行 85:       
+行 86:       #line 256 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 87:       using System;
+行 88:       
+行 89:       #line default
+行 90:       #line hidden
+行 91:       
+行 92:       #line 260 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 93:       using System.Text;
+行 94:       
+行 95:       #line default
+行 96:       #line hidden
+行 97:       
+行 98:       #line 266 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 99:       using System.Web.Profile;
+行 100:      
+行 101:      #line default
+行 102:      #line hidden
+行 103:      
+行 104:      #line 263 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 105:      using System.Web.Caching;
+行 106:      
+行 107:      #line default
+行 108:      #line hidden
+行 109:      
+行 110:      #line 5 "D:\mydata\easytv\index.aspx"
+行 111:      using System.Data;
+行 112:      
+行 113:      #line default
+行 114:      #line hidden
+行 115:      
+行 116:      #line 269 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 117:      using System.Web.UI.WebControls.WebParts;
+行 118:      
+行 119:      #line default
+行 120:      #line hidden
+行 121:      
+行 122:      #line 258 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 123:      using System.Collections.Specialized;
+行 124:      
+行 125:      #line default
+行 126:      #line hidden
+行 127:      
+行 128:      #line 264 "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Config\web.config"
+行 129:      using System.Web.SessionState;
+行 130:      
+行 131:      #line default
+行 132:      #line hidden
+行 133:      
+行 134:      #line 11 "D:\mydata\easytv\index.aspx"
+行 135:      using app;
+行 136:      
+行 137:      #line default
+行 138:      #line hidden
+行 139:      
+行 140:      
+行 141:      [System.Runtime.CompilerServices.CompilerGlobalScopeAttribute()]
+行 142:      public class index_aspx : global::System.Web.UI.Page, System.Web.SessionState.IRequiresSessionState, System.Web.IHttpHandler {
+行 143:          
+行 144:          
+行 145:          #line 1294 "D:\mydata\easytv\index.aspx"
+行 146:          protected global::ASP.etvusercntl_footbarv2_ascx FootBarV21;
+行 147:          
+行 148:          #line default
+行 149:          #line hidden
+行 150:          
+行 151:          private static bool @__initialized;
+行 152:          
+行 153:          private static object @__stringResource;
+行 154:          
+行 155:          private static object @__fileDependencies;
+行 156:          
+行 157:          private static System.Web.UI.OutputCacheParameters @__outputCacheSettings = null;
+行 158:          
+行 159:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 160:          public index_aspx() {
+行 161:              string[] dependencies;
+行 162:              ((global::System.Web.UI.Page)(this)).AppRelativeVirtualPath = "~/index.aspx";
+行 163:              if ((global::ASP.index_aspx.@__initialized == false)) {
+行 164:                  global::ASP.index_aspx.@__stringResource = this.ReadStringResource();
+行 165:                  dependencies = new string[6];
+行 166:                  dependencies[0] = "~/index.aspx";
+行 167:                  dependencies[1] = "~/SearchBar.ascx";
+行 168:                  dependencies[2] = "~/HeadBar.ascx";
+行 169:                  dependencies[3] = "~/ETVuserCntl/FootBarV2.ascx";
+行 170:                  dependencies[4] = "~/SelectedA.ascx";
+行 171:                  dependencies[5] = "~/FootBar.ascx";
+行 172:                  global::ASP.index_aspx.@__fileDependencies = this.GetWrappedFileDependencies(dependencies);
+行 173:                  global::ASP.index_aspx.@__initialized = true;
+行 174:              }
+行 175:              this.Server.ScriptTimeout = 30000000;
+行 176:              if ((global::ASP.index_aspx.@__outputCacheSettings == null)) {
+行 177:                  System.Web.UI.OutputCacheParameters outputCacheSettings;
+行 178:                  outputCacheSettings = new System.Web.UI.OutputCacheParameters();
+行 179:                  outputCacheSettings.Duration = 60;
+行 180:                  outputCacheSettings.VaryByParam = "*";
+行 181:                  global::ASP.index_aspx.@__outputCacheSettings = outputCacheSettings;
+行 182:              }
+行 183:          }
+行 184:          
+行 185:          protected System.Web.Profile.DefaultProfile Profile {
+行 186:              get {
+行 187:                  return ((System.Web.Profile.DefaultProfile)(this.Context.Profile));
+行 188:              }
+行 189:          }
+行 190:          
+行 191:          protected override bool SupportAutoEvents {
+行 192:              get {
+行 193:                  return false;
+行 194:              }
+行 195:          }
+行 196:          
+行 197:          protected ASP.global_asax ApplicationInstance {
+行 198:              get {
+行 199:                  return ((ASP.global_asax)(this.Context.ApplicationInstance));
+行 200:              }
+行 201:          }
+行 202:          
+行 203:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 204:          private System.Web.UI.Control @__BuildControlFootBarV21() {
+行 205:              global::ASP.etvusercntl_footbarv2_ascx @__ctrl;
+行 206:              
+行 207:              #line 1294 "D:\mydata\easytv\index.aspx"
+行 208:              @__ctrl = new global::ASP.etvusercntl_footbarv2_ascx();
+行 209:              
+行 210:              #line default
+行 211:              #line hidden
+行 212:              this.FootBarV21 = @__ctrl;
+行 213:              
+行 214:              #line 1294 "D:\mydata\easytv\index.aspx"
+行 215:              @__ctrl.InitializeAsUserControl(this.Page);
+行 216:              
+行 217:              #line default
+行 218:              #line hidden
+行 219:              
+行 220:              #line 1294 "D:\mydata\easytv\index.aspx"
+行 221:              @__ctrl.ID = "FootBarV21";
+行 222:              
+行 223:              #line default
+行 224:              #line hidden
+行 225:              return @__ctrl;
+行 226:          }
+行 227:          
+行 228:          [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 229:          private void @__BuildControlTree(index_aspx @__ctrl) {
+行 230:              
+行 231:              #line 1 "D:\mydata\easytv\index.aspx"
+行 232:              this.InitializeCulture();
+行 233:              
+行 234:              #line default
+行 235:              #line hidden
+行 236:              System.Web.UI.StaticPartialCachingControl.BuildCachedControl(@__ctrl, "FootBarV21", "b761c285-2655-4192-8007-b70c46de56a2", 1000, null, null, null, null, new System.Web.UI.BuildMethod(this.@__BuildControlFootBarV21));
+行 237:              @__ctrl.SetRenderMethodDelegate(new System.Web.UI.RenderMethod(this.@__Render__control1));
+行 238:          }
+行 239:          
+行 240:          private void @__Render__control1(System.Web.UI.HtmlTextWriter @__w, System.Web.UI.Control parameterContainer) {
+行 241:              
+行 242:              #line 16 "D:\mydata\easytv\index.aspx"
+行 243:    
+行 244:  
+行 245:  CataTreeBO ctbo=new CataTreeBO(Application["ConnString"].ToString());			
+行 246:  ArrayList al=ctbo.list(1,0,1000," ctprio "," where tdepth=1 ");
+行 247:  System.Collections.IEnumerator myEnumerator = al.GetEnumerator();
+行 248:  
+行 249:  int sid=0;
+行 250:  string Sql="";
+行 251:  
+行 252:  SqlConnection conn = new SqlConnection(Application["ConnString"].ToString());
+行 253:  conn.Open();
+行 254:  SqlCommand cmd =null;
+行 255:  SqlDataReader dtr=null;
+行 256:  
+行 257:  
+行 258:  
+行 259:              
+行 260:              #line default
+行 261:              #line hidden
+行 262:              this.WriteUTF8ResourceString(@__w, 0, 6367, false);
+行 263:              
+行 264:              #line 191 "D:\mydata\easytv\index.aspx"
+行 265:    
+行 266:  
+行 267:  int cata1=1;     // 0 not selected 
+行 268:  if(Request["cata1"]!=null)
+行 269:  	cata1=Convert.ToInt32(Request["cata1"]);
+行 270:  
+行 271:  int cata2=0;     // 0 not selected
+行 272:  if(Request["cata2"]!=null)
+行 273:  	cata2=Convert.ToInt32(Request["cata2"]);
+行 274:  	
+行 275:  	
+行 276:  
+行 277:  
+行 278:  int ifasc=0;
+行 279:  int pagesize=10;  
+行 280:  ItemBO ibo=new ItemBO(Application["ConnString"].ToString());
+行 281:  
+行 282:  string temps1="";
+行 283:  if(cata2==0)
+行 284:  	temps1="where istatus=1 and icatagory1="+cata1;
+行 285:  else
+行 286:  	temps1=" where istatus=1 and icatagory1="+cata1+" and icatagory2="+cata2;
+行 287:  	
+行 288:  
+行 289:  int tr=ibo.getSize(temps1);
+行 290:  
+行 291:  int totalpage=tr/pagesize+1;
+行 292:  
+行 293:  
+行 294:  int idx=1;
+行 295:  if(Request["idx"]!=null)
+行 296:  	idx=Convert.ToInt32(Request["idx"]);
+行 297:  
+行 298:  //string condition="";
+行 299:  //if(Request["txtCon"]!=null)
+行 300:  //	condition=Request["txtCon"].ToString();
+行 301:  
+行 302:  
+行 303:              
+行 304:              #line default
+行 305:              #line hidden
+行 306:              @__w.Write("\r\n<div id=\"nav\" onLoad=\"catainit(");
+行 307:              
+行 308:              #line 229 "D:\mydata\easytv\index.aspx"
+行 309:                         @__w.Write(cata1);
+行 310:  
+行 311:              
+行 312:              #line default
+行 313:              #line hidden
+行 314:              this.WriteUTF8ResourceString(@__w, 6367, 1626, true);
+行 315:              
+行 316:              #line 248 "D:\mydata\easytv\index.aspx"
+行 317:                            
+行 318:                            	ctbo=new CataTreeBO(Application["ConnString"].ToString());			
+行 319:  							al=ctbo.list(1,0,1000," ctprio "," where tdepth=1 ");
+行 320:  							int i=1;
+行 321:  							CataTreeModel ctm=null;
+行 322:  							myEnumerator = al.GetEnumerator();
+行 323:  							while ( myEnumerator.MoveNext() )
+行 324:  							{
+行 325:  								ctm=(CataTreeModel)myEnumerator.Current;
+行 326:  							
+行 327:                             
+行 328:              
+行 329:              #line default
+行 330:              #line hidden
+行 331:              @__w.Write("\r\n        \t<li id=\"cata2_");
+行 332:              
+行 333:              #line 259 "D:\mydata\easytv\index.aspx"
+行 334:                 @__w.Write(ctm.tid);
+行 335:  
+行 336:              
+行 337:              #line default
+行 338:              #line hidden
+行 339:              @__w.Write("\" class=\"cata2div\">\r\n                              ");
+行 340:              
+行 341:              #line 260 "D:\mydata\easytv\index.aspx"
+行 342:                                  
+行 343:  									CataTreeBO ctbo2=new CataTreeBO(Application["ConnString"].ToString());			
+行 344:  									ArrayList al2=ctbo2.list(1,1,1000," tid "," where tdepth=2 and pid="+ctm.tid );
+行 345:  									CataTreeModel ctm2=null;
+行 346:  									System.Collections.IEnumerator myEnumerator2 = al2.GetEnumerator();
+行 347:  									while ( myEnumerator2.MoveNext() )
+行 348:  									{
+行 349:  										ctm2=(CataTreeModel)myEnumerator2.Current;	
+行 350:  									
+行 351:  									
+行 352:              
+行 353:              #line default
+行 354:              #line hidden
+行 355:              @__w.Write("\r\n                                |<a href=\"ItemList.aspx?cata1=");
+行 356:              
+行 357:              #line 270 "D:\mydata\easytv\index.aspx"
+行 358:                                                        @__w.Write(ctm2.pid);
+行 359:  
+行 360:              
+行 361:              #line default
+行 362:              #line hidden
+行 363:              @__w.Write("&cata2=");
+行 364:              
+行 365:              #line 270 "D:\mydata\easytv\index.aspx"
+行 366:                                                                            @__w.Write(ctm2.tid);
+行 367:  
+行 368:              
+行 369:              #line default
+行 370:              #line hidden
+行 371:              @__w.Write("\" class=\"aFFF\">\r\n\t\t\t\t\t\t\t  \t\t");
+行 372:              
+行 373:              #line 271 "D:\mydata\easytv\index.aspx"
+行 374:               if((cata1==ctm2.pid)&&(cata2==ctm2.tid)) Response.Write("<b>"+ctm2.tname.Trim()+"</b>"); else Response.Write(ctm2.tname.Trim());  
+行 375:              
+行 376:              #line default
+行 377:              #line hidden
+行 378:              @__w.Write("\r\n\t\t\t\t\t\t\t\t</a> \r\n                              ");
+行 379:              
+行 380:              #line 273 "D:\mydata\easytv\index.aspx"
+行 381:                                  }
+行 382:              
+行 383:              #line default
+行 384:              #line hidden
+行 385:              @__w.Write("\r\n                              \r\n        \t</li>\r\n        \t ");
+行 386:              
+行 387:              #line 276 "D:\mydata\easytv\index.aspx"
+行 388:               } 
+行 389:              
+行 390:              #line default
+行 391:              #line hidden
+行 392:              this.WriteUTF8ResourceString(@__w, 7993, 4886, false);
+行 393:              
+行 394:              #line 379 "D:\mydata\easytv\index.aspx"
+行 395:    
+行 396:  Sql=" select top 12 "
+行 397:  +" iid, iname,ipicklein,icdate,iauditdate,icatagory1,ilasteditdate "
+行 398:  +" ,case when ilasteditdate is null then icdate "
+行 399:  +"  else ilasteditdate "
+行 400:  +" end as lasttime "
+行 401:  +" from item "
+行 402:  //+" where icatagory1=1 "
+行 403:  +" order by lasttime desc";
+行 404:  
+行 405:  cmd = new SqlCommand(Sql, conn);
+行 406:  cmd.CommandType = CommandType.Text;
+行 407:  
+行 408:   i=0;																						
+行 409:  dtr=cmd.ExecuteReader();
+行 410:  while(dtr.Read())
+行 411:  {							
+行 412:  
+行 413:              
+行 414:              #line default
+行 415:              #line hidden
+行 416:              @__w.Write("\t\t\r\n\t\t\t\t\t<li>\r\n\t\t\t\t");
+行 417:              
+行 418:              #line 398 "D:\mydata\easytv\index.aspx"
+行 419:        if(dtr["icatagory1"].ToString()!="7"){
+行 420:              
+行 421:              #line default
+行 422:              #line hidden
+行 423:              @__w.Write("\r\n\t\t\t\t<a href=\"ItemDet.aspx?IID=");
+行 424:              
+行 425:              #line 399 "D:\mydata\easytv\index.aspx"
+行 426:                        @__w.Write(dtr["iid"].ToString());
+行 427:  
+行 428:              
+行 429:              #line default
+行 430:              #line hidden
+行 431:              @__w.Write("\" class=\"aFF855C\" title=\"");
+行 432:              
+行 433:              #line 399 "D:\mydata\easytv\index.aspx"
+行 434:                                                                           @__w.Write(dtr["iname"].ToString());
+行 435:  
+行 436:              
+行 437:              #line default
+行 438:              #line hidden
+行 439:              @__w.Write("\" />\r\n\t\t\t\t");
+行 440:              
+行 441:              #line 400 "D:\mydata\easytv\index.aspx"
+行 442:        }else{
+行 443:              
+行 444:              #line default
+行 445:              #line hidden
+行 446:              @__w.Write("\r\n\t\t\t\t<a href=\"ItemDetForVideo.aspx?IID=");
+行 447:              
+行 448:              #line 401 "D:\mydata\easytv\index.aspx"
+行 449:                                @__w.Write(dtr["iid"].ToString());
+行 450:  
+行 451:              
+行 452:              #line default
+行 453:              #line hidden
+行 454:              @__w.Write("\" class=\"aFF855C\" title=\"");
+行 455:              
+行 456:              #line 401 "D:\mydata\easytv\index.aspx"
+行 457:                                                                                   @__w.Write(dtr["iname"].ToString());
+行 458:  
+行 459:              
+行 460:              #line default
+行 461:              #line hidden
+行 462:              @__w.Write("\">\r\n\t\t\t\t");
+行 463:              
+行 464:              #line 402 "D:\mydata\easytv\index.aspx"
+行 465:        }
+行 466:              
+行 467:              #line default
+行 468:              #line hidden
+行 469:              
+行 470:              #line 403 "D:\mydata\easytv\index.aspx"
+行 471:          			
+行 472:  						if(dtr["iname"].ToString().Trim().Length>=8) 
+行 473:  							Response.Write(dtr["iname"].ToString().Substring(0,8)+"...");
+行 474:  						else
+行 475:  							Response.Write(dtr["iname"].ToString()); 
+行 476:  						
+行 477:              
+行 478:              #line default
+行 479:              #line hidden
+行 480:              @__w.Write("\r\n\t\t\t\t\t</a>\r\n\t\t\t\t</li>\r\n");
+行 481:              
+行 482:              #line 411 "D:\mydata\easytv\index.aspx"
+行 483:    			
+行 484:  }dtr.Close();
+行 485:  
+行 486:              
+行 487:              #line default
+行 488:              #line hidden
+行 489:              this.WriteUTF8ResourceString(@__w, 12879, 335, true);
+行 490:              
+行 491:              #line 427 "D:\mydata\easytv\index.aspx"
+行 492:    
+行 493:  Sql=" select top 8 "
+行 494:  +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 495:  +" ,case when ilasteditdate is null then icdate "
+行 496:  +"  else ilasteditdate "
+行 497:  +" end as lasttime "
+行 498:  +" from item "
+行 499:  +" where icatagory1=1 and iifrecm = 1 "
+行 500:  +" order by lasttime desc";
+行 501:  
+行 502:  SqlDataAdapter  daMv = new SqlDataAdapter(Sql,conn);
+行 503:  DataSet dsMv = new DataSet();
+行 504:  daMv.Fill(dsMv,"tables1");
+行 505:  
+行 506:  
+行 507:              
+行 508:              #line default
+行 509:              #line hidden
+行 510:              this.WriteUTF8ResourceString(@__w, 13214, 1211, false);
+行 511:              
+行 512:              #line 459 "D:\mydata\easytv\index.aspx"
+行 513:                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 514:  
+行 515:              
+行 516:              #line default
+行 517:              #line hidden
+行 518:              @__w.Write("\"><img alt=\"");
+行 519:              
+行 520:              #line 459 "D:\mydata\easytv\index.aspx"
+行 521:                                                                                                               @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 522:  
+行 523:              
+行 524:              #line default
+行 525:              #line hidden
+行 526:              @__w.Write("\" src=\"");
+行 527:              
+行 528:              #line 459 "D:\mydata\easytv\index.aspx"
+行 529:                                                                                                                                                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 530:  
+行 531:              
+行 532:              #line default
+行 533:              #line hidden
+行 534:              @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 535:              
+行 536:              #line 460 "D:\mydata\easytv\index.aspx"
+行 537:                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 538:  
+行 539:              
+行 540:              #line default
+行 541:              #line hidden
+行 542:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 543:              
+行 544:              #line 460 "D:\mydata\easytv\index.aspx"
+行 545:                                                                                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 546:  
+行 547:              
+行 548:              #line default
+行 549:              #line hidden
+行 550:              @__w.Write("\">\r\n");
+行 551:              
+行 552:              #line 461 "D:\mydata\easytv\index.aspx"
+行 553:    
+行 554:  							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 555:  							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 556:  							  else
+行 557:  							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 558:  
+行 559:              
+行 560:              #line default
+行 561:              #line hidden
+行 562:              @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 563:                      "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 564:              
+行 565:              #line 471 "D:\mydata\easytv\index.aspx"
+行 566:                                 @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 567:  
+行 568:              
+行 569:              #line default
+行 570:              #line hidden
+行 571:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 572:              
+行 573:              #line 471 "D:\mydata\easytv\index.aspx"
+行 574:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 575:  
+行 576:              
+行 577:              #line default
+行 578:              #line hidden
+行 579:              @__w.Write("\">\r\n");
+行 580:              
+行 581:              #line 472 "D:\mydata\easytv\index.aspx"
+行 582:    
+行 583:  							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 584:  							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 585:  							  else
+行 586:  							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 587:  
+行 588:              
+行 589:              #line default
+行 590:              #line hidden
+行 591:              @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 592:              
+行 593:              #line 480 "D:\mydata\easytv\index.aspx"
+行 594:                                 @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 595:  
+行 596:              
+行 597:              #line default
+行 598:              #line hidden
+行 599:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 600:              
+行 601:              #line 480 "D:\mydata\easytv\index.aspx"
+行 602:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 603:  
+行 604:              
+行 605:              #line default
+行 606:              #line hidden
+行 607:              @__w.Write("\">\r\n");
+行 608:              
+行 609:              #line 481 "D:\mydata\easytv\index.aspx"
+行 610:    
+行 611:  							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 612:  							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 613:  							  else
+行 614:  							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 615:  
+行 616:              
+行 617:              #line default
+行 618:              #line hidden
+行 619:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 620:              
+行 621:              #line 488 "D:\mydata\easytv\index.aspx"
+行 622:                                 @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 623:  
+行 624:              
+行 625:              #line default
+行 626:              #line hidden
+行 627:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 628:              
+行 629:              #line 488 "D:\mydata\easytv\index.aspx"
+行 630:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 631:  
+行 632:              
+行 633:              #line default
+行 634:              #line hidden
+行 635:              @__w.Write("\">\r\n");
+行 636:              
+行 637:              #line 489 "D:\mydata\easytv\index.aspx"
+行 638:    
+行 639:  							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=10)
+行 640:  							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,10)+"...");
+行 641:  							  else
+行 642:  							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 643:  
+行 644:              
+行 645:              #line default
+行 646:              #line hidden
+行 647:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 648:              
+行 649:              #line 496 "D:\mydata\easytv\index.aspx"
+行 650:                                 @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 651:  
+行 652:              
+行 653:              #line default
+行 654:              #line hidden
+行 655:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 656:              
+行 657:              #line 496 "D:\mydata\easytv\index.aspx"
+行 658:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 659:  
+行 660:              
+行 661:              #line default
+行 662:              #line hidden
+行 663:              @__w.Write("\">");
+行 664:              
+行 665:              #line 496 "D:\mydata\easytv\index.aspx"
+行 666:                                                                                                                                                                                  
+行 667:  							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 668:  							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 669:  							  else
+行 670:  							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 671:  
+行 672:              
+行 673:              #line default
+行 674:              #line hidden
+行 675:              @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 676:              
+行 677:              #line 501 "D:\mydata\easytv\index.aspx"
+行 678:                                    @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 679:  
+行 680:              
+行 681:              #line default
+行 682:              #line hidden
+行 683:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 684:              
+行 685:              #line 501 "D:\mydata\easytv\index.aspx"
+行 686:                                                                                                                    @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 687:  
+行 688:              
+行 689:              #line default
+行 690:              #line hidden
+行 691:              @__w.Write("\">\r\n");
+行 692:              
+行 693:              #line 502 "D:\mydata\easytv\index.aspx"
+行 694:    
+行 695:  							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 696:  							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 697:  							  else
+行 698:  							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 699:  
+行 700:              
+行 701:              #line default
+行 702:              #line hidden
+行 703:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 704:              
+行 705:              #line 509 "D:\mydata\easytv\index.aspx"
+行 706:                                 @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 707:  
+行 708:              
+行 709:              #line default
+行 710:              #line hidden
+行 711:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 712:              
+行 713:              #line 509 "D:\mydata\easytv\index.aspx"
+行 714:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 715:  
+行 716:              
+行 717:              #line default
+行 718:              #line hidden
+行 719:              @__w.Write("\">\r\n");
+行 720:              
+行 721:              #line 510 "D:\mydata\easytv\index.aspx"
+行 722:    
+行 723:  							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 724:  							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 725:  							  else
+行 726:  							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 727:  
+行 728:              
+行 729:              #line default
+行 730:              #line hidden
+行 731:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 732:              
+行 733:              #line 517 "D:\mydata\easytv\index.aspx"
+行 734:                                 @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 735:  
+行 736:              
+行 737:              #line default
+行 738:              #line hidden
+行 739:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 740:              
+行 741:              #line 517 "D:\mydata\easytv\index.aspx"
+行 742:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 743:  
+行 744:              
+行 745:              #line default
+行 746:              #line hidden
+行 747:              @__w.Write("\">\r\n");
+行 748:              
+行 749:              #line 518 "D:\mydata\easytv\index.aspx"
+行 750:    
+行 751:  							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 752:  							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 753:  							  else
+行 754:  							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 755:  
+行 756:              
+行 757:              #line default
+行 758:              #line hidden
+行 759:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 760:                      "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n");
+行 761:              
+行 762:              #line 534 "D:\mydata\easytv\index.aspx"
+行 763:    
+行 764:  conn.Close();
+行 765:  
+行 766:  
+行 767:  Sql=" select top 8 "
+行 768:  +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 769:  +" ,case when ilasteditdate is null then icdate "
+行 770:  +"  else ilasteditdate "
+行 771:  +" end as lasttime "
+行 772:  +" from item "
+行 773:  +" where icatagory1=2 and iifrecm = 1 "
+行 774:  +" order by lasttime desc";
+行 775:  
+行 776:  daMv = new SqlDataAdapter(Sql,conn);
+行 777:  dsMv = new DataSet();
+行 778:  daMv.Fill(dsMv,"tables1");
+行 779:  
+行 780:  
+行 781:              
+行 782:              #line default
+行 783:              #line hidden
+行 784:              this.WriteUTF8ResourceString(@__w, 14425, 451, true);
+行 785:              
+行 786:              #line 562 "D:\mydata\easytv\index.aspx"
+行 787:                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 788:  
+行 789:              
+行 790:              #line default
+行 791:              #line hidden
+行 792:              @__w.Write("\"><img alt=\"");
+行 793:              
+行 794:              #line 562 "D:\mydata\easytv\index.aspx"
+行 795:                                                                                                               @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 796:  
+行 797:              
+行 798:              #line default
+行 799:              #line hidden
+行 800:              @__w.Write("\" src=\"");
+行 801:              
+行 802:              #line 562 "D:\mydata\easytv\index.aspx"
+行 803:                                                                                                                                                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 804:  
+行 805:              
+行 806:              #line default
+行 807:              #line hidden
+行 808:              @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 809:              
+行 810:              #line 563 "D:\mydata\easytv\index.aspx"
+行 811:                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 812:  
+行 813:              
+行 814:              #line default
+行 815:              #line hidden
+行 816:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 817:              
+行 818:              #line 563 "D:\mydata\easytv\index.aspx"
+行 819:                                                                                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 820:  
+行 821:              
+行 822:              #line default
+行 823:              #line hidden
+行 824:              @__w.Write("\">\r\n");
+行 825:              
+行 826:              #line 564 "D:\mydata\easytv\index.aspx"
+行 827:    
+行 828:  							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 829:  							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 830:  							  else
+行 831:  							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 832:  
+行 833:              
+行 834:              #line default
+行 835:              #line hidden
+行 836:              @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 837:                      "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 838:              
+行 839:              #line 574 "D:\mydata\easytv\index.aspx"
+行 840:                                 @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 841:  
+行 842:              
+行 843:              #line default
+行 844:              #line hidden
+行 845:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 846:              
+行 847:              #line 574 "D:\mydata\easytv\index.aspx"
+行 848:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 849:  
+行 850:              
+行 851:              #line default
+行 852:              #line hidden
+行 853:              @__w.Write("\">\r\n");
+行 854:              
+行 855:              #line 575 "D:\mydata\easytv\index.aspx"
+行 856:    
+行 857:  							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 858:  							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 859:  							  else
+行 860:  							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 861:  
+行 862:              
+行 863:              #line default
+行 864:              #line hidden
+行 865:              @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 866:              
+行 867:              #line 583 "D:\mydata\easytv\index.aspx"
+行 868:                                 @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 869:  
+行 870:              
+行 871:              #line default
+行 872:              #line hidden
+行 873:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 874:              
+行 875:              #line 583 "D:\mydata\easytv\index.aspx"
+行 876:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 877:  
+行 878:              
+行 879:              #line default
+行 880:              #line hidden
+行 881:              @__w.Write("\">\r\n");
+行 882:              
+行 883:              #line 584 "D:\mydata\easytv\index.aspx"
+行 884:    
+行 885:  							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 886:  							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 887:  							  else
+行 888:  							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 889:  
+行 890:              
+行 891:              #line default
+行 892:              #line hidden
+行 893:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 894:              
+行 895:              #line 591 "D:\mydata\easytv\index.aspx"
+行 896:                                 @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 897:  
+行 898:              
+行 899:              #line default
+行 900:              #line hidden
+行 901:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 902:              
+行 903:              #line 591 "D:\mydata\easytv\index.aspx"
+行 904:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 905:  
+行 906:              
+行 907:              #line default
+行 908:              #line hidden
+行 909:              @__w.Write("\">\r\n");
+行 910:              
+行 911:              #line 592 "D:\mydata\easytv\index.aspx"
+行 912:    
+行 913:  							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=7)
+行 914:  							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,7)+"...");
+行 915:  							  else
+行 916:  							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 917:  
+行 918:              
+行 919:              #line default
+行 920:              #line hidden
+行 921:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 922:              
+行 923:              #line 599 "D:\mydata\easytv\index.aspx"
+行 924:                                 @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 925:  
+行 926:              
+行 927:              #line default
+行 928:              #line hidden
+行 929:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 930:              
+行 931:              #line 599 "D:\mydata\easytv\index.aspx"
+行 932:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 933:  
+行 934:              
+行 935:              #line default
+行 936:              #line hidden
+行 937:              @__w.Write("\">");
+行 938:              
+行 939:              #line 599 "D:\mydata\easytv\index.aspx"
+行 940:                                                                                                                                                                                  
+行 941:  							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 942:  							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 943:  							  else
+行 944:  							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 945:  
+行 946:              
+行 947:              #line default
+行 948:              #line hidden
+行 949:              @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 950:              
+行 951:              #line 604 "D:\mydata\easytv\index.aspx"
+行 952:                                    @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 953:  
+行 954:              
+行 955:              #line default
+行 956:              #line hidden
+行 957:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 958:              
+行 959:              #line 604 "D:\mydata\easytv\index.aspx"
+行 960:                                                                                                                    @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 961:  
+行 962:              
+行 963:              #line default
+行 964:              #line hidden
+行 965:              @__w.Write("\">\r\n");
+行 966:              
+行 967:              #line 605 "D:\mydata\easytv\index.aspx"
+行 968:    
+行 969:  							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 970:  							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 971:  							  else
+行 972:  							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 973:  
+行 974:              
+行 975:              #line default
+行 976:              #line hidden
+行 977:              @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 978:              
+行 979:              #line 612 "D:\mydata\easytv\index.aspx"
+行 980:                                 @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 981:  
+行 982:              
+行 983:              #line default
+行 984:              #line hidden
+行 985:              @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 986:              
+行 987:              #line 612 "D:\mydata\easytv\index.aspx"
+行 988:                                                                                                                 @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 989:  
+行 990:              
+行 991:              #line default
+行 992:              #line hidden
+行 993:              @__w.Write("\">\r\n");
+行 994:              
+行 995:              #line 613 "D:\mydata\easytv\index.aspx"
+行 996:    
+行 997:  							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 998:  							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 999:  							  else
+行 1000: 							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1001: 
+行 1002:             
+行 1003:             #line default
+行 1004:             #line hidden
+行 1005:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 1006:             
+行 1007:             #line 620 "D:\mydata\easytv\index.aspx"
+行 1008:                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1009: 
+行 1010:             
+行 1011:             #line default
+行 1012:             #line hidden
+行 1013:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1014:             
+行 1015:             #line 620 "D:\mydata\easytv\index.aspx"
+行 1016:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 1017: 
+行 1018:             
+行 1019:             #line default
+行 1020:             #line hidden
+行 1021:             @__w.Write("\">\r\n");
+行 1022:             
+行 1023:             #line 621 "D:\mydata\easytv\index.aspx"
+行 1024:   
+行 1025: 							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 1026: 							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 1027: 							  else
+行 1028: 							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1029: 
+行 1030:             
+行 1031:             #line default
+行 1032:             #line hidden
+行 1033:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 1034:                     "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n");
+行 1035:             
+行 1036:             #line 637 "D:\mydata\easytv\index.aspx"
+行 1037:   
+行 1038: conn.Close();
+行 1039: 
+行 1040: 
+行 1041: Sql=" select top 8 "
+行 1042: +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 1043: +" ,case when ilasteditdate is null then icdate "
+行 1044: +"  else ilasteditdate "
+行 1045: +" end as lasttime "
+行 1046: +" from item "
+行 1047: +" where icatagory1=10 and  iifrecm = 1"
+行 1048: +" order by lasttime desc";
+行 1049: 
+行 1050: 
+行 1051: daMv = new SqlDataAdapter(Sql,conn);
+行 1052: dsMv = new DataSet();
+行 1053: daMv.Fill(dsMv,"tables1");
+行 1054: 
+行 1055: 
+行 1056:             
+行 1057:             #line default
+行 1058:             #line hidden
+行 1059:             this.WriteUTF8ResourceString(@__w, 14876, 430, true);
+行 1060:             
+行 1061:             #line 665 "D:\mydata\easytv\index.aspx"
+行 1062:                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1063: 
+行 1064:             
+行 1065:             #line default
+行 1066:             #line hidden
+行 1067:             @__w.Write("\"><img alt=\"");
+行 1068:             
+行 1069:             #line 665 "D:\mydata\easytv\index.aspx"
+行 1070:                                                                                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1071: 
+行 1072:             
+行 1073:             #line default
+行 1074:             #line hidden
+行 1075:             @__w.Write("\" src=\"");
+行 1076:             
+行 1077:             #line 665 "D:\mydata\easytv\index.aspx"
+行 1078:                                                                                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 1079: 
+行 1080:             
+行 1081:             #line default
+行 1082:             #line hidden
+行 1083:             @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 1084:             
+行 1085:             #line 666 "D:\mydata\easytv\index.aspx"
+行 1086:                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1087: 
+行 1088:             
+行 1089:             #line default
+行 1090:             #line hidden
+行 1091:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1092:             
+行 1093:             #line 666 "D:\mydata\easytv\index.aspx"
+行 1094:                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1095: 
+行 1096:             
+行 1097:             #line default
+行 1098:             #line hidden
+行 1099:             @__w.Write("\">\r\n");
+行 1100:             
+行 1101:             #line 667 "D:\mydata\easytv\index.aspx"
+行 1102:   
+行 1103: 							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 1104: 							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 1105: 							  else
+行 1106: 							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1107: 
+行 1108:             
+行 1109:             #line default
+行 1110:             #line hidden
+行 1111:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 1112:                     "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 1113:             
+行 1114:             #line 677 "D:\mydata\easytv\index.aspx"
+行 1115:                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1116: 
+行 1117:             
+行 1118:             #line default
+行 1119:             #line hidden
+行 1120:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1121:             
+行 1122:             #line 677 "D:\mydata\easytv\index.aspx"
+行 1123:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 1124: 
+行 1125:             
+行 1126:             #line default
+行 1127:             #line hidden
+行 1128:             @__w.Write("\">\r\n");
+行 1129:             
+行 1130:             #line 678 "D:\mydata\easytv\index.aspx"
+行 1131:   
+行 1132: 							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 1133: 							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 1134: 							  else
+行 1135: 							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1136: 
+行 1137:             
+行 1138:             #line default
+行 1139:             #line hidden
+行 1140:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 1141:             
+行 1142:             #line 686 "D:\mydata\easytv\index.aspx"
+行 1143:                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1144: 
+行 1145:             
+行 1146:             #line default
+行 1147:             #line hidden
+行 1148:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1149:             
+行 1150:             #line 686 "D:\mydata\easytv\index.aspx"
+行 1151:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 1152: 
+行 1153:             
+行 1154:             #line default
+行 1155:             #line hidden
+行 1156:             @__w.Write("\">\r\n");
+行 1157:             
+行 1158:             #line 687 "D:\mydata\easytv\index.aspx"
+行 1159:   
+行 1160: 							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 1161: 							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 1162: 							  else
+行 1163: 							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1164: 
+行 1165:             
+行 1166:             #line default
+行 1167:             #line hidden
+行 1168:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 1169:             
+行 1170:             #line 694 "D:\mydata\easytv\index.aspx"
+行 1171:                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1172: 
+行 1173:             
+行 1174:             #line default
+行 1175:             #line hidden
+行 1176:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1177:             
+行 1178:             #line 694 "D:\mydata\easytv\index.aspx"
+行 1179:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 1180: 
+行 1181:             
+行 1182:             #line default
+行 1183:             #line hidden
+行 1184:             @__w.Write("\">\r\n");
+行 1185:             
+行 1186:             #line 695 "D:\mydata\easytv\index.aspx"
+行 1187:   
+行 1188: 							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=7)
+行 1189: 							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,7)+"...");
+行 1190: 							  else
+行 1191: 							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1192: 
+行 1193:             
+行 1194:             #line default
+行 1195:             #line hidden
+行 1196:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 1197:             
+行 1198:             #line 702 "D:\mydata\easytv\index.aspx"
+行 1199:                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1200: 
+行 1201:             
+行 1202:             #line default
+行 1203:             #line hidden
+行 1204:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1205:             
+行 1206:             #line 702 "D:\mydata\easytv\index.aspx"
+行 1207:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 1208: 
+行 1209:             
+行 1210:             #line default
+行 1211:             #line hidden
+行 1212:             @__w.Write("\">");
+行 1213:             
+行 1214:             #line 702 "D:\mydata\easytv\index.aspx"
+行 1215:                                                                                                                                                                                 
+行 1216: 							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 1217: 							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 1218: 							  else
+行 1219: 							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1220: 
+行 1221:             
+行 1222:             #line default
+行 1223:             #line hidden
+行 1224:             @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 1225:             
+行 1226:             #line 707 "D:\mydata\easytv\index.aspx"
+行 1227:                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1228: 
+行 1229:             
+行 1230:             #line default
+行 1231:             #line hidden
+行 1232:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1233:             
+行 1234:             #line 707 "D:\mydata\easytv\index.aspx"
+行 1235:                                                                                                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 1236: 
+行 1237:             
+行 1238:             #line default
+行 1239:             #line hidden
+行 1240:             @__w.Write("\">\r\n");
+行 1241:             
+行 1242:             #line 708 "D:\mydata\easytv\index.aspx"
+行 1243:   
+行 1244: 							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 1245: 							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 1246: 							  else
+行 1247: 							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1248: 
+行 1249:             
+行 1250:             #line default
+行 1251:             #line hidden
+行 1252:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 1253:             
+行 1254:             #line 715 "D:\mydata\easytv\index.aspx"
+行 1255:                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1256: 
+行 1257:             
+行 1258:             #line default
+行 1259:             #line hidden
+行 1260:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1261:             
+行 1262:             #line 715 "D:\mydata\easytv\index.aspx"
+行 1263:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 1264: 
+行 1265:             
+行 1266:             #line default
+行 1267:             #line hidden
+行 1268:             @__w.Write("\">\r\n");
+行 1269:             
+行 1270:             #line 716 "D:\mydata\easytv\index.aspx"
+行 1271:   
+行 1272: 							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 1273: 							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 1274: 							  else
+行 1275: 							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1276: 
+行 1277:             
+行 1278:             #line default
+行 1279:             #line hidden
+行 1280:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 1281:             
+行 1282:             #line 723 "D:\mydata\easytv\index.aspx"
+行 1283:                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1284: 
+行 1285:             
+行 1286:             #line default
+行 1287:             #line hidden
+行 1288:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1289:             
+行 1290:             #line 723 "D:\mydata\easytv\index.aspx"
+行 1291:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 1292: 
+行 1293:             
+行 1294:             #line default
+行 1295:             #line hidden
+行 1296:             @__w.Write("\">\r\n");
+行 1297:             
+行 1298:             #line 724 "D:\mydata\easytv\index.aspx"
+行 1299:   
+行 1300: 							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 1301: 							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 1302: 							  else
+行 1303: 							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1304: 
+行 1305:             
+行 1306:             #line default
+行 1307:             #line hidden
+行 1308:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 1309:                     "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n");
+行 1310:             
+行 1311:             #line 740 "D:\mydata\easytv\index.aspx"
+行 1312:   
+行 1313: conn.Close();
+行 1314: Sql=" select top 8 "
+行 1315: +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 1316: +" ,case when ilasteditdate is null then icdate "
+行 1317: +"  else ilasteditdate "
+行 1318: +" end as lasttime "
+行 1319: +" from item "
+行 1320: +" where icatagory1=5 and  iifrecm = 1"
+行 1321: +" order by lasttime desc";
+行 1322: 
+行 1323: 
+行 1324: daMv = new SqlDataAdapter(Sql,conn);
+行 1325: dsMv = new DataSet();
+行 1326: daMv.Fill(dsMv,"tables1");
+行 1327: 
+行 1328: 
+行 1329:             
+行 1330:             #line default
+行 1331:             #line hidden
+行 1332:             this.WriteUTF8ResourceString(@__w, 15306, 429, true);
+行 1333:             
+行 1334:             #line 766 "D:\mydata\easytv\index.aspx"
+行 1335:                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1336: 
+行 1337:             
+行 1338:             #line default
+行 1339:             #line hidden
+行 1340:             @__w.Write("\"><img alt=\"");
+行 1341:             
+行 1342:             #line 766 "D:\mydata\easytv\index.aspx"
+行 1343:                                                                                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1344: 
+行 1345:             
+行 1346:             #line default
+行 1347:             #line hidden
+行 1348:             @__w.Write("\" src=\"");
+行 1349:             
+行 1350:             #line 766 "D:\mydata\easytv\index.aspx"
+行 1351:                                                                                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 1352: 
+行 1353:             
+行 1354:             #line default
+行 1355:             #line hidden
+行 1356:             @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 1357:             
+行 1358:             #line 767 "D:\mydata\easytv\index.aspx"
+行 1359:                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1360: 
+行 1361:             
+行 1362:             #line default
+行 1363:             #line hidden
+行 1364:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1365:             
+行 1366:             #line 767 "D:\mydata\easytv\index.aspx"
+行 1367:                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1368: 
+行 1369:             
+行 1370:             #line default
+行 1371:             #line hidden
+行 1372:             @__w.Write("\">\r\n");
+行 1373:             
+行 1374:             #line 768 "D:\mydata\easytv\index.aspx"
+行 1375:   
+行 1376: 							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 1377: 							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 1378: 							  else
+行 1379: 							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1380: 
+行 1381:             
+行 1382:             #line default
+行 1383:             #line hidden
+行 1384:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 1385:                     "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 1386:             
+行 1387:             #line 778 "D:\mydata\easytv\index.aspx"
+行 1388:                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1389: 
+行 1390:             
+行 1391:             #line default
+行 1392:             #line hidden
+行 1393:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1394:             
+行 1395:             #line 778 "D:\mydata\easytv\index.aspx"
+行 1396:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 1397: 
+行 1398:             
+行 1399:             #line default
+行 1400:             #line hidden
+行 1401:             @__w.Write("\">\r\n");
+行 1402:             
+行 1403:             #line 779 "D:\mydata\easytv\index.aspx"
+行 1404:   
+行 1405: 							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 1406: 							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 1407: 							  else
+行 1408: 							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1409: 
+行 1410:             
+行 1411:             #line default
+行 1412:             #line hidden
+行 1413:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 1414:             
+行 1415:             #line 787 "D:\mydata\easytv\index.aspx"
+行 1416:                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1417: 
+行 1418:             
+行 1419:             #line default
+行 1420:             #line hidden
+行 1421:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1422:             
+行 1423:             #line 787 "D:\mydata\easytv\index.aspx"
+行 1424:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 1425: 
+行 1426:             
+行 1427:             #line default
+行 1428:             #line hidden
+行 1429:             @__w.Write("\">\r\n");
+行 1430:             
+行 1431:             #line 788 "D:\mydata\easytv\index.aspx"
+行 1432:   
+行 1433: 							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 1434: 							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 1435: 							  else
+行 1436: 							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1437: 
+行 1438:             
+行 1439:             #line default
+行 1440:             #line hidden
+行 1441:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 1442:             
+行 1443:             #line 795 "D:\mydata\easytv\index.aspx"
+行 1444:                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1445: 
+行 1446:             
+行 1447:             #line default
+行 1448:             #line hidden
+行 1449:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1450:             
+行 1451:             #line 795 "D:\mydata\easytv\index.aspx"
+行 1452:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 1453: 
+行 1454:             
+行 1455:             #line default
+行 1456:             #line hidden
+行 1457:             @__w.Write("\">\r\n");
+行 1458:             
+行 1459:             #line 796 "D:\mydata\easytv\index.aspx"
+行 1460:   
+行 1461: 							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=7)
+行 1462: 							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,7)+"...");
+行 1463: 							  else
+行 1464: 							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1465: 
+行 1466:             
+行 1467:             #line default
+行 1468:             #line hidden
+行 1469:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 1470:             
+行 1471:             #line 803 "D:\mydata\easytv\index.aspx"
+行 1472:                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1473: 
+行 1474:             
+行 1475:             #line default
+行 1476:             #line hidden
+行 1477:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1478:             
+行 1479:             #line 803 "D:\mydata\easytv\index.aspx"
+行 1480:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 1481: 
+行 1482:             
+行 1483:             #line default
+行 1484:             #line hidden
+行 1485:             @__w.Write("\">");
+行 1486:             
+行 1487:             #line 803 "D:\mydata\easytv\index.aspx"
+行 1488:                                                                                                                                                                                 
+行 1489: 							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 1490: 							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 1491: 							  else
+行 1492: 							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1493: 
+行 1494:             
+行 1495:             #line default
+行 1496:             #line hidden
+行 1497:             @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 1498:             
+行 1499:             #line 808 "D:\mydata\easytv\index.aspx"
+行 1500:                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1501: 
+行 1502:             
+行 1503:             #line default
+行 1504:             #line hidden
+行 1505:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1506:             
+行 1507:             #line 808 "D:\mydata\easytv\index.aspx"
+行 1508:                                                                                                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 1509: 
+行 1510:             
+行 1511:             #line default
+行 1512:             #line hidden
+行 1513:             @__w.Write("\">\r\n");
+行 1514:             
+行 1515:             #line 809 "D:\mydata\easytv\index.aspx"
+行 1516:   
+行 1517: 							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 1518: 							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 1519: 							  else
+行 1520: 							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1521: 
+行 1522:             
+行 1523:             #line default
+行 1524:             #line hidden
+行 1525:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 1526:             
+行 1527:             #line 816 "D:\mydata\easytv\index.aspx"
+行 1528:                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1529: 
+行 1530:             
+行 1531:             #line default
+行 1532:             #line hidden
+行 1533:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1534:             
+行 1535:             #line 816 "D:\mydata\easytv\index.aspx"
+行 1536:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 1537: 
+行 1538:             
+行 1539:             #line default
+行 1540:             #line hidden
+行 1541:             @__w.Write("\">\r\n");
+行 1542:             
+行 1543:             #line 817 "D:\mydata\easytv\index.aspx"
+行 1544:   
+行 1545: 							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 1546: 							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 1547: 							  else
+行 1548: 							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1549: 
+行 1550:             
+行 1551:             #line default
+行 1552:             #line hidden
+行 1553:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 1554:             
+行 1555:             #line 824 "D:\mydata\easytv\index.aspx"
+行 1556:                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1557: 
+行 1558:             
+行 1559:             #line default
+行 1560:             #line hidden
+行 1561:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1562:             
+行 1563:             #line 824 "D:\mydata\easytv\index.aspx"
+行 1564:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 1565: 
+行 1566:             
+行 1567:             #line default
+行 1568:             #line hidden
+行 1569:             @__w.Write("\">\r\n");
+行 1570:             
+行 1571:             #line 825 "D:\mydata\easytv\index.aspx"
+行 1572:   
+行 1573: 							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 1574: 							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 1575: 							  else
+行 1576: 							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1577: 
+行 1578:             
+行 1579:             #line default
+行 1580:             #line hidden
+行 1581:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 1582:                     "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n");
+行 1583:             
+行 1584:             #line 841 "D:\mydata\easytv\index.aspx"
+行 1585:   
+行 1586: conn.Close();
+行 1587: Sql=" select top 8 "
+行 1588: +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 1589: +" ,case when ilasteditdate is null then icdate "
+行 1590: +"  else ilasteditdate "
+行 1591: +" end as lasttime "
+行 1592: +" from item "
+行 1593: +" where icatagory1=8 and  iifrecm = 1"
+行 1594: +" order by lasttime desc";
+行 1595: 
+行 1596: 
+行 1597: daMv = new SqlDataAdapter(Sql,conn);
+行 1598: dsMv = new DataSet();
+行 1599: daMv.Fill(dsMv,"tables1");
+行 1600: 
+行 1601: 
+行 1602:             
+行 1603:             #line default
+行 1604:             #line hidden
+行 1605:             this.WriteUTF8ResourceString(@__w, 15735, 429, true);
+行 1606:             
+行 1607:             #line 867 "D:\mydata\easytv\index.aspx"
+行 1608:                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1609: 
+行 1610:             
+行 1611:             #line default
+行 1612:             #line hidden
+行 1613:             @__w.Write("\"><img alt=\"");
+行 1614:             
+行 1615:             #line 867 "D:\mydata\easytv\index.aspx"
+行 1616:                                                                                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1617: 
+行 1618:             
+行 1619:             #line default
+行 1620:             #line hidden
+行 1621:             @__w.Write("\" src=\"");
+行 1622:             
+行 1623:             #line 867 "D:\mydata\easytv\index.aspx"
+行 1624:                                                                                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 1625: 
+行 1626:             
+行 1627:             #line default
+行 1628:             #line hidden
+行 1629:             @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 1630:             
+行 1631:             #line 868 "D:\mydata\easytv\index.aspx"
+行 1632:                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1633: 
+行 1634:             
+行 1635:             #line default
+行 1636:             #line hidden
+行 1637:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1638:             
+行 1639:             #line 868 "D:\mydata\easytv\index.aspx"
+行 1640:                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1641: 
+行 1642:             
+行 1643:             #line default
+行 1644:             #line hidden
+行 1645:             @__w.Write("\">\r\n");
+行 1646:             
+行 1647:             #line 869 "D:\mydata\easytv\index.aspx"
+行 1648:   
+行 1649: 							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 1650: 							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 1651: 							  else
+行 1652: 							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1653: 
+行 1654:             
+行 1655:             #line default
+行 1656:             #line hidden
+行 1657:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 1658:                     "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 1659:             
+行 1660:             #line 879 "D:\mydata\easytv\index.aspx"
+行 1661:                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1662: 
+行 1663:             
+行 1664:             #line default
+行 1665:             #line hidden
+行 1666:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1667:             
+行 1668:             #line 879 "D:\mydata\easytv\index.aspx"
+行 1669:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 1670: 
+行 1671:             
+行 1672:             #line default
+行 1673:             #line hidden
+行 1674:             @__w.Write("\">\r\n");
+行 1675:             
+行 1676:             #line 880 "D:\mydata\easytv\index.aspx"
+行 1677:   
+行 1678: 							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 1679: 							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 1680: 							  else
+行 1681: 							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1682: 
+行 1683:             
+行 1684:             #line default
+行 1685:             #line hidden
+行 1686:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 1687:             
+行 1688:             #line 888 "D:\mydata\easytv\index.aspx"
+行 1689:                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1690: 
+行 1691:             
+行 1692:             #line default
+行 1693:             #line hidden
+行 1694:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1695:             
+行 1696:             #line 888 "D:\mydata\easytv\index.aspx"
+行 1697:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 1698: 
+行 1699:             
+行 1700:             #line default
+行 1701:             #line hidden
+行 1702:             @__w.Write("\">\r\n");
+行 1703:             
+行 1704:             #line 889 "D:\mydata\easytv\index.aspx"
+行 1705:   
+行 1706: 							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 1707: 							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 1708: 							  else
+行 1709: 							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1710: 
+行 1711:             
+行 1712:             #line default
+行 1713:             #line hidden
+行 1714:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 1715:             
+行 1716:             #line 896 "D:\mydata\easytv\index.aspx"
+行 1717:                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1718: 
+行 1719:             
+行 1720:             #line default
+行 1721:             #line hidden
+行 1722:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1723:             
+行 1724:             #line 896 "D:\mydata\easytv\index.aspx"
+行 1725:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 1726: 
+行 1727:             
+行 1728:             #line default
+行 1729:             #line hidden
+行 1730:             @__w.Write("\">\r\n");
+行 1731:             
+行 1732:             #line 897 "D:\mydata\easytv\index.aspx"
+行 1733:   
+行 1734: 							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=7)
+行 1735: 							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,7)+"...");
+行 1736: 							  else
+行 1737: 							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1738: 
+行 1739:             
+行 1740:             #line default
+行 1741:             #line hidden
+行 1742:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 1743:             
+行 1744:             #line 904 "D:\mydata\easytv\index.aspx"
+行 1745:                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1746: 
+行 1747:             
+行 1748:             #line default
+行 1749:             #line hidden
+行 1750:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1751:             
+行 1752:             #line 904 "D:\mydata\easytv\index.aspx"
+行 1753:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 1754: 
+行 1755:             
+行 1756:             #line default
+行 1757:             #line hidden
+行 1758:             @__w.Write("\">");
+行 1759:             
+行 1760:             #line 904 "D:\mydata\easytv\index.aspx"
+行 1761:                                                                                                                                                                                 
+行 1762: 							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 1763: 							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 1764: 							  else
+行 1765: 							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 1766: 
+行 1767:             
+行 1768:             #line default
+行 1769:             #line hidden
+行 1770:             @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 1771:             
+行 1772:             #line 909 "D:\mydata\easytv\index.aspx"
+行 1773:                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1774: 
+行 1775:             
+行 1776:             #line default
+行 1777:             #line hidden
+行 1778:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1779:             
+行 1780:             #line 909 "D:\mydata\easytv\index.aspx"
+行 1781:                                                                                                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 1782: 
+行 1783:             
+行 1784:             #line default
+行 1785:             #line hidden
+行 1786:             @__w.Write("\">\r\n");
+行 1787:             
+行 1788:             #line 910 "D:\mydata\easytv\index.aspx"
+行 1789:   
+行 1790: 							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 1791: 							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 1792: 							  else
+行 1793: 							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 1794: 
+行 1795:             
+行 1796:             #line default
+行 1797:             #line hidden
+行 1798:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 1799:             
+行 1800:             #line 917 "D:\mydata\easytv\index.aspx"
+行 1801:                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1802: 
+行 1803:             
+行 1804:             #line default
+行 1805:             #line hidden
+行 1806:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1807:             
+行 1808:             #line 917 "D:\mydata\easytv\index.aspx"
+行 1809:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 1810: 
+行 1811:             
+行 1812:             #line default
+行 1813:             #line hidden
+行 1814:             @__w.Write("\">\r\n");
+行 1815:             
+行 1816:             #line 918 "D:\mydata\easytv\index.aspx"
+行 1817:   
+行 1818: 							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 1819: 							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 1820: 							  else
+行 1821: 							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 1822: 
+行 1823:             
+行 1824:             #line default
+行 1825:             #line hidden
+行 1826:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 1827:             
+行 1828:             #line 925 "D:\mydata\easytv\index.aspx"
+行 1829:                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1830: 
+行 1831:             
+行 1832:             #line default
+行 1833:             #line hidden
+行 1834:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1835:             
+行 1836:             #line 925 "D:\mydata\easytv\index.aspx"
+行 1837:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 1838: 
+行 1839:             
+行 1840:             #line default
+行 1841:             #line hidden
+行 1842:             @__w.Write("\">\r\n");
+行 1843:             
+行 1844:             #line 926 "D:\mydata\easytv\index.aspx"
+行 1845:   
+行 1846: 							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 1847: 							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 1848: 							  else
+行 1849: 							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 1850: 
+行 1851:             
+行 1852:             #line default
+行 1853:             #line hidden
+行 1854:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 1855:                     "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n");
+行 1856:             
+行 1857:             #line 942 "D:\mydata\easytv\index.aspx"
+行 1858:   
+行 1859: conn.Close();
+行 1860: Sql=" select top 8 "
+行 1861: +" iid, iname,ipicklein,icdate,iauditdate,ilasteditdate,iifrecm "
+行 1862: +" ,case when ilasteditdate is null then icdate "
+行 1863: +"  else ilasteditdate "
+行 1864: +" end as lasttime "
+行 1865: +" from item "
+行 1866: +" where icatagory1=3 and  iifrecm = 1"
+行 1867: +" order by lasttime desc";
+行 1868: 
+行 1869: 
+行 1870: daMv = new SqlDataAdapter(Sql,conn);
+行 1871: dsMv = new DataSet();
+行 1872: daMv.Fill(dsMv,"tables1");
+行 1873: 
+行 1874: 
+行 1875:             
+行 1876:             #line default
+行 1877:             #line hidden
+行 1878:             this.WriteUTF8ResourceString(@__w, 16164, 429, true);
+行 1879:             
+行 1880:             #line 968 "D:\mydata\easytv\index.aspx"
+行 1881:                                             @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1882: 
+行 1883:             
+行 1884:             #line default
+行 1885:             #line hidden
+行 1886:             @__w.Write("\"><img alt=\"");
+行 1887:             
+行 1888:             #line 968 "D:\mydata\easytv\index.aspx"
+行 1889:                                                                                                              @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1890: 
+行 1891:             
+行 1892:             #line default
+行 1893:             #line hidden
+行 1894:             @__w.Write("\" src=\"");
+行 1895:             
+行 1896:             #line 968 "D:\mydata\easytv\index.aspx"
+行 1897:                                                                                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["Ipicklein"].ToString());
+行 1898: 
+行 1899:             
+行 1900:             #line default
+行 1901:             #line hidden
+行 1902:             @__w.Write("\" /></a>\r\n\t\t\t\t\t\t\t\t<h4><a class=\"aFFF\" title=\"");
+行 1903:             
+行 1904:             #line 969 "D:\mydata\easytv\index.aspx"
+行 1905:                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1906: 
+行 1907:             
+行 1908:             #line default
+行 1909:             #line hidden
+行 1910:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1911:             
+行 1912:             #line 969 "D:\mydata\easytv\index.aspx"
+行 1913:                                                                                                            @__w.Write(dsMv.Tables["tables1"].Rows[0]["iid"].ToString());
+行 1914: 
+行 1915:             
+行 1916:             #line default
+行 1917:             #line hidden
+行 1918:             @__w.Write("\">\r\n");
+行 1919:             
+行 1920:             #line 970 "D:\mydata\easytv\index.aspx"
+行 1921:   
+行 1922: 							   if(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Trim().Length>=5)
+行 1923: 							   	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString().Substring(0,5)+"...");
+行 1924: 							  else
+行 1925: 							  	Response.Write(dsMv.Tables["tables1"].Rows[0]["iname"].ToString());
+行 1926: 
+行 1927:             
+行 1928:             #line default
+行 1929:             #line hidden
+行 1930:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\r\n\t\t\t\t\t\t\t\t</a></h4>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<ul class=\"columnList\">\r\n\t\t\t" +
+行 1931:                     "\t\t\t\t\t<li class=\"columnL1\"><a title=\"");
+行 1932:             
+行 1933:             #line 980 "D:\mydata\easytv\index.aspx"
+行 1934:                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1935: 
+行 1936:             
+行 1937:             #line default
+行 1938:             #line hidden
+行 1939:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1940:             
+行 1941:             #line 980 "D:\mydata\easytv\index.aspx"
+行 1942:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[1]["iid"].ToString());
+行 1943: 
+行 1944:             
+行 1945:             #line default
+行 1946:             #line hidden
+行 1947:             @__w.Write("\">\r\n");
+行 1948:             
+行 1949:             #line 981 "D:\mydata\easytv\index.aspx"
+行 1950:   
+行 1951: 							   if(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Trim().Length>=10)
+行 1952: 							   	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString().Substring(0,10)+"...");
+行 1953: 							  else
+行 1954: 							  	Response.Write(dsMv.Tables["tables1"].Rows[1]["iname"].ToString());
+行 1955: 
+行 1956:             
+行 1957:             #line default
+行 1958:             #line hidden
+行 1959:             @__w.Write("\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL2\"><a title=\"");
+行 1960:             
+行 1961:             #line 989 "D:\mydata\easytv\index.aspx"
+行 1962:                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1963: 
+行 1964:             
+行 1965:             #line default
+行 1966:             #line hidden
+行 1967:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1968:             
+行 1969:             #line 989 "D:\mydata\easytv\index.aspx"
+行 1970:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[2]["iid"].ToString());
+行 1971: 
+行 1972:             
+行 1973:             #line default
+行 1974:             #line hidden
+行 1975:             @__w.Write("\">\r\n");
+行 1976:             
+行 1977:             #line 990 "D:\mydata\easytv\index.aspx"
+行 1978:   
+行 1979: 							   if(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Trim().Length>=10)
+行 1980: 							   	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString().Substring(0,10)+"...");
+行 1981: 							  else
+行 1982: 							  	Response.Write(dsMv.Tables["tables1"].Rows[2]["iname"].ToString());
+行 1983: 
+行 1984:             
+行 1985:             #line default
+行 1986:             #line hidden
+行 1987:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL3\"><a title=\"");
+行 1988:             
+行 1989:             #line 997 "D:\mydata\easytv\index.aspx"
+行 1990:                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 1991: 
+行 1992:             
+行 1993:             #line default
+行 1994:             #line hidden
+行 1995:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 1996:             
+行 1997:             #line 997 "D:\mydata\easytv\index.aspx"
+行 1998:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[3]["iid"].ToString());
+行 1999: 
+行 2000:             
+行 2001:             #line default
+行 2002:             #line hidden
+行 2003:             @__w.Write("\">\r\n");
+行 2004:             
+行 2005:             #line 998 "D:\mydata\easytv\index.aspx"
+行 2006:   
+行 2007: 							   if(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Trim().Length>=7)
+行 2008: 							   	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString().Substring(0,7)+"...");
+行 2009: 							  else
+行 2010: 							  	Response.Write(dsMv.Tables["tables1"].Rows[3]["iname"].ToString());
+行 2011: 
+行 2012:             
+行 2013:             #line default
+行 2014:             #line hidden
+行 2015:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL4\"><a title=\"");
+行 2016:             
+行 2017:             #line 1005 "D:\mydata\easytv\index.aspx"
+行 2018:                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 2019: 
+行 2020:             
+行 2021:             #line default
+行 2022:             #line hidden
+行 2023:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 2024:             
+行 2025:             #line 1005 "D:\mydata\easytv\index.aspx"
+行 2026:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[4]["iid"].ToString());
+行 2027: 
+行 2028:             
+行 2029:             #line default
+行 2030:             #line hidden
+行 2031:             @__w.Write("\">");
+行 2032:             
+行 2033:             #line 1005 "D:\mydata\easytv\index.aspx"
+行 2034:                                                                                                                                                                                 
+行 2035: 							   if(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Trim().Length>=10)
+行 2036: 							   	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString().Substring(0,10)+"...");
+行 2037: 							  else
+行 2038: 							  	Response.Write(dsMv.Tables["tables1"].Rows[4]["iname"].ToString());
+行 2039: 
+行 2040:             
+行 2041:             #line default
+行 2042:             #line hidden
+行 2043:             @__w.Write("</a></li><li class=\"columnL5\"><a title=\"");
+行 2044:             
+行 2045:             #line 1010 "D:\mydata\easytv\index.aspx"
+行 2046:                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 2047: 
+行 2048:             
+行 2049:             #line default
+行 2050:             #line hidden
+行 2051:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 2052:             
+行 2053:             #line 1010 "D:\mydata\easytv\index.aspx"
+行 2054:                                                                                                                   @__w.Write(dsMv.Tables["tables1"].Rows[5]["iid"].ToString());
+行 2055: 
+行 2056:             
+行 2057:             #line default
+行 2058:             #line hidden
+行 2059:             @__w.Write("\">\r\n");
+行 2060:             
+行 2061:             #line 1011 "D:\mydata\easytv\index.aspx"
+行 2062:   
+行 2063: 							   if(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Trim().Length>=10)
+行 2064: 							   	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString().Substring(0,10)+"...");
+行 2065: 							  else
+行 2066: 							  	Response.Write(dsMv.Tables["tables1"].Rows[5]["iname"].ToString());
+行 2067: 
+行 2068:             
+行 2069:             #line default
+行 2070:             #line hidden
+行 2071:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL6\"><a title=\"");
+行 2072:             
+行 2073:             #line 1018 "D:\mydata\easytv\index.aspx"
+行 2074:                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 2075: 
+行 2076:             
+行 2077:             #line default
+行 2078:             #line hidden
+行 2079:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 2080:             
+行 2081:             #line 1018 "D:\mydata\easytv\index.aspx"
+行 2082:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[6]["iid"].ToString());
+行 2083: 
+行 2084:             
+行 2085:             #line default
+行 2086:             #line hidden
+行 2087:             @__w.Write("\">\r\n");
+行 2088:             
+行 2089:             #line 1019 "D:\mydata\easytv\index.aspx"
+行 2090:   
+行 2091: 							   if(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Trim().Length>=10)
+行 2092: 							   	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString().Substring(0,10)+"...");
+行 2093: 							  else
+行 2094: 							  	Response.Write(dsMv.Tables["tables1"].Rows[6]["iname"].ToString());
+行 2095: 
+行 2096:             
+行 2097:             #line default
+行 2098:             #line hidden
+行 2099:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t\t<li class=\"columnL7\"><a title=\"");
+行 2100:             
+行 2101:             #line 1026 "D:\mydata\easytv\index.aspx"
+行 2102:                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 2103: 
+行 2104:             
+行 2105:             #line default
+行 2106:             #line hidden
+行 2107:             @__w.Write("\" href=\"ItemDet.aspx?IID=");
+行 2108:             
+行 2109:             #line 1026 "D:\mydata\easytv\index.aspx"
+行 2110:                                                                                                                @__w.Write(dsMv.Tables["tables1"].Rows[7]["iid"].ToString());
+行 2111: 
+行 2112:             
+行 2113:             #line default
+行 2114:             #line hidden
+行 2115:             @__w.Write("\">\r\n");
+行 2116:             
+行 2117:             #line 1027 "D:\mydata\easytv\index.aspx"
+行 2118:   
+行 2119: 							   if(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Trim().Length>=10)
+行 2120: 							   	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString().Substring(0,10)+"...");
+行 2121: 							  else
+行 2122: 							  	Response.Write(dsMv.Tables["tables1"].Rows[7]["iname"].ToString());
+行 2123: 
+行 2124:             
+行 2125:             #line default
+行 2126:             #line hidden
+行 2127:             @__w.Write("\t\r\n\t\t\t\t\t\t\t\t</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t" +
+行 2128:                     "\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\r\n\t</div>\r\n");
+行 2129:             
+行 2130:             #line 1045 "D:\mydata\easytv\index.aspx"
+行 2131:   
+行 2132: conn.Close();
+行 2133: 
+行 2134:             
+行 2135:             #line default
+行 2136:             #line hidden
+行 2137:             @__w.Write("\r\n\t<div id=\"topContent\" class=\"clearfix\">\r\n\t\t<div id=\"movieTop\">\r\n\t\t\t<h3></h3>\r\n\t" +
+行 2138:                     "\t\t<div id=\"movieTopContent\">\r\n");
+行 2139:             
+行 2140:             #line 1052 "D:\mydata\easytv\index.aspx"
+行 2141:   
+行 2142: 	   
+行 2143: 
+行 2144: 		etv_algo obj=new etv_algo();		 
+行 2145: 		//al= obj.topn(3,3," and icatagory1=1 ",Application["ConnString"].ToString(),1);	
+行 2146:                  al= obj.topnByTu(3," icatagory1=1 ",Application["ConnString"].ToString());													
+行 2147: 	
+行 2148: 		ItemModel im=null;
+行 2149: 		myEnumerator =null;
+行 2150: 		
+行 2151: 		myEnumerator = al.GetEnumerator();
+行 2152: 		while ( myEnumerator.MoveNext() )
+行 2153: 		{
+行 2154: 			
+行 2155: 			im=(ItemModel)myEnumerator.Current;						
+行 2156: 
+行 2157:             
+行 2158:             #line default
+行 2159:             #line hidden
+行 2160:             @__w.Write("\t\t\r\n\t\t\t\t<div class=\"showSrcBox\">\r\n\t\t\t\t\t<a class=\"showSrcPic\" href=\"ItemDet.aspx?I" +
+行 2161:                     "ID=");
+行 2162:             
+行 2163:             #line 1069 "D:\mydata\easytv\index.aspx"
+行 2164:                                           @__w.Write(im.iid);
+行 2165: 
+行 2166:             
+行 2167:             #line default
+行 2168:             #line hidden
+行 2169:             @__w.Write("\"><img src=\"");
+行 2170:             
+行 2171:             #line 1069 "D:\mydata\easytv\index.aspx"
+行 2172:                                                                             if(im.ipicklein.Trim()=="") Response.Write("images/070517_75.jpg"); else Response.Write(im.ipicklein.Trim());   
+行 2173:             
+行 2174:             #line default
+行 2175:             #line hidden
+行 2176:             @__w.Write("\" alt=\"");
+行 2177:             
+行 2178:             #line 1069 "D:\mydata\easytv\index.aspx"
+行 2179:                                                                                                                                                                                              @__w.Write(im.iname.Trim());
+行 2180: 
+行 2181:             
+行 2182:             #line default
+行 2183:             #line hidden
+行 2184:             @__w.Write("\"/></a>\r\n\t\t\t\t\t<h4><a class=\"aFF855C\" href=\"ItemDet.aspx?IID=");
+行 2185:             
+行 2186:             #line 1070 "D:\mydata\easytv\index.aspx"
+行 2187:                                            @__w.Write(im.iid);
+行 2188: 
+行 2189:             
+行 2190:             #line default
+行 2191:             #line hidden
+行 2192:             @__w.Write("\">\r\n\t\t\t\t\t\t ");
+行 2193:             
+行 2194:             #line 1071 "D:\mydata\easytv\index.aspx"
+行 2195:          
+行 2196: 								if(im.iname.Trim().Length>=16) 
+行 2197: 											Response.Write(im.iname.Trim().Substring(0,9)+"...");
+行 2198: 								else
+行 2199: 									Response.Write(im.iname.Trim());
+行 2200: 						
+行 2201:             
+行 2202:             #line default
+行 2203:             #line hidden
+行 2204:             @__w.Write("\r\n\t\t\t\t\t</a></h4>\r\n\t\t\t\t</div>\t\r\n");
+行 2205:             
+行 2206:             #line 1079 "D:\mydata\easytv\index.aspx"
+行 2207:   }
+行 2208:             
+行 2209:             #line default
+行 2210:             #line hidden
+行 2211:             this.WriteUTF8ResourceString(@__w, 16593, 984, true);
+行 2212:             
+行 2213:             #line 1109 "D:\mydata\easytv\index.aspx"
+行 2214:   
+行 2215: conn.Open();
+行 2216: cmd =null;
+行 2217: dtr=null;
+行 2218: ibo=new ItemBO(Application["ConnString"].ToString());
+行 2219: im=null;
+行 2220: al=null;
+行 2221: myEnumerator=null;
+行 2222:     Sql = " select top 12 "
+行 2223: 			+ " iid, iname,ipicklein,icdate,iauditdate,ilasteditdate "
+行 2224: 			+ " ,case when ilasteditdate is null then icdate "
+行 2225: 			+ "  else ilasteditdate "
+行 2226: 			+ " end as lasttime "
+行 2227: 			+ " from item "
+行 2228: 			+ " where icatagory1=1"
+行 2229: 			+ " order by lasttime desc";
+行 2230: 
+行 2231: cmd = new SqlCommand(Sql, conn);
+行 2232: cmd.CommandType = CommandType.Text;
+行 2233: 
+行 2234: 																						
+行 2235: dtr=cmd.ExecuteReader();
+行 2236:     
+行 2237:     '  string[] str="";
+行 2238:     'if (dtr["ilasteditdate"].ToString()!=null|| dtr["ilasteditdate"].ToString()!="") 
+行 2239:     '        {
+行 2240:     '    str=dtr["ilasteditdate"].ToString().Split(' '); 
+行 2241:     '        }
+行 2242:     'string lastdate=str[0];
+行 2243:         
+行 2244:     While (dtr.Read())
+行 2245: {													
+行 2246: 
+行 2247:             
+行 2248:             #line default
+行 2249:             #line hidden
+行 2250:             @__w.Write("\r\n<div class=\"showSrcBox\">\r\n\t<a class=\"showSrcPic\" href=\"ItemDet.aspx?IID=");
+行 2251:             
+行 2252:             #line 1143 "D:\mydata\easytv\index.aspx"
+行 2253:                                       @__w.Write(dtr["iid"].ToString());
+行 2254: 
+行 2255:             
+行 2256:             #line default
+行 2257:             #line hidden
+行 2258:             @__w.Write("\">\r\n\t\t<img src=\"");
+行 2259:             
+行 2260:             #line 1144 "D:\mydata\easytv\index.aspx"
+行 2261:     @__w.Write(dtr["Ipicklein"].ToString());
+行 2262: 
+行 2263:             
+行 2264:             #line default
+行 2265:             #line hidden
+行 2266:             @__w.Write("\" alt=\"");
+行 2267:             
+行 2268:             #line 1144 "D:\mydata\easytv\index.aspx"
+行 2269:                                            @__w.Write(dtr["iname"].ToString());
+行 2270: 
+行 2271:             
+行 2272:             #line default
+行 2273:             #line hidden
+行 2274:             @__w.Write("\" />\r\n\t</a>\r\n\t<h4>\r\n\t<a class=\"aFF855C\" href=\"ItemDet.aspx?IID=");
+行 2275:             
+行 2276:             #line 1147 "D:\mydata\easytv\index.aspx"
+行 2277:                                    @__w.Write(dtr["iid"].ToString());
+行 2278: 
+行 2279:             
+行 2280:             #line default
+行 2281:             #line hidden
+行 2282:             @__w.Write("\" title=\"");
+行 2283:             
+行 2284:             #line 1147 "D:\mydata\easytv\index.aspx"
+行 2285:                                                                       @__w.Write(dtr["iname"].ToString());
+行 2286: 
+行 2287:             
+行 2288:             #line default
+行 2289:             #line hidden
+行 2290:             
+行 2291:             #line 1147 "D:\mydata\easytv\index.aspx"
+行 2292:                                                                                                   @__w.Write(dtr["ilasteditdate"].ToString());
+行 2293: 
+行 2294:             
+行 2295:             #line default
+行 2296:             #line hidden
+行 2297:             @__w.Write("\">\r\n");
+行 2298:             
+行 2299:             #line 1148 "D:\mydata\easytv\index.aspx"
+行 2300:   
+行 2301: if(dtr["iname"].ToString().Trim().Length>=15 && dtr["ilasteditdate"].ToString().Trim().Length>=0) 
+行 2302: 	Response.Write(dtr["iname"].ToString().Substring(0,15)+"..."+"更新时间："+dtr["ilasteditdate"].ToString().Substring(0,0)+"...");
+行 2303: else
+行 2304: 	Response.Write(dtr["iname"].ToString()+"更新时间："+dtr["ilasteditdate"].ToString());
+行 2305: 
+行 2306: 
+行 2307: 
+行 2308:             
+行 2309:             #line default
+行 2310:             #line hidden
+行 2311:             @__w.Write("\t\r\n\t</a>\r\n\t</h4>\r\n</div>\r\n\t\t\t\t\r\n");
+行 2312:             
+行 2313:             #line 1160 "D:\mydata\easytv\index.aspx"
+行 2314:   
+行 2315: }dtr.Close();
+行 2316: conn.Close();
+行 2317: 
+行 2318:             
+行 2319:             #line default
+行 2320:             #line hidden
+行 2321:             this.WriteUTF8ResourceString(@__w, 17577, 4177, false);
+行 2322:             parameterContainer.Controls[0].RenderControl(@__w);
+行 2323:             this.WriteUTF8ResourceString(@__w, 21754, 632, true);
+行 2324:         }
+行 2325:         
+行 2326:         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 2327:         protected override void FrameworkInitialize() {
+行 2328:             base.FrameworkInitialize();
+行 2329:             this.SetStringResourcePointer(global::ASP.index_aspx.@__stringResource, 0);
+行 2330:             this.@__BuildControlTree(this);
+行 2331:             this.AddWrappedFileDependencies(global::ASP.index_aspx.@__fileDependencies);
+行 2332:             this.InitOutputCache(global::ASP.index_aspx.@__outputCacheSettings);
+行 2333:             this.Request.ValidateInput();
+行 2334:         }
+行 2335:         
+行 2336:         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 2337:         public override int GetTypeHashCode() {
+行 2338:             return -736944122;
+行 2339:         }
+行 2340:         
+行 2341:         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+行 2342:         public override void ProcessRequest(System.Web.HttpContext context) {
+行 2343:             base.ProcessRequest(context);
+行 2344:         }
+行 2345:     }
+行 2346: }
+行 2347: 
+ 
+
+
+
+
+--------------------------------------------------------------------------------
+版本信息: Microsoft .NET Framework 版本:2.0.50727.1433; ASP.NET 版本:2.0.50727.1433 

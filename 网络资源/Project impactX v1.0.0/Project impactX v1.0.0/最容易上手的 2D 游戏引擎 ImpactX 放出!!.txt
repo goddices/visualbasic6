@@ -1,0 +1,45 @@
+引荐impactX
+
+Microsoft Visual Basic一直受到很多人的喜爱。DirectX从7.0版后开始支持VB调用，这也使得VB更具有生命力，用VB做一些小游戏确实要方便很多。目前，很多的引擎都是以DirectDraw为基础的。VC+DDraw一直是一些老鸟的首选，但先天速度不足的VB只能在DDraw下往屏幕上简单的贴图，要进行CPU运算的AlphaBlend却是是很慢的。而且像位图旋转等复杂运算都只有VC才能胜任。
+
+       现在大多数的电脑的都安装了3D加速卡，并且从DirectX 8.0以后，DirectDraw与Direct3D整合为DirectGraph，Microsoft也推荐使用D3D中的2D，多运用显卡的运算功能，减轻CPU的负担。impactX就是封装了DirectX的复杂调用的一个DirectX 8.0的VB游戏引擎。
+
+       impactX适合于对VB熟悉，对DirectX稍有理解的编程者。使用impactX无需下载DirectX SDK,只需要安装DirectX 8.0以上版本就可以开始编程。
+
+ 
+
+impactX基本特征：
+
+DirectX兼容版本：8.0以上
+
+图形性能：支持直接载入bmp,jpg,png,tga格式的图片
+
+支持关键色载入
+
+支持通用的精灵动画图片载入
+
+提供几何图形的绘制(线，矩形，填充矩形，4色渐变矩形，圆)
+
+提供图形的旋转，AlphaBlend，颜色混合，缩放，局部显示
+
+并且对精灵动画图片同时支持以上功能
+
+输入设备性能：支持键盘，鼠标和手柄的输入
+
+声音性能：支持midi,wav格式声音格式载入
+
+多媒体回放：支持mpeg,avi,dat,mov,wav,mp3文件格式
+
+文件打包：使用GameResourceFile(grf)格式可以轻松的将游戏图片打包为一个文件
+
+并且提供资源的直接从内存载入接口，免除了释放在临时文件夹后，再读入的速度问题。
+
+提供一个文件打包助理GameResManeger，使用几个按钮就可完成打包，更提供一套类似命令行方式使用的SDK
+
+
+使用impactX引擎制作的 战魂2 进化 在GameRes 被评为最佳表现力奖
+httpgd.91.comModules76f1a240-5ce0-4b62-845e-516272b68f17.htm
+
+使用impactX引擎制作的 灵
+httpdata.gameres.comshowmessage.aspTopicID=5837
+httpshow.gameres.comAnimaForceAnimaForce.exe

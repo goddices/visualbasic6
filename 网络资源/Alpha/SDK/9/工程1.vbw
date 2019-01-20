@@ -1,0 +1,10 @@
+MainFrm = 44, 45, 785, 492, , 3, 3, 589, 451, C
+CGameEngine = 132, 132, 740, 537, C
+GameEngineData = 66, 66, 652, 514, C
+CScreen = 66, 66, 651, 480, C
+CInput = 176, 176, 784, 581, C
+CGDISurface = 110, 110, 727, 558, 
+CSoundWav = 176, 176, 784, 581, 
+CSurface = 88, 88, 674, 536, 
+CRleSurface = 110, 110, 601, 528, 
+CDataPool = 0, 0, 0, 0, C

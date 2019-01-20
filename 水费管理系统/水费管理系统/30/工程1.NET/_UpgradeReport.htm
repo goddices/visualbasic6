@@ -1,0 +1,2111 @@
+﻿<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css">
+		<title>水费管理系统.vbp 升级报告</title>
+		
+		<script language="javascript">
+			function outliner () {
+				oMe = window.event.srcElement
+				//get child element
+				var child = document.all[event.srcElement.getAttribute("child",false)];
+				//if child element exists, expand or collapse it.
+				if (null != child)
+					child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+			}
+		
+			function changepic() {
+				uMe = window.event.srcElement;
+				var check = uMe.src.toLowerCase();
+				if (check.lastIndexOf("upgradereport_plus.gif") != -1)
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Minus.gif"
+				}
+				else
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Plus.gif"
+				}
+			}
+		</script>
+		
+	</head>
+	<body topmargin="0" leftmargin="0" rightmargin="0" onclick="outliner();">
+		<h1>水费管理系统.vbp 的升级报告</h1>
+		
+		<p><span class="note">
+		<b>升级时间:  </b>2011-12-19 20:12<br>
+		</span></p>
+		
+		<h2>升级摘要</h2>
+		<table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+		    <tr>
+		        <td nowrap class="header" width="45%">发现的问题类型</td>
+		        <td nowrap class="header" width="45%">了解更多信息</td>
+		        <td nowrap class="header" align="right">计数</td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="展开/折叠部分" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType0">
+		        &nbsp;编译错误
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        发现了将会妨碍项目编译的问题。需要在应用程序运行前解决这些问题。
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        39
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0">
+		            &nbsp;某些属性和方法未能升级
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>属性或方法未升级</a>
+		        </td>
+		        <td class="SummaryCount">39</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType0GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File0">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File1">
+		                        &nbsp;zycx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">DBGrid</td>
+		                            <td class="issuecontent">DBGrid1</td>
+		                            <td class="issuecontent">Bindings</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>DBGrid 属性 DBGrid1.Bindings 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File2">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">4</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">UpdateRecord</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 方法 Data1.UpdateRecord 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data3</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data3.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data3</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data3.RecordSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File3">
+		                        &nbsp;bfhcx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">5</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">RecordSource</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">DBGrid</td>
+		                            <td class="issuecontent">DBGrid1</td>
+		                            <td class="issuecontent">Bindings</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>DBGrid 属性 DBGrid1.Bindings 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File4">
+		                        &nbsp;Form3.frm
+		                    </td>
+		                    <td class="SummaryFileCount">7</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File4" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">Command3_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">7</td>
+		                            <td class="issuecontent">Command3_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File5">
+		                        &nbsp;zk.frm
+		                    </td>
+		                    <td class="SummaryFileCount">17</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File5" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">7</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">8</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">9</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">10</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">11</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">12</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">13</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">14</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">15</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">16</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">Recordset</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">17</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent">UpdateRecord</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 方法 Data1.UpdateRecord 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="展开/折叠部分" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType1">
+		        &nbsp;设计错误
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        设计时设置的某些属性没有直接等效项，未能升级。您应该彻底地测试您的应用程序，以确认该程序是否发挥了预期的作用。
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        44
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0">
+		            &nbsp;控件未升级
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>控件未升级</a>
+		        </td>
+		        <td class="SummaryCount">9</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File0">
+		                        &nbsp;bfhcx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File1">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File2">
+		                        &nbsp;Form3.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File3">
+		                        &nbsp;jf.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File4">
+		                        &nbsp;zk.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File4" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File5">
+		                        &nbsp;zycx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File5" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File6">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File6" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data2 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">Data</td>
+		                            <td class="issuecontent">Data3</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data3 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1">
+		            &nbsp;某些对象和集合未升级
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>对象或集合未升级</a>
+		        </td>
+		        <td class="SummaryCount">10</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File0">
+		                        &nbsp;bfhcx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File1">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File2">
+		                        &nbsp;Form3.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File3">
+		                        &nbsp;jf.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File4">
+		                        &nbsp;zk.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File4" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File5">
+		                        &nbsp;zycx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File5" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File6">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">4</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File6" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Shape 对象 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2">
+		            &nbsp;某些属性和方法未能升级
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>属性或方法未升级</a>
+		        </td>
+		        <td class="SummaryCount">25</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File0">
+		                        &nbsp;jf.frm
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text1.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File1">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text3</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text4</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text4.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text5</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text5.DataSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File2">
+		                        &nbsp;Form3.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text1.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text3</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File3">
+		                        &nbsp;zk.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_0</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_0.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_1.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_2.DataSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File4">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">14</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File4" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_1.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_2.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_3</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_3.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_4</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_4.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_5</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_5.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_6</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_6.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">7</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">_Text1_7</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_7.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">8</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text2</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">9</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text3</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">10</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text4</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text4.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">11</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text5</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text5.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">12</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text6</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text6.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">13</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text7</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text7.DataSource 未升级。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">14</td>
+		                            <td class="issuecontent">(布局)</td>
+		                            <td class="issuecontent">TextBox</td>
+		                            <td class="issuecontent">Text8</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text8.DataSource 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="展开/折叠部分" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType2">
+		        &nbsp;警告
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        发现了一些差异，这些差异可能会在应用程序运行时引起意外的结果。您应该彻底地测试您的应用程序，以确认该程序是否发挥了预期的作用。
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        23
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID0">
+		            &nbsp;检测到项目中使用了 ADODB
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>有关使用 ADODB 的更多信息</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID0File0">
+		                        &nbsp;(全局问题)
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>在升级的 VB.NET 应用程序上使用 ADODB。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID1">
+		            &nbsp;某些项目项未升级
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>项目项未升级</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID1File0">
+		                        &nbsp;(全局问题)
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>ActiveX 设计器 DataReport1.Dsr 未升级。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID2">
+		            &nbsp;在初始化窗体时可能会引发某些事件
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>初始化窗体时可能激发事件</a>
+		        </td>
+		        <td class="SummaryCount">2</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID2File0">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID2File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Text1_Change</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>初始化窗体时可能激发事件 Text1.TextChanged。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID2File1">
+		                        &nbsp;zycx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID2File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Option1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>初始化窗体时可能激发事件 Option1.CheckedChanged。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3">
+		            &nbsp;无法解析某些后期绑定的默认属性引用
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析后期绑定的默认属性引用</a>
+		        </td>
+		        <td class="SummaryCount">19</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID3">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3File0">
+		                        &nbsp;MDIForm1.frm
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID3File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">DRjfqh_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 DataReport1.Show 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">HELP_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 Form13.Show 的默认属性。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3File1">
+		                        &nbsp;ry.frm
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID3File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command2_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Picture1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 Picture1.Picture 的默认属性。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3File2">
+		                        &nbsp;bfhcx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">4</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID3File2" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3File3">
+		                        &nbsp;zycx.frm
+		                    </td>
+		                    <td class="SummaryFileCount">4</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID3File3" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID3File4">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">6</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID3File4" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">位置</td>
+		                            <td nowrap class="issuehdr">对象类型</td>
+		                            <td nowrap class="issuehdr">对象名</td>
+		                            <td nowrap class="issuehdr">属性</td>
+		                            <td nowrap class="issuehdr">说明</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 yfm 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">Command1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td colspan=2 class="content">总数</td>
+		        <td class="SummaryCount">106</td>
+		    </tr>
+		</table>
+		
+		<h2><IMG alt="展开/折叠部分" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="DetailList"> 项目中每个文件的详细信息</h2>
+		<span id="DetailList" class="collapsed">
+		<table cellpadding="2" cellspacing="0" width="98%" border="1"bordercolor="white" class="infotable">
+			<tr>
+				<td nowrap class="header">新文件名</td>
+				<td nowrap class="header">原文件名</td>
+				<td nowrap class="header">文件类型</td>
+				<td nowrap class="header">状态</td>
+				<td nowrap class="header">错误</td>
+				<td nowrap class="header">警告</td>
+				<td nowrap class="header">全部问题</td>
+			</tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="issue0">&nbsp;(全局问题)</td>
+			<td class="content"></td>
+			<td class="content"></td>
+			<td class="content">
+		</td>	<td class="content">0</td>
+			<td class="content">2</td>
+			<td class="content">2</td>
+		</tr>
+			<tr id="issue0" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">全局更新问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>全局警告</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="48A49793-4B36-455A-A684-D0D50E2E42B3"'>在升级的 VB.NET 应用程序上使用 ADODB。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>全局警告</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="8E17D925-FAA8-4EF2-9E5F-D59539C1A10D"'>ActiveX 设计器 DataReport1.Dsr 未升级。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue1">&nbsp;bfhcx.vb</td>
+			<td class="content">bfhcx.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">7</td>
+			<td class="content">4</td>
+			<td class="content">11</td>
+		</tr>
+			<tr class="collapsed" id="issue1" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">bfhcx.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">DBGrid</td><td class="issuecontent">DBGrid1</td><td class="issuecontent">Bindings</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>DBGrid 属性 DBGrid1.Bindings 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue2">&nbsp;DataEnvironment1.vb</td>
+			<td class="content">DataEnvironment1.Dsr</td>
+			<td class="content">ActiveX 设计器</td>
+			<td class="content">
+		已升级</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue2" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">DataEnvironment1.Dsr 的升级问题:</td></tr><tr><td class="issuenone">无</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue3">&nbsp;DATAREPORT1.dsr</td>
+			<td class="content">DataReport1.Dsr</td>
+			<td class="content">ActiveX 设计器</td>
+			<td class="content">
+		未升级</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue3" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">DataReport1.Dsr 的升级问题:</td></tr><tr><td class="issuenone">无</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue4">&nbsp;Form2.vb</td>
+			<td class="content">Form2.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">8</td>
+			<td class="content">6</td>
+			<td class="content">14</td>
+		</tr>
+			<tr class="collapsed" id="issue4" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Form2.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text3</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text4</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text4.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text5</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text5.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 yfm 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">13</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">14</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 qxqx 的默认属性。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue5">&nbsp;Form3.vb</td>
+			<td class="content">Form3.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">12</td>
+			<td class="content">0</td>
+			<td class="content">12</td>
+		</tr>
+			<tr class="collapsed" id="issue5" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Form3.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command2_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command2_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command3_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command3_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text1.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text3</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue6">&nbsp;jf.vb</td>
+			<td class="content">jf.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">4</td>
+			<td class="content">0</td>
+			<td class="content">4</td>
+		</tr>
+			<tr class="collapsed" id="issue6" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">jf.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text1.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue7">&nbsp;MDIForm1.vb</td>
+			<td class="content">MDIForm1.frm</td>
+			<td class="content">MDI 窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">0</td>
+			<td class="content">2</td>
+			<td class="content">2</td>
+		</tr>
+			<tr class="collapsed" id="issue7" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">MDIForm1.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">DRjfqh_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 DataReport1.Show 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">HELP_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 Form13.Show 的默认属性。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue8">&nbsp;Module1.vb</td>
+			<td class="content">Module1.bas</td>
+			<td class="content">模块</td>
+			<td class="content">
+		已升级</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue8" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Module1.bas 的升级问题:</td></tr><tr><td class="issuenone">无</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue9">&nbsp;ry.vb</td>
+			<td class="content">ry.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">25</td>
+			<td class="content">4</td>
+			<td class="content">29</td>
+		</tr>
+			<tr class="collapsed" id="issue9" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">ry.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">UpdateRecord</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 方法 Data1.UpdateRecord 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command2_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command2_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data3</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data3.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command2_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data3</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data3.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Shape 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data2 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data3</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data3 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_1.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">13</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_2.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">14</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_3</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_3.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">15</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_4</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_4.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">16</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_5</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_5.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">17</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_6</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_6.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">18</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_7</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_7.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">19</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text2.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">20</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text3</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text3.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">21</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text4</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text4.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">22</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text5</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text5.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">23</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text6</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text6.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">24</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text7</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text7.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">25</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">Text8</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 Text8.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">26</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command2_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">27</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command2_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">28</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Picture1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 Picture1.Picture 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">29</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Text1_Change</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>初始化窗体时可能激发事件 Text1.TextChanged。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue10">&nbsp;zk.vb</td>
+			<td class="content">zk.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">22</td>
+			<td class="content">0</td>
+			<td class="content">22</td>
+		</tr>
+			<tr class="collapsed" id="issue10" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">zk.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">13</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">14</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">15</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">16</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">17</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">UpdateRecord</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 方法 Data1.UpdateRecord 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">18</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">19</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">20</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_0</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_0.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">21</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_1.DataSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">22</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">TextBox</td><td class="issuecontent">_Text1_2</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>TextBox 属性 _Text1_2.DataSource 未升级。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="展开/折叠部分" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue11">&nbsp;zycx.vb</td>
+			<td class="content">zycx.frm</td>
+			<td class="content">窗体</td>
+			<td class="content">
+		已升级，但存在下列问题</td>	<td class="content">5</td>
+			<td class="content">5</td>
+			<td class="content">10</td>
+		</tr>
+			<tr class="collapsed" id="issue11" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">zycx.frm 的升级问题:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>严重级别</td><td class="issuehdr">位置</td><td class="issuehdr">对象类型</td><td class="issuehdr">对象名</td><td class="issuehdr">属性</td><td class="issuehdr">说明</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">Recordset</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.Recordset 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>编译错误</td><td class="issuecontent">Command1_Click</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent">RecordSource</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>Data 属性 Data1.RecordSource 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6B85A2A7-FE9F-4FBE-AA0C-CF11AC86A305"'>Data 对象 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">Data</td><td class="issuecontent">Data1</td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6E047632-2D91-44D6-B2A3-0801707AF686"'>Data 控件 Data1 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>设计错误</td><td class="issuecontent">(布局)</td><td class="issuecontent">DBGrid</td><td class="issuecontent">DBGrid1</td><td class="issuecontent">Bindings</td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="076C26E5-B7A9-4E77-B69C-B4448DF39E58"'>DBGrid 属性 DBGrid1.Bindings 未升级。</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Command1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>未能解析对象 SQL 的默认属性。</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>运行时警告</td><td class="issuecontent">Option1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>初始化窗体时可能激发事件 Option1.CheckedChanged。</a></td></tr>
+				</table>
+			</td></tr>
+		<tr valign="top">
+			<td class="foot">11 文件</td>
+			<td class="foot">&nbsp;</td>
+			<td class="foot">ActiveX 设计器: 2<br>模块: 1<br>窗体: 7<br>MDI 窗体: 1</td>
+			<td class="foot">
+		已升级: 10<BR>
+		未升级: 1
+		</td>
+			<td class="foot">83</td>
+			<td class="foot">23</td>
+			<td class="foot">106</td>
+		</tr>
+		</table>
+		</span>
+		<p class="help">
+			<A href='ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="a16bd8ca-916d-4cd3-821c-417999d3cb97"'>单击此处以获得有关升级项目的疑难解答帮助。</A>
+		</p>
+				<p>
+					<table class = "note">
+						<tr><td nowrap><b>升级设置</b></td></tr>
+						<tr><td nowrap><b>日志文件:</b> 水费管理系统.log</td></tr>
+						<tr><td nowrap><b>将项目迁移到:</b> WinExe</td></tr>
+						<tr><td nowrap><b>输出目录:</b> D:\my documents\Tencent Files\470857673\FileRecv\水费管理系统\水费管理系统\30\工程1.NET</td></tr>
+						<tr><td nowrap><b>输出名:</b> 水费管理系统.vbproj</td></tr>
+						<tr><td nowrap><b>项目名称:</b> 水费管理系统</td></tr>
+						<tr><td nowrap><b>项目路径:</b> D:\my documents\Tencent Files\470857673\FileRecv\水费管理系统\水费管理系统\30\水费管理系统.vbp</td></tr>
+					</table>
+				</p>
+	</body>
+</html>

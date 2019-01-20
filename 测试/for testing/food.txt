@@ -1,0 +1,234 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="936"%>
+
+<!-- #include file="odb.asp"-->
+<!-- #include file="reload.asp"-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<META 
+content=苏武牧羊餐饮管理有限公司是一家以经营火锅为主的餐饮连锁企业，成立于2002年10月，现有连锁店80余家。其自主研发的“苏武牧羊锅”、“苏武补元锅”、“苏武羴鱻锅”等九大系列十五种锅底深得顾客喜爱，闻名遐迩。 
+name=description>
+<META content=苏武牧羊,火锅,火锅连锁,苏武牧羊张江店 name=keywords>
+<title>苏武牧羊张江店</title>
+<link   type="text/css" href="backup/style.css"  rel="stylesheet"/>
+<style type="text/css">
+<!--
+.STYLE6 {color: #552000}
+#Layer3 {
+	position:relative;
+	width:200px;
+	height:115px;
+	z-index:3;
+	left: 20px;
+	top: 97px;
+}
+-->
+</style>
+</head>
+
+<%
+dim ID,foodname 
+ID=request.QueryString("id")
+if ID="" then ID="1"
+
+select case cint(id)
+	case 1
+		foodname="至尊和牛"
+	case 2
+		foodname="牧羊水饺"
+	case 3
+		foodname="蔬菜多拼"
+	case 4
+		foodname="苏武筒骨锅义底"
+	case 5
+		foodname="苏武珍菌菇"
+	case 6
+		foodname="御制羊肉"
+	case 7
+		foodname="金菇肥牛"
+	case 8
+		foodname="烤羊排"
+	case 9
+		foodname="烤羊腿"
+	case 10
+		foodname="牧羊蝎子煲"
+	case 11
+		foodname="羊肉串"
+	case 12
+		 foodname="烤鸡翅"
+	case 13
+		 
+	case 14
+		foodname="精品羊肉"
+	case 15
+		foodname="酸菜鱼锅"
+
+end select
+	
+ 
+Dim Recordset1
+Dim Conn,ConnStr
+
+Const adOpenStatic = 3
+Const adLockOptimistic = 3
+
+Set Conn=Server.CreateObject("ADODB.Connection")
+Set Recordset1 = Server.CreateObject("ADODB.Recordset")
+
+call  OpenDataBase1()
+
+Conn.open ConnStr
+
+Recordset1.Open  "SELECT * FROM P where ID=" & id & " ORDER BY adddate DESC", conn, adOpenStatic, adLockOptimistic
+
+dim mm_Title, mm_Content,mm_IPAddress
+mm_Title=request.Form("Title")
+mm_Content=request.Form("Content")
+mm_IPAddress=request.Form("IPAddress")
+if mm_Title<>""  then 
+set Rs=Conn.execute("insert into P (title,content,id) values('" &cstr(mm_Title) &"','" & cstr(mm_Content)&"','" &cstr(id) &"')" )
+call reload()
+end if
+
+%>
+
+<body>
+<div id="Layer1">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1004" height="164">
+    <param name="movie" value="backup/top.swf" />
+    <param name="quality" value="high" />
+    <embed src="backup/top.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1004" height="164"></embed>
+  </object>
+</div>
+<div id="hdpic"></div>
+
+<div id="page">
+
+  <div id="head"></div>
+  <div id="daohang">
+   <a href="index.htm"><img src="backup/sy.gif" width="129" height="34" border="0" /></a><a href="about.htm"><img src="backup/gsgk.gif" width="129" height="34" border="0" /></a><a href="qywh.htm"><img src="backup/qywh2.gif" width="129" height="34" border="0" /></a><a href="yhhd.htm"><img src="backup/yhhd2.gif" width="129" height="34" border="0" /></a><a href="mszs.htm"><img src="backup/mszs.gif" width="129" height="34" border="0" /></a><a href="message.asp"><img src="backup/lyb.gif" width="129" height="34" border="0" /></a> 
+  </div>
+  <div id="subpic"><img src="backup/showfood.gif" width="75" height="20"  class="subpic2"/></div>
+  <div id="body"  style="background-image:url(backup/df.bmp)"><br /><br />
+    <div >
+	<a name="top"><h1><%=foodname%></h1></a>
+     <img src="backup/f<%=id%>.gif" width="776" height="567" />
+    </div>
+<%miid=id
+piid=id
+if miid<=1 then miid=16 
+if piid>=15 then piid=0
+%>
+	   　　　　　　　　　　　　　　　 <a href="food.asp?id=<%=cstr(miid-1)%>#top"><img src="backup/prev.gif"  width="100" height="20" border="0" /></a>　　　<a href="mszs.htm"><img src="backup/mu.gif" width="100" height="20" border="0"  style="margin:0 auto"/></a>　　　
+	   <a href="food.asp?id=<%=cstr(piid+1)%>#top"><img src="backup/next.gif" width="100" height="20" border="0" /></a>
+	   <div id="Layer4" style="height:auto; width:auto;"> <br />
+  <div  style="margin:10px 20px">
+  <p>评论：</p>
+  <p>
+    <%
+	j=recordset1.recordcount+1
+if not (recordset1.bof and recordset1.eof ) then
+do  
+	j=j-1
+with  response
+%>
+          <font color="#0000FF"  size="2"> 
+          <%
+.Write  (j) & "楼  主题：" &  recordset1("title")  & "<p>"
+%>
+          </font></p>
+  <font  face="Verdana"color="#000099" size="4"><pre style="word-wrap:break-word;word-break:break-all">
+<%
+.write recordset1("content") 
+%></pre>
+  </font><font  size="2">
+  <%
+.write "发表时间：" & recordset1("adddate") &"<hr><p>"
+%></font><%
+end with
+recordset1.movenext
+
+loop until  recordset1.eof
+else
+response.Write("还没有评论")
+end if
+%>
+</div>
+</div>
+	 
+	<div id="Layer3 " style="height:auto; width:auto;">
+			
+			<form name="form1" method="POST" action="food.asp?id=<%=id%>#top" onSubmit="return check()">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="94" height="21" align="right" valign="top">标题:</td>
+        <td colspan="2" valign="top"> 
+		  <input name="Title" type="text" id="Title" size="50" maxlength="50"></td>
+        </tr>
+      <tr>
+        <td height="21" align="right" valign="top">内容:</td>
+        <td width="669" rowspan="2" valign="top">
+		  <textarea name="Content" cols="60" rows="10" id="Content"></textarea></td>
+        <td width="3"></td>
+        </tr>
+      <tr>
+        <td rowspan="2" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        <td height="133"></td>
+        </tr>
+      <tr>
+        <td height="21" valign="top">
+		 <input type="submit" name="Submit" value="提交" onClick="ReplaceString()">
+         <input type="reset" name="Submit2" value="重置">		  </td>
+        <td></td>
+        </tr>
+      <tr>
+        <td height="55">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+        </tr>
+    </table>
+</form>	
+			
+	</div>		
+	
+ 
+  </div>
+ 
+</div><div id="bo">
+<div id="bottom">
+<div id="bottom_text"><a href="about.htm">关于我们</a> | <a href="yhhd.htm">优惠活动</a> | <a href="rczp.htm">人才招聘</a> | <a href="lxwm.htm">联系我们</a></div></div>
+<div id="Layer2"><div id="copyright_text">版权所有(C)苏武牧羊餐饮管理有限公司张江店</div></div>
+</div>
+
+<script language="JavaScript">
+function check()
+{
+if (form1.Title.value=="" ){
+	
+	alert ("主题不能为空");
+	form1.Title.focus();
+	return false;
+	}
+}
+
+function ReplaceString()
+{
+var fContent=document.form1.Content.value;
+fContent=fContent.replace(/</g,"&lt;");
+fContent=fContent.replace(/>/g,"&gt;");
+fContent=fContent.replace(/&/g,"&amp;");
+document.form1.Content.value=fContent;
+}
+</script>
+</body>
+</html>
+ 
+<%
+Recordset1.Close()
+Set Recordset1 = Nothing
+Conn.Close()
+Set Conn=Nothing
+%>

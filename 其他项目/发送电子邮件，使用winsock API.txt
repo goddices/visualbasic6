@@ -1,0 +1,61 @@
+1.设置Winsock控件的通信协议（TCP)，远程主机ip,远程连接端口（通常为25）。然后连接远程主机。
+
+Winsock1.Protocol = sckTCPProtocol
+Winsock1.RemoteHost = "smtp.126.com"
+Winsock1.RemotePort = 25
+Winsock1.Connect
+
+　2 如果winsock接受到的服务器的回应码为220，表明服务器端接受了客护端的连接请求。这样可以进行下一步的通信：客户端发送EHLO消息，该消息表示客户希望基于ESMTP协议的电子邮件传递。
+
+　　eg,   winsock1.senddata("EHLO xiaopeng"+vbcrlf)
+
+　　3 如果winsock接受到服务器的回应码为250，表明服务器接受了客户端的通过ESMTP发送邮件的请求。
+
+　　这样可以进行下一步的通信：客户端发送AUTH LOGIN消息。
+
+　　eg, winsock1.senddata("AUTH LOGIN"+vbcrlf)
+
+　　4 如果winsock接收到服务器的回应码为334，表明服务器启动了一个认证过程。下一步期待用户输入用户名 。
+
+　　eg, winsock1.senddata(Encode64("username")+vbcrlf)
+
+　　5 如果winsock接收到服务器的回应码为334，表明服务器已经接受了用户名，下一步期待用户输入密码。
+
+　　eg,winsoc1.senddata(Encode64("password")+vbcrlf)
+
+　　6 如果winsock接收到服务器的回应码为235，表明认证成功完成。接着客户就可以发邮件了。
+
+　　发邮件具体过程如下：
+
+　　（1）客户端发送"mail from:"消息，该消息包含了发送人的email
+
+　　eg, winsock1.sendata("mail from:"+chr(32)+"xiaopeng.qi@126.com"+vbcrlf)
+
+　　（2）当客户端接收到250，则继续发送"rcpt to:"消息，它包含了收件人的邮件地址。
+
+　　eg, winsock1.senddata("rcpt to:"+chr(32)+"linglingxp@126.com"+vbcrlf)
+
+　　（3）当客户端接收到250，则继续发送“data”消息，它通知邮件服务器随后客户断将发送电子邮件数据。
+
+　　eg, winsock1.senddata("data"+vbcrlf)
+
+　　（4）客户端如果接收到354的消息，客户端将发送电子邮件数据。电子邮件的数据包括以下字段：
+
+　　Date,From,To,X-Mailer以及邮件正文。电子邮件以"."结束。
+　　eg,winsock1.senddata("Date:"+chr(32)+format(Date,"Ddd")&","&format(Date,"dd Mmm YYYY")&""&format(Time,"hh:mm:ss")&""&"-0600"+vbcrlf)
+　　winsock1.senddata("From:"+chr(32)+"xiaopeng"+vbcrlf)
+　　winsock1.senddata("X-Mailer: vbemailsender"+vbcrlf)
+　　winsock1.senddata("To:"+chr(32)+"lingling"+vbcrlf)
+　　winsock1.senddata("Subject:"+chr(32)+"how are you"+vbcrlf)
+　　winsock1.sendtada("ni hao ma"+vbcrlf)
+　　winsock1.senddata("."+vbcrlf)
+
+　　（5）如果客户端接收到250的消息，表明电子邮件数据被成功发送。此时客户端如果希望与服务器断开连接，发送"quit"消息即可。如果客户端接收到221的消息，表明服务器已经终止了基于ESMTP协议的连接。
+
+　　eg,  winsock1.senddata("quit"+vbcrlf)
+
+　　需要说明的地方：
+
+　　Encode64 这是一个用于Base64编码的函数
+
+ 

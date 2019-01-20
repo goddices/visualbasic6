@@ -1,0 +1,55 @@
+
+
+function mnpMenuDir()
+{
+	return "LTR";
+}
+
+function mnpMenuCT()
+{
+	
+	return false;
+	
+}
+
+function me67fab1928c54603a3578cd0e6581209()
+{
+	this.items = new Array();
+	var n = 0;
+	this.items[n++] = new mnpPage('&#26368;&#26377;&#20215;&#20540;&#19987;&#23478;&#27010;&#36848;', '/china/community/Professional/MVP/mvpexecsum.mspx', '', '', '_S1_Node1_S1_Node1');
+	this.items[n++] = new mnpPage('&#24120;&#35265;&#38382;&#39064;', '/china/community/Professional/MVP/faq.mspx', '', '', '_S1_Node1_S1_Node2');
+	this.items[n++] = new mnpPage('&#22312;&#32447;&#30003;&#35831;', '/china/community/Professional/mvp/regnow.aspx', '', '', '_S1_Node1_S1_Node3');
+	this.items[n++] = new mnpPage('&#20013;&#22269;MVP&#21517;&#24405;', '/china/community/Professional/MVP/MVPListMain.mspx', '', '', '_S1_Node1_S1_Node4');
+	this.items[n++] = new mnpPage('&#20840;&#29699;MVP&#21517;&#24405;', '/communities/MVP/MVP.mspx', '', '', '_S1_Node1_S1_Node5');
+	this.items[n++] = new mnpPage('MVP&#25216;&#26415;&#19987;&#26639;', '/china/community/Column/WriterList.mspx', '', '', '_S1_Node1_S1_Node6');
+	this.items[n++] = new mnpPage('Microsoft MVP &#22270;&#20070;', '/china/community/MVPBooks/default.mspx', '', '', '_S1_Node1_S1_Node7');
+	this.items[n++] = new mnpPage('Microsoft Book Library', '/china/community/booklibrary/default.mspx', '', '', '_S1_Node1_S1_Node8');
+}
+
+function m2e3dd82a8f61445ab861e2bd4a8743cb()
+{
+	this.items = new Array();
+	var n = 0;
+	this.items[n++] = new mnpPage('&#24494;&#36719;&#25216;&#26415;&#31038;&#21306;&#32852;&#30431;&#31616;&#20171;', '/china/community/Partner/CommunityAllianceIntro.mspx', '', '', '_S1_Node2_S1_Node1');
+	this.items[n++] = new mnpPage('&#24494;&#36719;&#25216;&#26415;&#31038;&#21306;&#32852;&#30431;&#25104;&#21592;', '/china/community/Partner/partner.aspx', '', '', '_S1_Node2_S1_Node2');
+}
+
+function m3c1d73f40b3b447aaf5b94f254bc5ff5()
+{
+	this.items = new Array();
+	var n = 0;
+	this.items[n++] = new mnpPage('&#22312;&#32447;&#32842;&#22825;', '/china/community/chat/chat.aspx', '', '', '_S1_Node4_S1_Node1');
+}
+
+function me6f89d7389d24d5ea04f9d68419b0bbf()
+{
+	this.items = new Array();
+	var n = 0;
+	this.items[n++] = new mnpPage('MSDN&#25216;&#26415;&#25991;&#31456;', 'http://www.microsoft.com/china/msdn', '', '', '_S1_Node8_S1_Node1');
+	this.items[n++] = new mnpPage('Technet', 'http://www.microsoft.com/china/technet/default.asp', '', '', '_S1_Node8_S1_Node2');
+	this.items[n++] = new mnpPage('&#30693;&#35782;&#24211;&#32034;&#24341;', 'http://support.microsoft.com/default.aspx?LN=ZH-CN', '', '', '_S1_Node8_S1_Node3');
+	this.items[n++] = new mnpPage('&#24494;&#36719;&#26415;&#35821;&#34920;', '/china/community/developer/VSGlossary.aspx', '', '', '_S1_Node8_S1_Node4');
+	this.items[n++] = new mnpPage('&#24494;&#36719;&#19987;&#23478;&#19987;&#39064;&#35762;&#24231;', '/china/community/MsSpecialist/List.aspx', '', '', '_S1_Node8_S1_Node5');
+	this.items[n++] = new mnpPage('&#31038;&#21306;&#21407;&#21019;&#25991;&#31456;', '/china/community/program/OriginalArticles/articlelist.mspx', '', '', '_S1_Node8_S1_Node6');
+}
+

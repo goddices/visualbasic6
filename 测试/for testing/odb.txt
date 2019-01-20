@@ -1,0 +1,13 @@
+<%
+Sub OpenDataBase1()
+
+dim a 
+a=server.mappath("../")
+a= a & "\wwwroot\#data#\liuyan.mdb"
+
+On error resume next
+ConnStr="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & a
+End Sub
+
+
+%>

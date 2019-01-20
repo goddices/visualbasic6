@@ -1,0 +1,43 @@
+Private Sub Form_Load()
+ 
+End Sub
+ 
+Public Function PictureFromByteStream(b() As Byte) As IPicture
+    Dim LowerBound As Long
+    Dim ByteCount  As Long
+    Dim hMem  As Long
+    Dim lpMem  As Long
+    Dim IID_IPicture(15)
+    Dim istm As stdole.IUnknown
+
+    On Error GoTo Err_Init
+    If UBound(b, 1) < 0 Then
+      Exit Function
+    End If
+    
+    LowerBound = LBound(b)
+    ByteCount = (UBound(b) - LowerBound) + 1
+    hMem = GlobalAlloc(&H2, ByteCount)
+    If hMem <> 0 Then
+      lpMem = GlobalLock(hMem)
+      If lpMem <> 0 Then
+        MoveMemory ByVal lpMem, b(LowerBound), ByteCount
+        Call GlobalUnlock(hMem)
+        If CreateStreamOnHGlobal(hMem, 1, istm) = 0 Then
+          If CLSIDFromString(StrPtr("{7BF80980-BF32-101A-8BBB-00AA00300CAB}"), IID_IPicture(0)) = 0 Then
+            Call OleLoadPicture(ByVal ObjPtr(istm), ByteCount, 0, IID_IPicture(0), PictureFromByteStream)
+          End If
+        End If
+      End If
+    End If
+    
+    Exit Function
+    
+Err_Init:
+    If Err.Number = 9 Then
+      'Uninitialized array
+      MsgBox "You must pass a non-empty byte array to this function!"
+    Else
+      MsgBox Err.Number & " - " & Err.Description
+    End If
+End Function

@@ -1,0 +1,553 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0083)http://www.microsoft.com/china/community/program/originalarticles/techdoc/hook.mspx -->
+<HTML dir=ltr><HEAD><TITLE>微软中国社区</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content=zh-chs name=MS.LOCALE>
+<STYLE>A {
+	FONT-SIZE: 9pt; COLOR: #21589c; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #21589c; FONT-FAMILY: Verdana; TEXT-DECORATION: underline
+}
+HR {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+.text1 {
+	FONT: bold 18px/200% Verdana; COLOR: #21589c
+}
+.text2 {
+	MARGIN-TOP: 15px; FONT: bold 85% Verdana; COLOR: #21589c
+}
+.text3 {
+	FONT: bold 75% Verdana
+}
+.text4 {
+	MARGIN-BOTTOM: 10px; FONT: 75%/140% Verdana
+}
+.text5 {
+	PADDING-LEFT: 20px; FONT: 75% Lucida Console
+}
+.text6 {
+	FONT: bold 75% Verdana
+}
+.list1 {
+	
+}
+.list2 {
+	FONT: 75% Verdana
+}
+</STYLE>
+<LINK href="微软中国社区_files/css.css" type=text/css rel=Stylesheet>
+<SCRIPT language=Javascript src="微软中国社区_files/menujs" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=Javascript src="微软中国社区_files/js.aspx" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7><LINK 
+href="微软中国社区_files/css(1).css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>var doImage=doImage;var TType=TType;var defaultSearchLable;
+function mhHover(tbl,idx,cls){var t,d;if(document.getElementById)t=document.getElementById(tbl);else t=document.all(tbl);if(t==null)return;if(t.getElementsByTagName)d=t.getElementsByTagName("TD");else d=t.all.tags("TD");if(d==null)return;if(d.length<=idx)return;d[idx].className=cls;}
+function footerjs(doc){if(doImage==null){var tt=TType==null?"PV":TType;doc.write('<layer visibility="hide"><div style="display:none"><img src="http://c.microsoft.com/trans_pixel.asp?source=www&TYPE=' + tt + '&p=china_community_program_originalarticles_techdoc&URI=%2fchina%2fcommunity%2fprogram%2foriginalarticles%2ftechdoc%2fhook.mspx&GUID=1F4FC18C-F71E-47FB-8FC9-612F8EE59C61&lc=zh-chs" width=0 height=0 hspace=0 vspace=0 border=0 alt=""/></div></layer>');}}
+var rsltextbox = 'msviLSBtbox'; var wtflag = false;
+function stripSymbols () { var objrslttextbox = getObjectById(rsltextbox); if (objrslttextbox) { var form = objrslttextbox.form; var s = objrslttextbox.value; filteredValues = "<>"; var i; var returnString = ""; for (i = 0; i < s.length; i++) { var c = s.charAt(i); if (filteredValues.indexOf(c) == -1) { returnString += c; } else { returnString += " "; } } objrslttextbox.value = returnString; } if(!wtflag) { trackLSB("Site"); } } 
+function addSubmitEvent() { defaultSearchLable=document.getElementById("msviLSBtbox").value;var objrslttextbox = getObjectById(rsltextbox); if (objrslttextbox) { var form = objrslttextbox.form; if (window.attachEvent) { form.attachEvent("onsubmit",stripSymbols); } else { form.addEventListener("submit",stripSymbols,false); } } } 
+function getObjectById(elid) { if (document.getElementById) { return document.getElementById(elid); } else if (document.all) { return document.all[elid]; } else if (document.layers) { return document.layers[elid]; } } 
+if (window.attachEvent) { window.attachEvent("onload",addSubmitEvent); } else { window.addEventListener("load",addSubmitEvent,false); } 
+function trackLSB(type) { clearDefaultSearchLable();if (typeof dcsMultiTrack == "function") { var qu = document.getElementById("msviLSBtbox").value; var dcsuri = "results.aspx"; var dcssip, ti; if (type == "Site") { dcssip = "search.microsoft.com"; ti = "SearchButton: OnSite"; } else if (type == "Web") { dcssip = "bing.com"; ti = "SearchButton: Web"; } dcsMultiTrack("DCS.dcsuri", dcsuri, "DCS.dcssip", dcssip, "WT.ti", ti, "WT.dl", "2", "WT.z_srch_t", qu, "DCS.dcsqry", "", "WT.ad", "", "WT.mc_id", ""); wtflag = true; DCS.dcsuri=DCS.dcssip=DCS.dcsqry=WT.ti=WT.z_srch_t="";} }
+
+var isInputqu = false;
+var searchBoxWidthWithKievLogo = 0;
+var searchBoxWidthWithoutKievLogo = 0;
+function clearDefaultSearchLable()
+{var searchBox = document.getElementById("msviLSBtbox");
+if(!isInputqu){searchBox.value = "";}}
+var kievImageWidth = 0;
+
+function searchBoxFocused(defaultSearchLabel)
+{
+    var searchBoxInput = document.getElementById("msviLSBtbox");
+    var kievImage = document.getElementById("msviLSBlogo");
+    if(searchBoxInput.value == defaultSearchLabel)
+    {
+        searchBoxInput.value = '';
+        if(kievImageWidth == 0)
+        {
+            kievImageWidth = kievImage.clientWidth;
+        }
+        searchBoxInput.style.fontStyle = '';
+        searchBoxInput.style.color='#000000';
+        kievImage.style.width = '1px';
+        if(searchBoxWidthWithKievLogo == 0)
+        {
+            searchBoxWidthWithKievLogo = searchBoxInput.style.width;
+            searchBoxWidthWithoutKievLogo = searchBoxInput.clientWidth + (kievImageWidth - 1);
+        }
+        searchBoxInput.style.width = searchBoxWidthWithoutKievLogo;
+    }
+}
+
+function searchBoxBlur(defaultSearchLabel)
+{
+    var searchBoxInput = document.getElementById("msviLSBtbox");
+    var kievImage = document.getElementById("msviLSBlogo");
+    if(searchBoxInput.value.replace(/(^\s*)|(\s*$)/g, '')=='') 
+    {
+        searchBoxInput.value=defaultSearchLabel;searchBoxInput.style.fontStyle ='Italic';
+        searchBoxInput.style.color = "#a1a1a1";
+        kievImage.style.width = kievImageWidth;
+        
+        searchBoxInput.style.width = searchBoxWidthWithKievLogo;
+        isInputqu = false;
+     }
+     else
+     {
+        isInputqu = true;
+     }
+}</SCRIPT>
+
+<META content=_china_community_ name=WT.sp>
+<SCRIPT language=JavaScript src="微软中国社区_files/broker.js"></SCRIPT>
+
+<SCRIPT language=Javascript>
+					if (self.name == "MNPMainFrame") top.location.href = self.location.href;
+				</SCRIPT>
+
+<META content=favorite name=save>
+<META content="MSHTML 6.00.6000.16825" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0"><!--NOINDEX_START--><A name=top></A>
+<DIV id=msviMasthead>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <TABLE height=22 cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD id=msviMarketing noWrap bgColor=#4b92d9><A 
+            href="http://go.microsoft.com/fwlink/?LinkID=92799">单击此处安装 
+            Silverlight</A></TD>
+          <TD id=msviGlobalToolbarGradient1 
+          style="FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#4B92D9', endColorStr='#CEDFF6', gradientType='1')" 
+          width="50%"></TD>
+          <TD id=msviGlobalToolbarGradient2 
+          style="FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#CEDFF6', endColorStr='#1E77D3', gradientType='1')" 
+          width="50%"></TD></TR></TBODY></TABLE></TD>
+    <TD id=msviGlobalToolbar dir=ltr noWrap align=left bgColor=#1e77d3 
+height=22>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD id=msviRegionId noWrap>China</TD>
+          <TD id=msviRegionSelector noWrap><A 
+            href="http://www.microsoft.com/worldwide">更改</A></TD>
+          <TD class=gtsep>|</TD>
+          <TD id=msviSiteMap noWrap><A 
+            href="http://www.microsoft.com/zh/cn/sitemap.aspx">所有 Microsoft 
+            网站</A></TD>
+          <TD class=msviPPSpace></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD>
+      <TABLE height=42 cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD id=msviBrandBanner bgColor=#0a6cce><A 
+            href="http://www.microsoft.com/china/"><IMG title="" height=42 
+            alt=Microsoft src="微软中国社区_files/ms_masthead_ltr.gif" width=136 
+            border=0></A></TD></TR></TBODY></TABLE></TD>
+    <TD id=msviGlobalSearch width="100%" bgColor=#ffffff>
+      <DIV class=msviLSBsform>
+      <FORM id=msviLSBForm action=/library/toolbar/3.0/search.aspx target=_top>
+      <DIV id=msKiev><INPUT type=hidden value=zh-cn name=View><INPUT type=hidden 
+      value=gb2312 name=charset><INPUT id=msviLSBtbox 
+      onkeydown="if(event.keyCode == 13)searchBoxBlur('搜索 Microsoft.com')" 
+      onblur="searchBoxBlur('搜索 Microsoft.com')" 
+      style="COLOR: #a1a1a1; FONT-STYLE: italic" 
+      onfocus="searchBoxFocused('搜索 Microsoft.com')" value="搜索 Microsoft.com" 
+      name=qu autocomplete="off"><SPAN class=msviLSBlogo id=msviLSBlogo 
+      title="搜索结果由 Bing 提供"></SPAN><INPUT id=msviLSBssearch 
+      title="搜索 Microsoft.com" onclick="trackLSB('Site')" type=image 
+      src="微软中国社区_files/Search_icon.gif" align=absMiddle name=site></DIV><INPUT id=msviLSBWeb title=搜索网页 onclick="trackLSB('Web')" type=submit align=absMiddle name=sweb></FORM></DIV></TD></TR></TBODY></TABLE>
+<TABLE id=msviSubbanner cellSpacing=0 cellPadding=0 width="100%" bgColor=#003399 
+border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG title="" height=26 alt=微软中国社区 src="微软中国社区_files/subbanner.jpg" 
+      width=467 border=0></TD>
+    <TD width="100%">&nbsp;</TD></TR></TBODY></TABLE>
+<DIV id=msviLocalToolbar>
+<TABLE height=19 cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD id=msviHomePageLink noWrap><A 
+      href="http://www.microsoft.com/china/community/default.mspx">微软中国首页</A></TD>
+    <TD><SPAN class=ltsep>|</SPAN></TD>
+    <TD class=lt0 onmouseover="mhHover('msviLocalToolbar', 2, 'lt1')" 
+    onmouseout="mhHover('msviLocalToolbar', 2, 'lt0')" noWrap><A 
+      href="http://www.microsoft.com/communities" target=_blank>微软全球社区</A></TD>
+    <TD width="100%"></TD></TR></TBODY></TABLE></DIV></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD style="OVERFLOW-X: hidden" width=181 height="100%">
+      <DIV class=mnpMenuTop id=mnpMenuTop dir=ltr 
+      style="OVERFLOW-X: hidden; WIDTH: 181px" 
+      parent="/china/community/Column/WriterList.mspx" 
+      url="/china/community/program/originalarticles/techdoc/hook.mspx">
+      <DIV class=mnpInherit>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1" 
+      menu="me67fab1928c54603a3578cd0e6581209"><IMG class=mnpMenuArrow title="" 
+      style="LEFT: 166px; VISIBILITY: hidden" height=7 alt=* 
+      src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Professional/MVP/mvpexecsum.mspx">微软最有价值专家 
+      - MVP</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1" 
+      menu="m2e3dd82a8f61445ab861e2bd4a8743cb"><IMG class=mnpMenuArrow title="" 
+      style="LEFT: 166px; VISIBILITY: hidden" height=7 alt=* 
+      src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Partner/CommunityAllianceIntro.mspx">微软技术社区联盟</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/forum.mspx">微软中文技术论坛</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1" 
+      menu="m3c1d73f40b3b447aaf5b94f254bc5ff5"><IMG class=mnpMenuArrow title="" 
+      style="LEFT: 166px; VISIBILITY: hidden" height=7 alt=* 
+      src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/chat/chat.aspx">技术聊天室</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/communities/find/default.mspx">社区资源网站集</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/communities/usergroups/default.mspx" 
+      target=_blank>用户组</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/technet/community/webcasts/" 
+      target=_blank>Webcasts</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1" 
+      menu="me6f89d7389d24d5ea04f9d68419b0bbf"><IMG class=mnpMenuArrow title="" 
+      style="LEFT: 166px; VISIBILITY: hidden" height=7 alt=* 
+      src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://support.microsoft.com/default.aspx?LN=ZH-CN">更多资源</A></DIV>
+      <DIV class=mnpMenuBorder style="WIDTH: 180px"></DIV>
+      <DIV class=mnpMenuLabel>用户站点</DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/ITPro/default.mspx">IT专业人员社区</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Developer/default.mspx">开发人员社区</A></DIV>
+      <DIV class=mnpMenuBorder style="WIDTH: 180px"></DIV>
+      <DIV class=mnpMenuLabel>产品技术社区</DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Windows/default.mspx">Windows</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Office/default.mspx">Office</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Developer/default.mspx">开发工具</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Server/default.mspx">服务器</A></DIV>
+      <DIV class=mnpMenuRow 
+      style="BORDER-LEFT-COLOR: #f1f1f1; BACKGROUND: #f1f1f1; OVERFLOW-X: hidden; BORDER-BOTTOM-COLOR: #f1f1f1; WIDTH: 176px; BORDER-TOP-COLOR: #f1f1f1; BORDER-RIGHT-COLOR: #f1f1f1"><IMG 
+      class=mnpMenuArrow title="" style="LEFT: 166px; VISIBILITY: hidden" 
+      height=7 alt=* src="微软中国社区_files/arrowLTR.gif" width=4 border=0><A 
+      href="http://www.microsoft.com/china/community/Mobile/default.mspx">Mobile</A></DIV>
+      <DIV class=mnpMenuBorder 
+      style="MARGIN-BOTTOM: 0px; WIDTH: 180px"></DIV></DIV></DIV>
+      <DIV class=mnpAds 
+      style="BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 0px solid; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 20px; BORDER-LEFT: #999999 0px solid; WIDTH: 181px; BORDER-BOTTOM: #999999 0px solid; HEIGHT: 100%">
+      <CENTER>
+      <SCRIPT src="" type=text/javascript></SCRIPT>
+
+      <DIV 
+      style="BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 20px"></DIV><A 
+      href="http://go.microsoft.com/?linkid=9676036"><IMG alt=点击购买，放心实惠 
+      src="微软中国社区_files/120-240.jpg" border=0></IMG> </A><BR></CENTER></DIV></TD>
+    <TD dir=ltr width="100%">
+      <DIV 
+      style="PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px">
+      <DIV class=text1>HOOK专题</DIV>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV class=text2>目录</DIV>
+      <DIV class=text4></DIV>
+      <UL class=list1>
+        <LI class=list2><B></B>基本概念
+        <LI class=list2><B></B>运行机制
+        <LI class=list2><B></B>钩子类型
+        <LI class=list2><B></B>作者</LI></UL>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV class=text2>基本概念</DIV>
+      <DIV class=text4></DIV>
+      <DIV 
+      class=text4>钩子(Hook)，是Windows消息处理机制的一个平台,应用程序可以在上面设置子程以监视指定窗口的某种消息，而且所监视的窗口可以是其他进程所创建的。当消息到达后，在目标窗口处理函数之前处理它。钩子机制允许应用程序截获处理window消息或特定事件。</DIV>
+      <DIV 
+      class=text4>钩子实际上是一个处理消息的程序段，通过系统调用，把它挂入系统。每当特定的消息发出，在没有到达目的窗口前，钩子程序就先捕获该消息，亦即钩子函数先得到控</DIV>
+      <DIV 
+      class=text4>制权。这时钩子函数即可以加工处理（改变）该消息，也可以不作处理而继续传递该消息，还可以强制结束消息的传递。</DIV>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV class=text2>运行机制</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>1、钩子链表和钩子子程：</DIV>
+      <DIV 
+      class=text4>每一个Hook都有一个与之相关联的指针列表，称之为钩子链表，由系统来维护。这个列表的指针指向指定的，应用程序定义的，被Hook子程调用的回调函数，也就是该钩子的各个处理子程。当与指定的Hook类型关联的消息发生时，系统就把这个消息传递到Hook子程。一些Hook子程可以只监视消息，或者修改消息，或者停止消息的前进，避免这些消息传递到下一个Hook子程或者目的窗口。最近安装的钩子放在链的开始，而最早安装的钩子放在最后，也就是后加入的先获得控制权。</DIV>
+      <DIV class=text4>Windows 并不要求钩子子程的卸载顺序一定得和安装顺序相反。每当有一个钩子被卸载，Windows 
+      便释放其占用的内存，并更新整个Hook链表。如果程序安装了钩子，但是在尚未卸载钩子之前就结束了，那么系统会自动为它做卸载钩子的操作。</DIV>
+      <DIV class=text4>钩子子程是一个应用程序定义的回调函数(CALLBACK 
+      Function),不能定义成某个类的成员函数，只能定义为普通的C函数。用以监视系统或某一特定类型的事件，这些事件可以是与某一特定线程关联的，也可以是系统中所有线程的事件。</DIV>
+      <DIV class=text4>钩子子程必须按照以下的语法：</DIV>
+      <DIV style="BACKGROUND-COLOR: #eeeeee" width="100%"><PRE class=text5>LRESULT CALLBACK HookProc
+(
+ 	int nCode, 
+     	WPARAM wParam, 
+     	LPARAM lParam
+);
+</PRE></DIV>
+      <DIV class=text4>HookProc是应用程序定义的名字。</DIV>
+      <DIV 
+      class=text4>nCode参数是Hook代码，Hook子程使用这个参数来确定任务。这个参数的值依赖于Hook类型，每一种Hook都有自己的Hook代码特征字符集。</DIV>
+      <DIV 
+      class=text4>wParam和lParam参数的值依赖于Hook代码，但是它们的典型值是包含了关于发送或者接收消息的信息。</DIV>
+      <DIV class=text4>2、钩子的安装与释放：</DIV>
+      <DIV 
+      class=text4>使用API函数SetWindowsHookEx()把一个应用程序定义的钩子子程安装到钩子链表中。SetWindowsHookEx函数总是在Hook链的开头安装Hook子程。当指定类型的Hook监视的事件发生时，系统就调用与这个Hook关联的Hook链的开头的Hook子程。每一个Hook链中的Hook子程都决定是否把这个事件传递到下一个Hook子程。Hook子程传递事件到下一个Hook子程需要调用CallNextHookEx函数。</DIV>
+      <DIV style="BACKGROUND-COLOR: #eeeeee" width="100%"><PRE class=text5>HHOOK SetWindowsHookEx( 
+　　　　　int idHook,      // 钩子的类型，即它处理的消息类型
+　　　　　HOOKPROC lpfn,   // 钩子子程的地址指针。如果dwThreadId参数为0
+			   // 或是一个由别的进程创建的线程的标识，
+			   // lpfn必须指向DLL中的钩子子程。
+			   // 除此以外，lpfn可以指向当前进程的一段钩子子程代码。
+			   // 钩子函数的入口地址，当钩子钩到任何消息后便调用这个函数。
+　　　　　HINSTANCE hMod,  // 应用程序实例的句柄。标识包含lpfn所指的子程的
+DLL。
+			   // 如果dwThreadId 标识当前进程创建的一个线程，
+			   // 而且子程代码位于当前进程，hMod必须为NULL。
+			   // 可以很简单的设定其为本应用程序的实例句柄。
+　　　　　DWORD dwThreadId // 与安装的钩子子程相关联的线程的标识符。
+			   // 如果为0，钩子子程与所有的线程关联，即为全局钩子。
+　　　　　            ); 
+</PRE></DIV>
+      <DIV class=text4>　　函数成功则返回钩子子程的句柄，失败返回NULL。</DIV>
+      <DIV 
+      class=text4>　　以上所说的钩子子程与线程相关联是指在一钩子链表中发给该线程的消息同时发送给钩子子程，且被钩子子程先处理。</DIV>
+      <DIV 
+      class=text4>在钩子子程中调用得到控制权的钩子函数在完成对消息的处理后，如果想要该消息继续传递，那么它必须调用另外一个SDK中的API函数CallNextHookEx来传递它，以执行钩子链表所指的下一个钩子子程。这个函数成功时返回钩子链中下一个钩子过程的返回值，返回值的类型依赖于钩子的类型。这个函数的原型如下：</DIV>
+      <DIV style="BACKGROUND-COLOR: #eeeeee" width="100%"><PRE class=text5>LRESULT CallNextHookEx
+			(
+				HHOOK hhk;
+				int nCode;
+				WPARAM wParam;
+				LPARAM lParam;
+			 );
+</PRE></DIV>
+      <DIV class=text4>hhk为当前钩子的句柄，由SetWindowsHookEx()函数返回。</DIV>
+      <DIV class=text4>NCode为传给钩子过程的事件代码。</DIV>
+      <DIV class=text4>wParam和lParam 分别是传给钩子子程的wParam值，其具体含义与钩子类型有关。</DIV>
+      <DIV class=text4></DIV>
+      <DIV 
+      class=text4>钩子函数也可以通过直接返回TRUE来丢弃该消息，并阻止该消息的传递。否则的话，其他安装了钩子的应用程序将不会接收到钩子的通知而且还有可能产生不正确的结果。</DIV>
+      <DIV 
+      class=text4>钩子在使用完之后需要用UnHookWindowsHookEx()卸载，否则会造成麻烦。释放钩子比较简单，UnHookWindowsHookEx()只有一个参数。函数原型如下：</DIV>
+      <DIV style="BACKGROUND-COLOR: #eeeeee" width="100%"><PRE class=text5>UnHookWindowsHookEx
+(
+	HHOOK hhk;
+);
+</PRE></DIV>
+      <DIV class=text4>函数成功返回TRUE，否则返回FALSE。</DIV>
+      <DIV class=text4>3、一些运行机制：</DIV>
+      <DIV 
+      class=text4>在Win16环境中，DLL的全局数据对每个载入它的进程来说都是相同的；而在Win32环境中，情况却发生了变化，DLL函数中的代码所创建的任何对象（包括变量）都归调用它的线程或进程所有。当进程在载入DLL时，操作系统自动把DLL地址映射到该进程的私有空间，也就是进程的虚拟地址空间，而且也复制该DLL的全局数据的一份拷贝到该进程空间。也就是说每个进程所拥有的相同的DLL的全局数据，它们的名称相同，但其值却并不一定是相同的，而且是互不干涉的。</DIV>
+      <DIV class=text4></DIV>
+      <DIV 
+      class=text4>因此，在Win32环境下要想在多个进程中共享数据，就必须进行必要的设置。在访问同一个Dll的各进程之间共享存储器是通过存储器映射文件技术实现的。也可以把这些需要共享的数据分离出来，放置在一个独立的数据段里，并把该段的属性设置为共享。必须给这些变量赋初值，否则编译器会把没有赋初始值的变量放在一个叫未被初始化的数据段中。</DIV>
+      <DIV class=text4>#pragma data_seg预处理指令用于设置共享数据段。例如：</DIV>
+      <DIV style="BACKGROUND-COLOR: #eeeeee" width="100%"><PRE class=text5>#pragma data_seg("SharedDataName")
+HHOOK hHook=NULL;
+#pragma data_seg()
+</PRE></DIV>
+      <DIV class=text4>在#pragma data_seg("SharedDataName")和#pragma 
+      data_seg()之间的所有变量将被访问该Dll的所有进程看到和共享。再加上一条指令#pragma 
+      comment(linker,"/section:.SharedDataName,rws"),那么这个数据节中的数据可以在所有DLL的实例之间共享。所有对这些数据的操作都针对同一个实例的，而不是在每个进程的地址空间中都有一份。</DIV>
+      <DIV 
+      class=text4>当进程隐式或显式调用一个动态库里的函数时，系统都要把这个动态库映射到这个进程的虚拟地址空间里(以下简称"地址空间")。这使得DLL成为进程的一部分，以这个进程的身份执行，使用这个进程的堆栈。</DIV>
+      <DIV class=text4>4、系统钩子与线程钩子：</DIV>
+      <DIV class=text4>SetWindowsHookEx()函数的最后一个参数决定了此钩子是系统钩子还是线程钩子。</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>线程勾子用于监视指定线程的事件消息。线程勾子一般在当前线程或者当前线程派生的线程内。</DIV>
+      <DIV class=text4></DIV>
+      <DIV 
+      class=text4>系统勾子监视系统中的所有线程的事件消息。因为系统勾子会影响系统中所有的应用程序，所以勾子函数必须放在独立的动态链接库(DLL) 
+      中。系统自动将包含"钩子回调函数"的DLL映射到受钩子函数影响的所有进程的地址空间中，即将这个DLL注入了那些进程。</DIV>
+      <DIV class=text4>几点说明：</DIV>
+      <DIV 
+      class=text4>（1）如果对于同一事件（如鼠标消息）既安装了线程勾子又安装了系统勾子，那么系统会自动先调用线程勾子，然后调用系统勾子。 
+      </DIV>
+      <DIV 
+      class=text4>（2）对同一事件消息可安装多个勾子处理过程，这些勾子处理过程形成了勾子链。当前勾子处理结束后应把勾子信息传递给下一个勾子函数。 
+      </DIV>
+      <DIV 
+      class=text4>（3）勾子特别是系统勾子会消耗消息处理时间，降低系统性能。只有在必要的时候才安装勾子，在使用完毕后要及时卸载。</DIV>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV class=text2>钩子类型</DIV>
+      <DIV class=text4></DIV>
+      <DIV 
+      class=text4>每一种类型的Hook可以使应用程序能够监视不同类型的系统消息处理机制。下面描述所有可以利用的Hook类型。</DIV>
+      <DIV class=text4>1、WH_CALLWNDPROC和WH_CALLWNDPROCRET Hooks</DIV>
+      <DIV class=text4>WH_CALLWNDPROC和WH_CALLWNDPROCRET 
+      Hooks使你可以监视发送到窗口过程的消息。系统在消息发送到接收窗口过程之前调用WH_CALLWNDPROC 
+      Hook子程，并且在窗口过程处理完消息之后调用WH_CALLWNDPROCRET Hook子程。</DIV>
+      <DIV class=text4>WH_CALLWNDPROCRET 
+      Hook传递指针到CWPRETSTRUCT结构，再传递到Hook子程。</DIV>
+      <DIV 
+class=text4>CWPRETSTRUCT结构包含了来自处理消息的窗口过程的返回值，同样也包括了与这个消息关联的消息参数。</DIV>
+      <DIV class=text4>2、WH_CBT Hook</DIV>
+      <DIV class=text4>在以下事件之前，系统都会调用WH_CBT Hook子程，这些事件包括：</DIV>
+      <DIV class=text4>1. 激活，建立，销毁，最小化，最大化，移动，改变尺寸等窗口事件；</DIV>
+      <DIV class=text4>2. 完成系统指令；</DIV>
+      <DIV class=text4>3. 来自系统消息队列中的移动鼠标，键盘事件；</DIV>
+      <DIV class=text4>4. 设置输入焦点事件；</DIV>
+      <DIV class=text4>5. 同步系统消息队列事件。</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>Hook子程的返回值确定系统是否允许或者防止这些操作中的一个。</DIV>
+      <DIV class=text4>3、WH_DEBUG Hook</DIV>
+      <DIV class=text4>在系统调用系统中与其他Hook关联的Hook子程之前，系统会调用WH_DEBUG 
+      Hook子程。你可以使用这个Hook来决定是否允许系统调用与其他Hook关联的Hook子程。</DIV>
+      <DIV class=text4>4、WH_FOREGROUNDIDLE Hook</DIV>
+      <DIV class=text4>当应用程序的前台线程处于空闲状态时，可以使用WH_FOREGROUNDIDLE 
+      Hook执行低优先级的任务。当应用程序的前台线程大概要变成空闲状态时，系统就会调用WH_FOREGROUNDIDLE Hook子程。</DIV>
+      <DIV class=text4>5、WH_GETMESSAGE Hook</DIV>
+      <DIV class=text4>应用程序使用WH_GETMESSAGE Hook来监视从GetMessage or 
+      PeekMessage函数返回的消息。你可以使用WH_GETMESSAGE 
+Hook去监视鼠标和键盘输入，以及其他发送到消息队列中的消息。</DIV>
+      <DIV class=text4>6、WH_JOURNALPLAYBACK Hook</DIV>
+      <DIV class=text4>WH_JOURNALPLAYBACK 
+      Hook使应用程序可以插入消息到系统消息队列。可以使用这个Hook回放通过使用WH_JOURNALRECORD 
+      Hook记录下来的连续的鼠标和键盘事件。只要WH_JOURNALPLAYBACK Hook已经安装，正常的鼠标和键盘事件就是无效的。</DIV>
+      <DIV class=text4>WH_JOURNALPLAYBACK Hook是全局Hook，它不能象线程特定Hook一样使用。</DIV>
+      <DIV class=text4>WH_JOURNALPLAYBACK 
+      Hook返回超时值，这个值告诉系统在处理来自回放Hook当前消息之前需要等待多长时间（毫秒）。这就使Hook可以控制实时事件的回放。</DIV>
+      <DIV class=text4>WH_JOURNALPLAYBACK是system-wide local 
+      hooks，它們不會被注射到任何行程位址空間。</DIV>
+      <DIV class=text4>7、WH_JOURNALRECORD Hook</DIV>
+      <DIV class=text4>WH_JOURNALRECORD 
+      Hook用来监视和记录输入事件。典型的，可以使用这个Hook记录连续的鼠标和键盘事件，然后通过使用WH_JOURNALPLAYBACK 
+      Hook来回放。</DIV>
+      <DIV class=text4>WH_JOURNALRECORD Hook是全局Hook，它不能象线程特定Hook一样使用。</DIV>
+      <DIV class=text4>WH_JOURNALRECORD是system-wide local 
+      hooks，它們不會被注射到任何行程位址空間。</DIV>
+      <DIV class=text4>8、WH_KEYBOARD Hook</DIV>
+      <DIV class=text4>在应用程序中，WH_KEYBOARD Hook用来监视WM_KEYDOWN and 
+      WM_KEYUP消息，这些消息通过GetMessage or PeekMessage 
+      function返回。可以使用这个Hook来监视输入到消息队列中的键盘消息。</DIV>
+      <DIV class=text4>9、WH_KEYBOARD_LL Hook</DIV>
+      <DIV class=text4>WH_KEYBOARD_LL Hook监视输入到线程消息队列中的键盘消息。</DIV>
+      <DIV class=text4>10、WH_MOUSE Hook</DIV>
+      <DIV class=text4>WH_MOUSE Hook监视从GetMessage 或者 PeekMessage 
+      函数返回的鼠标消息。使用这个Hook监视输入到消息队列中的鼠标消息。</DIV>
+      <DIV class=text4>11、WH_MOUSE_LL Hook</DIV>
+      <DIV class=text4>WH_MOUSE_LL Hook监视输入到线程消息队列中的鼠标消息。</DIV>
+      <DIV class=text4>12、WH_MSGFILTER 和 WH_SYSMSGFILTER Hooks</DIV>
+      <DIV class=text4>WH_MSGFILTER 和 WH_SYSMSGFILTER 
+      Hooks使我们可以监视菜单，滚动条，消息框，对话框消息并且发现用户使用ALT+TAB or ALT+ESC 
+      组合键切换窗口。WH_MSGFILTER 
+      Hook只能监视传递到菜单，滚动条，消息框的消息，以及传递到通过安装了Hook子程的应用程序建立的对话框的消息。WH_SYSMSGFILTER 
+      Hook监视所有应用程序消息。</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>WH_MSGFILTER 和 WH_SYSMSGFILTER 
+      Hooks使我们可以在模式循环期间过滤消息，这等价于在主消息循环中过滤消息。</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>通过调用CallMsgFilter function可以直接的调用WH_MSGFILTER 
+      Hook。通过使用这个函数，应用程序能够在模式循环期间使用相同的代码去过滤消息，如同在主消息循环里一样。</DIV>
+      <DIV class=text4>13、WH_SHELL Hook</DIV>
+      <DIV class=text4>外壳应用程序可以使用WH_SHELL 
+      Hook去接收重要的通知。当外壳应用程序是激活的并且当顶层窗口建立或者销毁时，系统调用WH_SHELL Hook子程。</DIV>
+      <DIV class=text4>WH_SHELL 共有５钟情況：</DIV>
+      <DIV class=text4>1. 只要有个top-level、unowned 窗口被产生、起作用、或是被摧毁；</DIV>
+      <DIV class=text4>2. 当Taskbar需要重画某个按钮；</DIV>
+      <DIV class=text4>3. 当系统需要显示关于Taskbar的一个程序的最小化形式；</DIV>
+      <DIV class=text4>4. 当目前的键盘布局状态改变；</DIV>
+      <DIV class=text4>5. 当使用者按Ctrl+Esc去执行Task Manager（或相同级别的程序）。</DIV>
+      <DIV 
+      class=text4>按照惯例，外壳应用程序都不接收WH_SHELL消息。所以，在应用程序能够接收WH_SHELL消息之前，应用程序必须调用SystemParametersInfo 
+      function注册它自己。</DIV>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV class=text2>作者</DIV>
+      <DIV class=text4></DIV>
+      <DIV class=text4>姜山 2002年11月7日</DIV>
+      <HR color=#cccccc SIZE=1>
+
+      <DIV 
+      class=text2>版权声明</DIV>凡在本网站发表的文章，作者必须保证是原创文章；如果不是原创文章，由此带来的版权纠纷由作者自己承担。微软有义务对本站点发表的文章进行审核，但您需要考虑这些文章的使用风险。本站点仅提供一个用户相互交换技术信息和学习的园地，并不对来自社区用户的技术文章承担任何风险。</DIV></TD></TR></TBODY></TABLE><BR 
+style="OVERFLOW: hidden; LINE-HEIGHT: 1px" clear=all>
+<TABLE id=msviFooter cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR vAlign=bottom>
+    <TD id=msviFooter2 
+    style="FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#3F8CDA', gradientType='1')">
+      <DIV id=msviLocalFooter><NOBR><A 
+      href="https://profile.microsoft.com/RegSysProfileCenter/Infodefault.aspx?LCID=2052" 
+      target=_top>个人信息中心</A> |</NOBR><WBR></WBR><NOBR><A 
+      href="mailto:ccws@microsoft.com" target=_parent>联系我们</A></NOBR></DIV>
+      <DIV id=msviGlobalFooter><SPAN dir=ltr>&copy;2009 Microsoft Corporation. 版权所有. 
+      &nbsp;</SPAN><NOBR><A 
+      href="http://support.microsoft.com/contactus/?ws=mscom" 
+      target=_parent>与我们联系</A> |</NOBR><WBR></WBR><NOBR><A 
+      href="http://www.microsoft.com/china/info/cpyright.mspx" 
+      target=_top>保留所有权利</A> |</NOBR><WBR></WBR><NOBR><A 
+      href="http://www.microsoft.com/library/toolbar/3.0/trademarks/zh-cn.mspx" 
+      target=_top>商标</A> |</NOBR><WBR></WBR><NOBR><A 
+      href="http://www.microsoft.com/info/cn/privacy.mspx" 
+      target=_top>隐私权声明</A></NOBR></DIV></TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>        var msviFooter2;        if (document.getElementById)        {        msviFooter2 = document.getElementById("msviFooter2");        msviFooter2.style.filter = "";        }      </SCRIPT>
+
+<TABLE height=58 cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR vAlign=top>
+    <TD>
+      <DIV style="WIDTH: 200px"></DIV></TD>
+    <TD 
+    style="FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#3F8CDA', gradientType='1')" 
+    width="100%"></TD></TR></TBODY></TABLE>
+<DIV style="DISPLAY: none">
+<SCRIPT type=text/javascript>var gDomain="m.webtrends.com";var gDcsId="dcsjwb9vb00000c932fd0rjc7_5p3t";var gFpc="WT_FPC";if(document.cookie.indexOf(gFpc+"=")==-1){document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");}</SCRIPT>
+
+<SCRIPT src="微软中国社区_files/wt.js" type=text/javascript></SCRIPT>
+<NOSCRIPT><IMG height=1 src="微软中国社区_files/njs.gif" width=1 border=0 
+name=DCSIMG></NOSCRIPT></DIV><LAYER visibility="hide">
+<DIV style="DISPLAY: none"><IMG height=0 alt="" hspace=0 
+src="微软中国社区_files/trans_pixel.gif" width=0 border=0></DIV></LAYER></BODY></HTML>

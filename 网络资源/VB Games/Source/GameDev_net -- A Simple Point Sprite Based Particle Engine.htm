@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0077)http://www.gamedev.net/reference/programming/features/pointspritevb/page3.asp -->
+<HTML><HEAD><TITLE>GameDev.net -- A Simple Point Sprite Based Particle Engine</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312"><LINK 
+href="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/global.html" 
+type=text/css rel=stylesheet><LINK href="/pics/gdicon.png" type=image/png 
+rel=icon>
+<SCRIPT language=javascript 
+src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/global.js" 
+type=text/javascript></SCRIPT>
+
+<META 
+content="game development, game programming, graphics programming, OpenGL, DirectX, Direct3D, AI, artificial intelligence, game design, game, gamedev, development, programming, c++, games, program, create, design, gouraud, shading, tutorial, art, gdnet" 
+name=Keywords>
+<META 
+content="Gamedev.net is the leading resource for game developers, featuring daily news updates, over 1500 featured articles and tutorials, and the most active game development forums anywhere!" 
+name=Description><!-- FASTCLICK.COM POP-UNDER CODE v1.7 for gamedev.net -->
+<SCRIPT language=javascript><!--
+var doc=document;  var url=escape(doc.location.href); var date_ob=new Date();
+doc.cookie='h2=o; path=/;';var bust=date_ob.getSeconds();
+if(doc.cookie.indexOf('e=llo') <= 0 && doc.cookie.indexOf('2=o') > 0){
+doc.write('<scr'+'ipt language="javascript" src="http://media.fastclick.net');
+doc.write('/w/pop.cgi?sid=2342&m=2&v=1.7&u='+url+'&c='+bust+'"></scr'+'ipt>');
+doc.cookie='he=llo; path=/;';} // -->
+</SCRIPT>
+<!-- FASTCLICK.COM POP-UNDER CODE v1.7 for gamedev.net -->
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#ffffff vLink=#ffff96 aLink=#9999ff link=#ffff96 bgColor=#000000 
+leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#333366 
+background="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/line.gif" 
+border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle>
+      <TABLE cellSpacing=1 cellPadding=1 width="95%" bgColor=black border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD class=menubody vAlign=center colSpan=5>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><A href="http://www.gamedev.net/"><IMG height=60 
+                  src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/gdlogo2.gif" 
+                  width=270 border=0></A></TD>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 align=right border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=middle><SPAN 
+                        style="FONT-WEIGHT: normal; FONT-SIZE: 10px"><A 
+                        href="http://www.gamedev.net/info/media/"><B>Click 
+                        here</B></A> to advertise with us</SPAN><BR><!-- Begin Ban Man Pro Banner Code -  Zone: GameDev.net Main Site -->
+                        <SCRIPT language=JAVASCRIPT>
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://www.gamedev.net/banman/banman.asp?ZoneID=1&Task=Get&Browser=NETSCAPE6&X=' + browDateTime + '" width=468 height=60 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://www.gamedev.net/banman/banman.asp?ZoneID=1&Task=Get&Browser=NETSCAPE4">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://www.gamedev.net/banman/banman.asp?ZoneID=1&Task=Click&Mode=HTML&PageID=71844&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://www.gamedev.net/banman/banman.asp?ZoneID=1&Task=Get&Mode=HTML&PageID=71844&RandomNumber=' + browDateTime + '" width="468" height="60" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://www.gamedev.net/banman/banman.asp?ZoneID=1&Task=Get&X=' + browDateTime + '" width=468 height=60 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</SCRIPT>
+                        <NOSCRIPT><A 
+                        href="http://www.gamedev.net/banman/banman.asp?ZoneID=1&amp;Task=Click&amp;Mode=HTML&amp;PageID=71844" 
+                        target=_new><IMG height=60 src="" width=468 
+                        border=0></A> </NOSCRIPT><!-- End Ban Man Pro Banner Code -  Zone: GameDev.net Main Site --></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR vAlign=top>
+          <TD class=menuheadr align=middle width="20%">Features</TD>
+          <TD class=menuheadr align=middle width="20%">Resources</TD>
+          <TD class=menuheadr align=middle width="20%">Community</TD>
+          <TD class=menuheadr align=middle width="20%">Directories</TD>
+          <TD class=menuheadr align=middle width="20%">More</TD></TR>
+        <TR vAlign=top>
+          <TD class=menubody><A href="http://www.gamedev.net/">News</A><BR><A 
+            href="http://www.gamedev.net/columns/">Columns</A><BR><A 
+            href="http://www.gamedev.net/community/contest/">Contests</A><BR></TD>
+          <TD class=menubody><A 
+            href="http://www.gamedev.net/reference/">Articles &amp; 
+            Resources</A><BR><A 
+            href="http://www.gamedev.net/columns/books/">Books &amp; 
+            Software</A><BR><A 
+            href="http://www.gamedev.net/reference/start_here/">For 
+            Beginners</A><BR></TD>
+          <TD class=menubody><A 
+            href="http://www.gamedev.net/community/forums/">Forums</A><BR><A 
+            href="http://www.gamedev.net/community/gds/">GD Showcase</A><BR><A 
+            href="http://www.gamedev.net/community/chat/">GDNet Chat 
+            Network</A><BR></TD>
+          <TD class=menubody><A 
+            href="http://www.gamedev.net/directory/careers/">Job 
+            Offers</A><BR><A href="http://www.gamedev.net/profile/">Member 
+            Search</A><BR><A 
+            href="http://www.gamedev.net/features/hosted/">Hosted Sites</A><BR><!--        <A HREF="/directory/developernet/">DeveloperNET</A><BR>--></TD>
+          <TD class=menubody><A 
+            href="http://www.gamedev.net/features/diaries/">Designer 
+            Diaries</A><BR><A href="http://www.gamedev.net/dict/">Game 
+            Dictionary</A><BR><A 
+            href="http://www.gamedev.net/info/newsletter.asp">Newsletter</A><BR></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD background=""><IMG height=1 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/clear.gif"></TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+function popupsource(file) {
+  var helpWin = window.open(file,"Code","status=no,scrollbars=no,width=600,height=460");
+}
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P align=center><A 
+      href="http://www.gamedev.net/reference/programming/features/pointspritevb/"><IMG 
+      alt="" 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/pointsprite.png" 
+      border=0></A> 
+      <TABLE cellSpacing=0 cellPadding=2 width=170 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle>
+            <TABLE cellSpacing=2 cellPadding=4 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=boxheadr vAlign=top>Contents</TD></TR>
+              <TR>
+                <TD class=featmenu vAlign=center>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR vAlign=top>
+                      <TD width=7><IMG height=6 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/dotsm.gif" 
+                        width=7 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/reference/programming/features/pointspritevb/default.asp"><FONT 
+                        color=#ffffff>Introduction</FONT></A></TD></TR>
+                    <TR vAlign=top>
+                      <TD><IMG height=6 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/dotsm.gif" 
+                        width=7 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/reference/programming/features/pointspritevb/page2.asp"><FONT 
+                        color=#ffffff>Point Sprites</FONT></A></TD></TR>
+                    <TR vAlign=top>
+                      <TD><IMG height=6 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/dotsm.gif" 
+                        width=7 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/reference/programming/features/pointspritevb/page3.asp"><FONT 
+                        color=#ffffff>Creating the 
+                  code</FONT></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+            <P>
+            <TABLE class=featmenu cellSpacing=2 cellPadding=4 width="100%" 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR vAlign=top>
+                      <TD width=16><IMG height=16 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/download.gif" 
+                        width=16 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/reference/programming/features/pointspritevb/Source.zip"><FONT 
+                        color=#ffffff>Source code</FONT></A></TD></TR>
+                    <TR vAlign=top>
+                      <TD><IMG height=16 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/print.gif" 
+                        width=16 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/reference/articles/article2002.asp"><FONT 
+                        color=#ffffff>Printable version</FONT></A></TD></TR>
+                    <TR vAlign=top>
+                      <TD><IMG height=16 alt="" 
+                        src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/discuss.gif" 
+                        width=16 border=0>&nbsp;</TD>
+                      <TD><A 
+                        href="http://www.gamedev.net/community/forums/topic.asp?key=featart&amp;uid=2002&amp;forum_id=35&amp;Topic_Title=A+Simple+Point+Sprite+Based+Particle+Engine"><FONT 
+                        color=#ffffff>Discuss this 
+                    article</FONT></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD class=center><!-- Begin Ban Man Pro Banner Code -  Zone: GameDev.net Skyscraper -->
+                  <SCRIPT language=JAVASCRIPT>
+<!--
+var browName = navigator.appName;
+var browDateTime = (new Date()).getTime();
+var browVersion = parseInt(navigator.appVersion);
+var ua=navigator.userAgent.toLowerCase();
+var adcode='';
+if (browName=='Netscape'){
+     if (browVersion>=5) 
+          { document.write('<ifr'+'ame src="http://www.gamedev.net/banman/banman.asp?ZoneID=9&Task=Get&Browser=NETSCAPE6&X=' + browDateTime + '" width=160 height=600 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+     else if ((browVersion>=4)&&(ua.indexOf("mac")==-1))
+          { document.write('<S'+'CRIPT src="http://www.gamedev.net/banman/banman.asp?ZoneID=9&Task=Get&Browser=NETSCAPE4">');
+          document.write('</'+'scr'+'ipt>');
+          document.write(adcode); }
+     else if (browVersion>=3) 
+          { document.write('<A HREF="http://www.gamedev.net/banman/banman.asp?ZoneID=9&Task=Click&Mode=HTML&PageID=55941&RandomNumber=' + browDateTime + '" target="_new"><IMG SRC="http://www.gamedev.net/banman/banman.asp?ZoneID=9&Task=Get&Mode=HTML&PageID=55941&RandomNumber=' + browDateTime + '" width="160" height="600" border="0"></A>'); } }
+if (browName=='Microsoft Internet Explorer')
+     { document.write('<ifr'+'ame src="http://www.gamedev.net/banman/banman.asp?ZoneID=9&Task=Get&X=' + browDateTime + '" width=160 height=600 Marginwidth=0 Marginheight=0 Hspace=0 Vspace=0 Frameborder=0 Scrolling=No></ifr'+'ame>'); }
+// --> 
+</SCRIPT>
+                  <NOSCRIPT><A 
+                  href="http://www.gamedev.net/banman/banman.asp?ZoneID=9&amp;Task=Click&amp;Mode=HTML&amp;PageID=55941" 
+                  target=_new><IMG height=600 src="" width=160 border=0></A> 
+                  </NOSCRIPT><!-- End Ban Man Pro Banner Code -  Zone: GameDev.net Skyscraper --></TD></TR></TBODY></TABLE></P></TD></TD></TR></TBODY></TABLE>
+      <H1>Creating the code</H1>
+      <P>We have our classes ready, time to start writing the actual code.</P>
+      <P>Point primitives are not much different from the other primitive types 
+      available (triangle strips, lists, etc.). We can still choose what vertex 
+      shader we use.</P>
+      <P>A vertex shader tells DirectX about what type of vertices it can expect 
+      - such as whether they are already transformed, if they have a diffuse 
+      color, and so on. Since I'm mainly aiming this tutorial at 2D gaming, I'm 
+      going to use slightly customized TL vertices. This stands for Transformed 
+      and Lit, which means the vertices already are transformed and that the 
+      lighting color has already been computed. So an X of 300 will be 300 on 
+      the screen, and the vertex color will be the final color.</P><PRE class=code>Public Const D3DFVF_TLVERTEX = (D3DFVF_XYZRHW Or
+                  D3DFVF_DIFFUSE Or D3DFVF_TEX1)
+
+ Public Type typeTRANSLITVERTEX
+   X As Single
+   Y As Single
+   Z As Single
+   rhw As Single
+   color As Long
+   tu As Single
+   tv As Single
+ End Type
+</PRE>
+      <P>We will need an array to contain the point sprites</P><PRE class=code>Private vertsPoints() As typeTRANSLITVERTEX
+</PRE>
+      <P>Next up is the "Reset" method. Here we will reset the individual 
+      particles. Since this is just a collection using the Particle class, we 
+      can basically hard code numbers in here. Since this first example will be 
+      a fire effect, we will set the properties to look like a fire. Note I have 
+      named the "collection" "colFireFX" as well.</P><PRE class=code>With Particles(I)
+   Call .ResetIt(X, Y, -0.4 + (Rnd * 0.8), -0.5 - (Rnd * 0.4), 0, -(Rnd * 0.3), 2)
+   Call .ResetColor(1, 0.5, 0.2, 0.6 + (0.2 * Rnd), 0.01 + Rnd * 0.05)
+ End With
+</PRE>
+      <P><IMG height=148 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/imgFireFX.jpeg" 
+      width=69 align=right>This might look a bit complex now, but it really is 
+      not. There are lots of Rnd's in there. This is because the "flame" of the 
+      fire should be different every time, a bit irregular. That is what this 
+      code does: it changes the X and Y speed a bit, and also the Alpha and 
+      decay value. Check out the picture to the right for the results. The nice 
+      thing is that you can do so much with a simple particle engine like this 
+      just by modifying a few lines of code.</P>
+      <P>The decay value is the amount of "Alpha" (visibility) that is 
+      subtracted from the Alpha value every frame (based on the time). When the 
+      Alpha drops below zero, the particle will be reset, using the Reset 
+      method.</P>
+      <P>We need to initialize the arrays as well, both for the point list and 
+      the particles themselves, which will be done using a simple loop. Pretty 
+      straightforward. We simply reset all the particles now. Because of this, 
+      it will look the fire is "turned on" for the first few seconds.</P><PRE class=code>For I = 0 To ParticleCounts
+   Set Particles(I) = New Particle
+   vertsPoints(I).rhw = 1
+   Call Reset(I)
+ Next I
+</PRE>
+      <P>The size of the particles is set with:</P><PRE class=code>lngFloatSize = FtoDW(25) '//Size of our flame particles..
+</PRE>
+      <P>Note that this code uses this special function:</P><PRE class=code>Public Function FtoDW(f As Single) As Long
+   Dim Buf As D3DXBuffer
+   Dim L As Long
+
+   With ObjD3DX
+    Set Buf = .CreateBuffer(4)
+    .BufferSetData Buf, 0, 4, 1, f
+    .BufferGetData Buf, 0, 4, 1, L
+   End With
+
+   FtoDW = L
+ End Function
+</PRE>
+      <P>This function will put a "single in a long" (float in a dword), which 
+      is required for the .SetRenderState D3DRS_POINTSIZE and some other 
+      PointSize render states.</P>
+      <P>We still have to make the particles move. This is nothing more than 
+      looping through all particles in the array, and call "UpdateParticle." 
+      This method will change each particle: <PRE class=code> Public Sub UpdateParticle(sngTime As Single)
+   sngX = sngX + sngXSpeed * sngTime
+   sngY = sngY + sngYSpeed * sngTime
+
+   sngXSpeed = sngXSpeed + sngXAccel * sngTime
+   sngYSpeed = sngYSpeed + sngYAccel * sngTime
+
+   sngA = sngA - sngAlphaDecay * sngTime
+ End Sub
+</PRE>
+      <P>That's about as tough as the math gets. We simply update the position 
+      of the particle based on the speed, the acceleration and the time. The 
+      Alpha value decreases as well, based on the time.</P>
+      <P>The particle has changed now. Therefore, we have to update the vertex 
+      associated with this particle. We only have to update the position and the 
+      color.</P><PRE class=code>vertsPoints(I).color = D3DColorMake(.sngR,.sngG, .sngB, .sngA)
+ vertsPoints(I).X = .sngX
+ vertsPoints(I).Y = .sngY
+</PRE>
+      <P>After finishing the "Update" sub in our collection, the particles have 
+      been moved and the vertices (point sprites) have been updated.</P>
+      <P>Since we have already covered creating, resetting and updating, it's 
+      time for rendering. Rendering is similar to how you would render any other 
+      primitives. Due to the fact that vertex buffers are complicated to set up 
+      and to modify, I'm using DrawPrimitiveUP to render my vertices. With point 
+      sprites, this is done as follows:</P>
+      <P>First enable pointsprites:</P><PRE class=code> With ObjDev
+   .SetRenderState D3DRS_POINTSPRITE_ENABLE, 1 'True
+   .SetRenderState D3DRS_POINTSCALE_ENABLE, 0 '//I don't need it..
+ End With
+</PRE>
+      <P>We need to set a certain alphablend state to get that "glowing" 
+      effect:</P><PRE class=code> With ObjDev
+   .SetRenderState D3DRS_SRCBLEND, D3DBLEND_SRCALPHA
+   .SetRenderState D3DRS_DESTBLEND, D3DBLEND_ONE
+   .SetRenderState D3DRS_ALPHABLENDENABLE,1
+ End With
+</PRE>
+      <P>Then render:</P><PRE class=code> '//Set up the vertex shader
+ .SetVertexShader D3DFVF_TLVERTEX
+
+ '//Set our texture
+ .SetTexture 0, myTexture
+
+ '//And draw all our particles :D
+ .DrawPrimitiveUP D3DPT_POINTLIST, ParticleCounts, vertsPoints(0), Len(vertsPoints(0))
+</PRE>
+      <P>You might have noticed the texture. The texture controls (for this 
+      particle engine) which part of the particle is seen. It should be 
+      grayscale, since we set the colors manually. Changing the texture can 
+      result in interesting effects. For example, changing the texture in a 
+      "flare" texture will give the particles an entirely different look!</P>
+      <P><IMG height=122 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/firetex1.jpeg" 
+      width=130><IMG height=122 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/firetex2.jpeg" 
+      width=130></P>
+      <P>Once rendering is complete, you need to disable the point sprites 
+      again:</P><PRE class=code> With ObjDev
+ .SetRenderState D3DRS_POINTSPRITE_ENABLE, 0 'True
+ End With
+</PRE>
+      <P>That's it for the rendering (be sure to change any renderstates you 
+      have modified back to the values they were).</P>
+      <P>A small point for optimization: The "Len(vertsPoints(0)" could simply 
+      be changed to a constant, or a value that is set once. Then the Len() 
+      function isn't required anymore, speeding up the rendering just a bit.</P>
+      <P>Remember, it's way more efficient to render as much as possible with 
+      one DrawPrimitive call.</P>
+      <P>We are ready with the code inside our particle class and 
+collection.</P>
+      <P>To create an instance of our particle collection, we simply use the 
+      normal VB way for it:</P><PRE class=code> Dim myNewFire As colFireFX
+ Set myNewFire = New colFireFX
+ myNewFire.ParticleCounts = 150
+ myNewFire.ReLocate 400, 400
+ myNewFire.Begin
+</PRE>
+      <P>And in our render loop we only have to use two lines of code to get the 
+      particle effect on the screen:</P><PRE class=code>myNewFire.Update
+myNewFire.Render
+</PRE>
+      <P>Check out the source (or the compiled exe) to see it working.</P>
+      <H1>What do we have now?</H1>
+      <P>Right now we have a simple particle engine. It does not have things 
+      like gravity, or attraction of particles to each other. But don't think 
+      you cannot do anything with this simple engine. You can simply change the 
+      "Reset" code a bit, and you can get truly wonderful things.</P>
+      <P><IMG height=93 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/imgParticle.jpeg" 
+      width=109></P>
+      <P>While trying to make some simple particle demos I was surprised at the 
+      power of this simple particle engine. Just changing a few numbers can 
+      generate wonderful particle collections. The source contains quite a 
+      number of the interesting patterns generated by code. Often a small change 
+      of a number can result in a completely new pattern.</P>
+      <P>The particle class and the collection class can easily be inserted into 
+      a 2D project and used instantly. Then you can try to experiment with the 
+      arguments or formulas in the Reset() method. There is a lot to experiment 
+      with. For example, with some of my demonstration patterns, changing the 
+      particlecount will change the entire look of the pattern.</P>
+      <P>I hope this tutorial sheds some light on particles and how to use point 
+      sprites in DirectX together with Visual Basic.</P>
+      <P>Almar Joling<BR><A 
+      href="http://www.persistentrealities.com/">http://www.persistentrealities.com/</A></P>
+      <P align=center><A 
+      href="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/total.jpeg"><IMG 
+      height=240 
+      src="GameDev_net -- A Simple Point Sprite Based Particle Engine_files/total.jpeg" 
+      width=320 border=1></A></P><BR><BR><BR></TD></TR></TBODY></TABLE>
+<P align=center><A href="http://www.gamedev.net/info/about">About Us</A> | <A 
+href="http://www.gamedev.net/info/media/">Advertise on GameDev.net</A> | <A 
+href="http://www.gamedev.net/info/writers.asp">Write for us</A><BR>&copy; 1999-2004 
+Gamedev.net, LLC. All rights reserved. <A 
+href="http://www.gamedev.net/info/legal.htm#copyright"><U>Terms of Use</U></A> 
+<A href="http://www.gamedev.net/info/legal.htm#privacy"><U>Privacy 
+Policy</U></A> <BR><SPAN class=maintext-1>Comments? Questions? Feedback? <A 
+href="http://www.gamedev.net/info/faq.asp">Click here!</A></SPAN> <BR><SPAN 
+class=maintext-2>GameDev.net<SUP>TM</SUP>, the GameDev.net logo, and 
+GDNet<SUP>TM</SUP> are trademarks of GameDev.net, 
+LLC</A></SPAN></P></BODY></HTML>

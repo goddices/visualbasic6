@@ -1,0 +1,128 @@
+[Root]
+Most Recent Package=晗青图书管理系统
+
+
+[Package|晗青图书管理系统|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=G:\包
+
+[Package|晗青图书管理系统|Configure DAO ISAMs]
+Applicable=No
+
+[Package|晗青图书管理系统|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|晗青图书管理系统|Files Found]
+
+[Package|晗青图书管理系统|Files Released]
+
+[Package|晗青图书管理系统|Missing Dependency Information]
+F:\超酷彩旦\CoolMenuControls\CoolMenu2.ocx=
+
+[Package|晗青图书管理系统|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\COMCT332.OCX=
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=
+
+[Package|晗青图书管理系统|Files Added]
+G:\图书管理系统\DataBase\Data.mdb=
+G:\图书管理系统\DataBase\Set.Dat=
+G:\图书管理系统\Readme.txt=
+
+[Package|晗青图书管理系统|Files Removed]
+
+[Package|晗青图书管理系统|Files In Project]
+G:\图书管理系统\BookSystem.exe=Yes
+C:\WINDOWS\SYSTEM\msvbvm60.dll=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO360.DLL=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCC2CHS.DLL=Yes
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=Yes
+C:\WINDOWS\SYSTEM\COMCT332.OCX=Yes
+C:\WINDOWS\SYSTEM\CMCT3CHS.DLL=Yes
+F:\超酷彩旦\CoolMenuControls\CoolMenu2.ocx=Yes
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+G:\图书管理系统\DataBase\Data.mdb=Yes
+G:\图书管理系统\DataBase\Set.Dat=Yes
+G:\图书管理系统\Readme.txt=Yes
+
+[Package|晗青图书管理系统|Configure Registry Files]
+Applicable=No
+
+[Package|晗青图书管理系统|Configure Remote Servers]
+Applicable=No
+
+[Package|晗青图书管理系统|Install Locations]
+G:\图书管理系统\BookSystem.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB6CHS.DLL=$(WinSysPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO360.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCMCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCC2CHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\TABCTCHS.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMCT332.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CMCT3CHS.DLL=$(WinSysPath)
+F:\超酷彩旦\CoolMenuControls\CoolMenu2.ocx=$(WinSysPath)
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+G:\图书管理系统\DataBase\Data.mdb=$(AppPath)
+G:\图书管理系统\DataBase\Set.Dat=$(AppPath)
+G:\图书管理系统\Readme.txt=$(AppPath)
+
+[Package|晗青图书管理系统|Configure Shared Files]
+Applicable=Yes
+G:\图书管理系统\BookSystem.exe=No
+G:\图书管理系统\DataBase\Data.mdb=No
+G:\图书管理系统\DataBase\Set.Dat=No
+G:\图书管理系统\Readme.txt=No
+
+[Package|晗青图书管理系统|Distribution]
+Type=multi
+Size=1.44 MB
+Title=晗青图书管理系统
+
+[Package|晗青图书管理系统|IconGroups]
+Group0=晗青图书管理系统
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|晗青图书管理系统|晗青图书管理系统]
+Icon1=BookSystem.exe
+Title1=晗青图书管理系统
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|晗青图书管理系统|Package]
+PackageFolder=G:\包
+ProjectFolder=G:\图书管理系统
+ServerSideCab=
+File1=G:\包\setup.exe
+File2=G:\包\Setup.Lst
+File3=G:\包\BookSy1.CAB
+File4=G:\包\BookSy2.CAB
+File5=G:\包\BookSy3.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz

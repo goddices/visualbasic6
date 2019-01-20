@@ -1,0 +1,20 @@
+impactX Game 2D Engine
+
+本引擎由清风水波独立开发，以开放源代码方式发布，主要包括
+GraphEnine.bas
+xAudio.cls
+xGraphPool.cls
+xInput.cls
+xShow
+提供本引擎的目的是让更多的设计者从繁重的DX引擎开发中解脱出来
+
+你可以免费使用本代码，但是不允许以除作者外的名义或理由2次发布本代码
+
+希望能在你的游戏中打上 使用impactX引擎，并且把下载地址提供给更多的设计者
+
+
+
+Davy.xu
+Sunic Entertainment all rights reserved
+sunicdavy@sina.com
+qq:20998333
